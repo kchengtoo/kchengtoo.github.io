@@ -104,7 +104,7 @@ function configComponents(location) {
 
 		// console.log(contactLink);
 		if (contactLink) {
-			contactLink.href = checkConnectivity("contact");
+			// contactLink.href = checkConnectivity("contact");
 		}
 	}
 	else if (location == "home") {

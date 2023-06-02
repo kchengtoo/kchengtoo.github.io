@@ -4,27 +4,7 @@ let currentLocation = window.location.href;
 
 $(document).ready(function() {
 
-	// console.log(window.location.href);
-
-	// if (currentLocation.includes("pages")) {
-	// 	console.log("pages");
-	// 	$("#footer-div").load("../pages/social-media-footer.html #load-social-media-div");
-	// }
-
-	// if (currentLocation.includes("design.html") || currentLocation.includes("tech.html") || currentLocation.includes("about.html")){
-	// 	$("#footer-div").load("../pages/social-media-footer.html #load-social-media-div");
-	// 	setTimeout (function() {
-	// 		configSocialMediaFooter("pages");
-	// 	}, 500);
-	// }
-	// else {
-	// 	$("#header-div").load("../social-media-footer.html #navbar-div");
-	// 	$("#footer-div").load("../social-media-footer.html #load-social-media-div");
-	// 	setTimeout (function() {
-	// 		configSocialMediaFooter("projects");
-	// 	}, 500);
-	// }
-
+// Loading html in other html does not work locally, only works when it's published
 	if (currentLocation.includes("featured-work")){
 		// console.log("featured project");
 		// $("#header-div").load("../pages/social-media-footer.html #navbar-header");

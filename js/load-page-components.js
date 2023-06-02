@@ -15,7 +15,7 @@ $(document).ready(function() {
 		}, 600);
 	}
 	else if (!currentLocation.includes("pages")) {
-		console.log("homepage");
+		// console.log("homepage");
 		$("#header-div").load("pages/shared-page-components.html #navbar-div");
 		setTimeout (function() {
 			configComponents("home");
@@ -76,7 +76,8 @@ function configComponents(location) {
 
 		}
 		// contactLink.href = "../contact";
-		contactLink.href = checkConnectivity("../contact");
+		
+		// contactLink.href = checkConnectivity("../contact");
 
 		// linkedinImg.src = "../../img/linkedin-logo.svg";
 		// instagramImg.src = "../../img/instagram-logo.svg";
@@ -107,7 +108,7 @@ function configComponents(location) {
 		}
 	}
 	else if (location == "home") {
-		console.log(homeLink);
+		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
 			navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]) + ".html";
 			// console.log(navbarElements[i].href);

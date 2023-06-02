@@ -1,0 +1,110 @@
+.project-background {
+	background-image: url("../img/irobot-connect-context-shot.png");
+}
+
+.step-num {
+	background-color: #93c47d;
+	color: white;
+}
+
+.project-color-text {
+	color: #93c47d;
+}
+
+/*.h-10-gap {
+	padding-left: 10px;
+	padding-right: 10px;
+}*/
+
+/*.callout-framework-creation {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 290px;
+	margin: 0 0 20px 0;
+}*/
+
+.synthesize-section {
+
+}
+
+.irobot-connect-callout {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	/*background-color: orange;*/
+	width: 215px;
+	/*margin-bottom: 20px;*/
+	margin: 0 0 20px 0;
+}
+
+.framework-creation-image {
+	/*height: 215px;*/
+	width: 100%;
+	/*margin-bottom: 30px;*/
+}
+
+.hmw-box {
+	background-color: rgba(157,194,132,0.5);
+	padding: 20px;
+	color: #24613d;
+}
+
+.callout-concept-building {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 290px;
+	margin: 0 0 20px 0;
+}
+
+.concept-system-image {
+	/*height: 215px;*/
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+@media (min-width: 767px) {
+	.project-background {
+		/*background-image: url("../img/nuravel-context-shot.png");*/
+		background-position: 50% 80%;
+	}
+
+	.research-section {
+		/*padding: 0 50px 0 50px;*/
+	}
+
+	.framework-creation-image {
+		width: auto;
+		height: 185px;
+		/*margin-bottom: 20px;*/
+	}
+
+	.concept-system-image {
+		width: auto;
+		height: 215px;
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media (min-width: 991px) {
+	.research-section {
+		/*padding: 0 90px 0 90px;*/
+	}
+
+	.framework-creation-image {
+		height: 250px;
+	}
+
+	.concept-system-image {
+		height: 280px;
+	}
+}
+
+@media (min-width: 1441px) {
+	/*.project-background {
+		height: 900px!important;
+	}*/
+}

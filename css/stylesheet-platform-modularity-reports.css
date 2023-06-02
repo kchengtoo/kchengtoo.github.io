@@ -1,0 +1,50 @@
+.project-background {
+	background-image: url("../img/platform-modularity-reports-context-shot.png");
+	background-position: 50% 50%;
+}
+
+.step-num {
+	background-color: #3e70ab;
+	color: white;
+}
+
+.project-color-text {
+	color: #3e70ab;
+}
+
+.hmw-box {
+	background-color: rgba(122, 167, 222, 0.5);
+	padding: 25px;
+	color: #3e70ab;
+	/*text-align: left;*/
+}
+
+
+@media (min-width: 767px) {
+	.project-background {
+		/*background-image: url("../img/nuravel-context-shot.png");*/
+		background-position: 50% 40%;
+	}
+
+	.research-section {
+		padding: 0 50px 0 50px;
+	}
+	
+}
+
+@media (min-width: 991px) {
+	.project-background {
+		/*background-image: url("../img/nuravel-context-shot.png");*/
+/*		background-position: 50% 45%;*/
+	}
+
+	.research-section {
+		/*padding: 0 90px 0 90px;*/
+	}
+}
+
+@media (min-width: 1441px) {
+	/*.project-background {
+		height: 900px!important;
+	}*/
+}

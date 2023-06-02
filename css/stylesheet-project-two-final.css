@@ -1,0 +1,539 @@
+ 	* {
+		background-color: #050d11;
+		margin: 0;
+		padding: 0;
+	}
+
+	main#canvas {
+		width: 178vw;
+		height: 117vw;
+		background-color: black;
+	}
+
+	section {
+		width: 178vw;
+		height: 117vw;
+		background: url(../img/shadow.png) no-repeat 50% 50%;
+		background-position: 50% 50%;
+		cursor: none;
+		position: absolute;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	article {
+		background-image: url(../img/giphy-2.gif);
+		background-size: 2000%;
+		background-position: center;
+		z-index: 4;
+		border-radius: 50px/50px;
+		position: absolute;
+		opacity: 3;
+	}
+
+		.gifone {
+			margin: 42.2vw 3vw 3vw 20.7vw;
+			width: 2vw;
+			height: 2vw;
+			background-size: 3000%;
+			visibility: visible;
+		}
+
+		.giftwo {
+			background-image: url(../img/giphy-4.gif);
+			margin: 6.9vw 3vw 3vw 9.1vw;
+			width: 0.5vw;
+			height: 0.5vw;
+			visibility: visible;
+		}
+
+		.gifthree {
+			background-image: url(../img/giphy-3.gif);
+			margin: 13vw 3vw 3vw 51vw;
+			background-size: 2500%;
+			width: 1.7vw;
+			height: 1.7vw;
+			visibility: visible;
+		}
+
+		.giffour {
+			background-image: url(../img/giphy-2.gif);
+			margin: 38vw 3vw 3vw 49.7vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.giffive {
+			background-image: url(../img/giphy-4.gif);
+			margin: 35.6vw 3vw 3vw 96.4vw;
+			background-size: 2500%;
+			width: 1.2vw;
+			height: 1.2vw;
+			visibility: visible;
+		}
+
+		.gifsix {
+			background-image: url(../img/giphy-3.gif);
+			margin: 41vw 3vw 3vw 120vw;
+			background-size: 3000%;
+			width: 2.5vw;
+			height: 2.5vw;
+			visibility: visible;
+		}
+
+		.gifseven {
+			background-image: url(../img/giphy-2.gif);
+			margin: 9vw 3vw 3vw 95vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.gifeight {
+			background-image: url(../img/giphy-4.gif);
+			margin: 7vw 3vw 3vw 120.4vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.gifnine {
+			background-image: url(../img/giphy-3.gif);
+			margin: 7.8vw 3vw 3vw 148.7vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			visibility: visible;
+		}
+
+		.giften {
+			background-image: url(../img/giphy-2.gif);
+			margin: 45.4vw 3vw 3vw 158.9vw;
+			background-size: 2500%;
+			width: 0.5vw;
+			height: 0.5vw;
+			opacity: 0.7;
+			visibility: visible;
+		}
+
+		.gifeleven {
+			background-image: url(../img/giphy-4.gif);
+			margin: 64.2vw 3vw 3vw 23.3vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			opacity: 0.7;
+			visibility: visible;
+		}
+
+		.giftwelve {
+			background-image: url(../img/giphy-3.gif);
+			margin: 67.2vw 3vw 3vw 63.7vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.gifthirteen {
+			background-image: url(../img/giphy-2.gif);
+			margin: 74.6vw 3vw 3vw 84vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.giffourteen {
+			background-image: url(../img/giphy-4.gif);
+			margin: 67.5vw 3vw 3vw 131.7vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			visibility: visible;
+		}
+
+		.giffifteen {
+			background-image: url(../img/giphy-3.gif);
+			margin: 65.8vw 3vw 3vw 164.8vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			visibility: visible;
+		}
+
+		.gifsixteen {
+			background-image: url(../img/giphy-2.gif);
+			margin: 99.1vw 3vw 3vw 15.3vw;
+			background-size: 2500%;
+			width: 1vw;
+			height: 1vw;
+			visibility: visible;
+		}
+
+		.gifseventeen {
+			background-image: url(../img/giphy-4.gif);
+			margin: 104.8vw 3vw 3vw 46.7vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			opacity: 0.8;
+			visibility: visible;
+		}
+
+		.gifeighteen {
+			background-image: url(../img/giphy-3.gif);
+			margin: 106.6vw 3vw 3vw 79.9vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			visibility: visible;
+		}
+
+		.gifnineteen {
+			background-image: url(../img/giphy-2.gif);
+			margin: 102.3vw 3vw 3vw 126.6vw;
+			background-size: 2500%;
+			width: 1.5vw;
+			height: 1.5vw;
+			visibility: visible;
+		}
+
+		.giftwenty {
+			background-image: url(../img/giphy-4.gif);
+			margin: 109vw 3vw 3vw 164.6vw;
+			background-size: 2500%;
+			width: 2vw;
+			height: 2vw;
+			visibility: visible;
+		}
+
+	p.titleone {
+		color: #37585c;
+		background-color: transparent;
+		font-family: "DTL Albertina T Regular";
+		font-size: 65pt;
+		text-align: right;
+	}
+
+	p.titletwo {
+		color: #37585c;
+		background-color: transparent;
+		font-family: "DTL Albertina T Regular";
+		font-size: 20pt;
+		text-align: center;
+	}
+
+	p.titlethree {
+		color: #37585c;
+		background-color: transparent;
+		font-family: "DTL Albertina T Regular";
+		font-size: 70pt;
+		text-align: center;
+	}
+
+	p.instructionone {
+		color: #37585c;
+		background-color: transparent;
+		font-family: "DTL Albertina T Regular";
+		font-size: 15pt;
+		text-align: center;
+	}
+
+	p.instructiontwo {
+		color: white;
+		background-color: transparent;
+		font-family: "DTL Albertina T Regular";
+		font-size: 15pt;
+		text-align: center;
+	}
+
+	@font-face {
+		font-family: DTL Albertina T Regular;
+		src: url(../fonts/DTL Albertina T Regular.otf);
+	}
+
+	div {
+		z-index: 6;
+		position: absolute;
+	}
+		.falling {
+			background: url(../img/falling.gif);
+			background-size: cover;
+			background-color: black;
+			width: 31.83vw;
+			height: 32.45vw;
+			padding: 10px;
+			float: right;
+		}
+		.cover {
+			background: url(../img/explanation.jpg);
+			background-size: cover;
+			background-color: black;
+			width: 100vw;
+			height: 100vh;
+			z-index: 7;
+			position: fixed;
+			pointer-events: none;
+			animation-name: fade-out;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+			animation-delay: 8s;
+				-moz-animation-name: fade-out;
+					-moz-animation-duration: 4s;
+					-moz-animation-fill-mode: forwards;
+					-moz-animation-delay: 8s;
+				-o-animation-name: fade-out;
+					-o-animation-duration: 4s;
+					-o-animation-fill-mode: forwards;
+					-o-animation-delay: 8s;
+				-ms-animation-name: fade-out;
+					-ms-animation-duration: 4s;
+					-ms-animation-fill-mode: forwards;
+					-ms-animation-delay: 8s;
+				-webkit-animation-name: fade-out;
+					-webkit-animation-duration: 4s;
+					-webkit-animation-fill-mode: forwards;
+					-webkit-animation-delay: 8s;
+		}
+
+		.explainone {
+			background-color: transparent;
+			position: fixed;
+			width: 50vw;
+			height: 15vw;
+			pointer-events: none;
+			margin: 28vw 0vw 0vw 24vw;
+			animation-name: fade-out;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+			animation-delay: 30s;
+		}
+
+		.exit {
+			background-image: url(../img/giphy-1.gif);
+			background-size: 150%;
+			background-position: center;
+			width: 5vw;
+			height: 5vw;
+			border-radius: 50px/50px;
+			margin: 85vw 3vw 3vw 104vw;
+			display: none;
+		}
+
+		.one.two.three.four.five.six.seven.eight.nine.ten.eleven.twelve.thirteen.fourteen.fifteen.sixteen.seventeen.eighteen.nineteen.twenty {
+			display: block;
+		}
+
+		.end {
+			background-color: transparent;
+			width: 100vw;
+			height: 100vh;
+			z-index: 8;
+			position: fixed;
+			display: none;
+		}
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+
+	@-webkit-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+
+	@-o-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+
+	@-moz-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+
+	@-ms-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0.9;
+		}
+	}
+
+	@keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@-webkit-keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@-o-keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@-moz-keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@-ms-keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+
+	figure {
+		width: 31.6vw;
+		height: 25.25vw;
+		background-size: contain;
+		transition: transform 0.1s;
+			-moz-transition: transform 0.1s;
+			-o-transition: transform 0.1s;
+			-webkit-transition: transform 0.1s;
+		float: left;
+		margin: 2vw 2vw 2vw 2vw;
+	}
+
+		figure#one {
+			background-image: url("../img/deepseacreature7.png");
+			//margin: 40vw 3vw 3vw 1vw;
+		}
+
+		figure#two {
+			background-image: url("../img/deepseacreature12.png");
+			//margin: 5vw 3vw 3vw 28vw;
+		}
+
+		figure#three {
+			background-image: url("../img/deepseacreature8.png");
+			//margin: 0vw 3vw 3vw 0vw;
+		}
+
+		figure#four {
+			background-image: url("../img/deepseacreature10.png");
+			//margin: 30vw 3vw 3vw 80vw;
+		}
+
+		figure#five {
+			background-image: url("../img/deepseacreature1.png");
+			//margin: 28vw 3vw 3vw 40vw;
+		}
+
+		figure#six {
+			background-image: url("../img/deepseacreature15.png");
+			//margin: 52vw 3vw 3vw 105vw;
+		}
+
+		figure#seven {
+			background-image: url("../img/deepseacreature19.png");
+			height: 23vw;
+		}
+
+		figure#eight {
+			background-image: url("../img/deepseacreature2.png");
+			//margin: 2vw 3vw 3vw 62vw;
+		}
+
+		figure#nine {
+			background-image: url("../img/deepseacreature13.png");
+			//margin: 0vw 3vw 3vw 104vw;
+		}
+
+		figure#ten {
+			background-image: url("../img/deepseacreature14.png");
+		}
+
+		figure#eleven {
+			background-image: url("../img/deepseacreature17.png");
+		}
+
+		figure#twelve {
+			background-image: url("../img/deepseacreature6.png");
+		}
+
+		figure#thirteen {
+			background-image: url("../img/deepseacreature20.png");
+		}
+
+		figure#fourteen {
+			background-image: url("../img/deepseacreature11.png");
+		}
+
+		figure#fifteen {
+			background-image: url("../img/deepseacreature16.png");
+		}
+
+		figure#sixteen {
+			background-image: url("../img/deepseacreature9.png");
+		}
+
+		figure#seventeen {
+			background-image: url("../img/deepseacreature3.png");
+		}
+
+		figure#eighteen {
+			background-image: url("../img/deepseacreature5.png");
+		}
+
+		figure#nineteen {
+			background-image: url("../img/deepseacreature18.png");
+		}
+
+		figure#twenty {
+			background-image: url("../img/deepseacreature4.png");
+		}
+
+	figure:hover {
+		transform: scale(2.05,2.05);
+			-moz-transform: scale(1.05,1.05);
+			-ms-transform: scale(1.05,1.05);
+			-o-transform: scale(1.05,1.05);
+			-webkit-transform: scale(1.05,1.05);
+	}

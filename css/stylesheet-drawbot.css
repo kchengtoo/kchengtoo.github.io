@@ -1,0 +1,34 @@
+.project-background {
+	background-image: url("../img/drawbot-thumbnail.jpg");
+	background-color: #f8f9fa;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	/*background-attachment: fixed;*/
+	height: 500px!important;
+}
+
+#video {
+	width: 100%;
+	height: 260px;
+}
+
+@media (min-width: 767px) {
+
+	.project-background {
+		background-image: url("../img/drawbot-background.jpg");
+		height: 700px!important;
+	}
+
+	#video {
+		width: 100%;
+		height: 420px;
+	}
+	
+}
+
+@media (min-width: 1441px) {
+	.project-background {
+		height: 900px!important;
+	}
+}

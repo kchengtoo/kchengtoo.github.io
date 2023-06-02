@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Flock
+	</title>
+	<style type="text/css">
+		html {
+			font-family: sans-serif;
+			font-size: 15px;
+		}
+
+		body {
+			padding: 0 1rem;
+			max-width: 30rem;
+			margin: 0 auto;
+		}
+
+		form {
+			border: 1px solid #f5f5f5;
+			padding: 1rem;
+		}
+
+		img {
+			margin: 1rem 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Select An Image to Resize 👇</h1>
+	<p>
+		Once submitted, the image will be resized and displayed using only a
+		few lines of JavaScript!
+	</p>
+	<form id="my-form" action="" method="post"r>
+		<input type="file" name="photo" accept="image/*" required />
+		<button type="submit">Resize Image</button>
+	</form>
+
+	<img id="img-preview" style="width: 100%;">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		const form = document.querySelector('#my-form');
+
+		form.addEventListener('submit', async (e) => {
+	  		e.preventDefault();
+	  
+	  		// Get data URI of the selected image
+	  		const formData = new FormData(e.currentTarget);
+	  		const photoField = formData.get('photo');
+	  		const dataUri = await dataUriFromFormField(photoField);
+	  
+	  		const imgEl = document.createElement('img');
+	  		imgEl.addEventListener('load', () => {
+	    		const resizedDataUri = resizeImage(imgEl, 4032);
+	    		document.querySelector('#img-preview').src = resizedDataUri;
+	  		});
+  			imgEl.src = dataUri;
+		});
+
+		function dataUriFromFormField (field) {
+			return new Promise((resolve) => {
+				const reader = new FileReader();
+		    
+		    	reader.addEventListener('load', () => {
+		      		resolve(reader.result);
+		    	});
+		    
+		    	reader.readAsDataURL(field);
+		  	});
+		}
+
+		function resizeImage (imgEl, wantedWidth) {
+			const canvas = document.createElement('canvas');
+			const ctx = canvas.getContext('2d');
+
+			const aspect = imgEl.width / imgEl.height;
+
+			canvas.width = wantedWidth;
+			canvas.height = wantedWidth / aspect;
+
+			ctx.drawImage(imgEl, 0, 0, canvas.width, canvas.height);
+			return canvas.toDataURL();
+		}
+	</script>
+</body>
+</html>

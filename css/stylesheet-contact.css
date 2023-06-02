@@ -1,0 +1,268 @@
+@font-face {
+	font-family: "Proxima Thin";
+	src: url("../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+	font-family: "Proxima Reg";
+	src: url("../fonts/ProximaNova-Regular.otf");
+}
+
+@font-face {
+	font-family: "Proxima Bold";
+	src: url("../fonts/Proxima Nova Bold.otf");
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Proxima Reg', sans-serif;
+	background-color: #f8f9fa;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+p {
+	font-size: 15px;
+}
+
+/*#background-image {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/designerbackground.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: fixed;
+}*/
+
+/*#page-front {
+	background-color: #f8f9fa;
+	position: relative;
+}*/
+
+.bold {
+	font-family: "Proxima Bold", Ariel, sans-serif;
+}
+
+.reg {
+	font-family: "Proxima Reg", Ariel, sans-serif;
+}
+
+.thin {
+	font-family: "Proxima Thin", Ariel, sans-serif;
+}
+
+#contact-content {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin-bottom: 0px;
+	padding: 0;
+	/*padding-top: 65px!important;*/
+}
+
+.page-front {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+#contact-col {
+	padding-left: 0;
+}
+
+.page-row {
+	padding-bottom: 50px;
+}
+
+.block {
+	/*margin: 30px 0 0 0;*/
+	/*margin-bottom: 20px;*/
+	/*padding: 0;*/
+	padding-top: 45px;
+}
+
+.text-box {
+	outline: none;
+	box-shadow: none!important;
+	border: none;
+	border-bottom: 1px grey solid;
+	border-radius: 0;
+	background-color: transparent!important;
+	/*margin-bottom: 10px!important;*/
+	font-size: 15px;
+}
+
+#name-id {
+	margin-bottom: 16px;
+}
+
+#message-id {
+	height: 150px;
+	resize: none; 
+}
+
+#email-h1 {
+	/*font-family: "Proxima Bold", Ariel, sans-serif;*/
+	font-size: 30px;
+	/*margin-bottom: 25px;*/
+	text-align: center; 
+	text-decoration: underline;
+	/*display: inline-block;*/
+	/*background-color: orange;*/
+	/*margin: auto;*/
+	color: #162a51;
+}
+
+#email-span {
+	transition: 0.2s;
+}
+
+#email-span:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#contact-title {
+	margin-bottom: 30px;
+}
+
+#message-col {
+	text-align: center;
+}
+
+#send-button {
+	width: 100%;
+	color: #162a51!important;
+	border-color: #162a51!important;
+}
+
+#send-button:hover {
+	color: white!important;
+	background-color: #162a51!important;
+}
+
+#contact-detail {
+	/*padding: 0 20px 0 20px;*/
+	margin-bottom: 30px;
+	text-align: center;
+	/*background-color: orange;*/
+}
+
+.row-center {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+.column-center {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.confirmation-img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+#page-container {
+	/*margin-bottom: 100px;*/
+}
+
+.ohnohoney{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+
+@media (min-width: 767px) {
+	button {
+		display: none;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	#contact-content {
+		padding-top: 75px!important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.block {
+
+	}
+
+	#email-h1 {
+		font-size: 50px;
+	}
+
+	#name-id {
+		margin-bottom: 0;
+	}
+
+	#message-id {
+		height: 200px;
+	}
+
+
+	#contact-copyright-row {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 991px) {
+
+
+	.block {
+		padding-top: 40px;
+	}
+
+/*	#contact-img-div {
+		background-size: 25%;
+		background-position: 15% -30%
+	}*/
+
+	#contact-img-div {
+		width: 100%;
+		height: 100%;
+		/*position: fixed;*/
+		/*background-color: orange;*/
+		background-image: url(../img/contact-email.svg);
+		background-size: 80%;
+		/*background-attachment: fixed;*/
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+	#email-h1 {
+		font-size: 40px;
+		text-align: left;
+	}
+
+	#contact-detail {
+		text-align: left;
+	}
+
+	.page-row {
+		/*height: 798px;*/
+		padding-bottom: 180px;
+		/*padding: 125px 0 0 0;*/
+		/*background-color: orange;*/
+	}
+}
+
+
+

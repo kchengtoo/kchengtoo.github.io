@@ -1,0 +1,33 @@
+.project-background {
+	background-image: url("../img/collective-narrative-context-shot.png");
+}
+
+.step-num {
+	background-color: #91B3FA;
+	color: white;
+}
+
+.project-color-text {
+	color: #91B3FA;
+}
+
+@media (min-width: 767px) {
+	.project-background {
+		/*background-image: url("../img/collective-narrative-context-shot.png");*/
+	}
+
+	.research-section {
+		padding: 0 50px 0 50px;
+	}
+	
+}
+
+@media (min-width: 991px) {
+	.research-section {
+		/*padding: 0;*/
+	}
+}
+
+@media (min-width: 1441px) {
+	
+}

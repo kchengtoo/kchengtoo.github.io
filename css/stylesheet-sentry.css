@@ -1,0 +1,25 @@
+.project-background {
+	background-image: url("../img/sentry-context-shot.png");
+}
+
+.step-num {
+	background-color: #3560b1;
+	color: white;
+}
+
+.project-color-text {
+	color: #3560b1;
+}
+
+@media (min-width: 767px) {
+
+	.project-background {
+		background-image: url("../img/sentry-context-shot.png");
+		background-position: 50% 80%;
+	}
+	
+}
+
+@media (min-width: 1441px) {
+	
+}

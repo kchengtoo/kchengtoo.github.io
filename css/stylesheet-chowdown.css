@@ -1,0 +1,54 @@
+.project-background {
+	background-image: url("../img/chowdown-context-shot.png");
+	/*background-position: 50% 10%;*/
+}
+
+.step-num {
+	background-color: #597e5c;
+	color: white;
+}
+
+.project-color-text {
+	color: #597e5c;
+}
+
+.synthesize-section {
+
+}
+
+.hmw-box {
+	background-color: rgba(205,226,157,0.5);
+	padding: 25px;
+	color: #597e5c;
+	/*text-align: left;*/
+}
+
+
+@media (min-width: 767px) {
+	.project-background {
+		/*background-image: url("../img/nuravel-context-shot.png");*/
+		background-position: 50% 30%;
+	}
+
+	.research-section {
+		padding: 0 50px 0 50px;
+	}
+	
+}
+
+@media (min-width: 991px) {
+	.project-background {
+		/*background-image: url("../img/nuravel-context-shot.png");*/
+		background-position: 50% 45%;
+	}
+
+	.research-section {
+		/*padding: 0 90px 0 90px;*/
+	}
+}
+
+@media (min-width: 1441px) {
+	/*.project-background {
+		height: 900px!important;
+	}*/
+}

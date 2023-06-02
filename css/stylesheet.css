@@ -1,0 +1,376 @@
+@font-face {
+	font-family: "Proxima Thin";
+	src: url("../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+	font-family: "Proxima Reg";
+	src: url("../fonts/ProximaNova-Regular.otf");
+}
+
+@font-face {
+	font-family: "Proxima Bold";
+	src: url("../fonts/Proxima Nova Bold.otf");
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Proxima Reg', sans-serif;
+	background-color: #f8f9fa;
+	/*display: flex;
+	flex-direction: column;*/
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+/*html {
+	height: 100%
+}*/
+
+a {
+	text-decoration: none!important;
+}
+
+/*a:hover {
+	color: black!important;
+}*/
+.current-page {
+	text-decoration: underline!important;
+}
+
+#intro-content {
+	height: 100%;
+	/*background-image: url("../img/kevin-transparent-background-2.png");*/
+	background-color: transparent!important;
+	/*background-size: 27%;
+	background-repeat: no-repeat;
+	background-position: 75% -10%;*/
+	/*height: 700px!important;*/
+	/*flex: 1 1 auto;*/
+	flex-grow: 1;
+	margin-bottom: 0px;
+	/*padding-bottom: 0px;*/
+	padding: 0;
+	padding-top: 65px!important;
+	/*position: absolute;*/
+	/*top: 100px;*/
+	bottom: 0;
+	width: 100%;
+}
+
+#hero {
+	/*margin: 130px 0 0 200px;*/
+	/*display: flex;
+	flex-direction: column;*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.hero-row {
+	/*display: flex;
+	flex-flow: column;
+	align-items: center;*/
+}
+
+.hero-col {
+	width: 100%;
+}
+
+#intro {
+	/*width: 420px;*/
+	/*width: 100%;*/
+	/*margin: 50px 0 0 0;*/
+	/*justify-content: center;*/
+}
+
+.header {
+	font-family: "Proxima Bold", Ariel, sans-serif;
+	color: #6392cc;
+	/*margin-top: 60px;*/
+	/*background-color: #162a51;*/
+	/*display: inline-block;*/
+}
+
+.blue-sub-header {
+	font-family: "Proxima Reg", Ariel, sans-serif;
+	color: #6392cc;
+}
+  
+#greeting {
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+#designer-name {
+	font-family: "Proxima Bold", Ariel, sans-serif;
+	font-size: 55px!important;
+	/*padding: 20px 0 20px 0;*/
+	/*line-height: 100px;*/
+	color: #162a51;
+}
+
+#designer-bio {
+	font-family: "Proxima Thin", Ariel, sans-serif;
+	font-size: 20px!important;
+	/*padding: 20px 0 20px 0;*/
+	color: #162a51;
+	line-height: 26px;
+}
+
+#check-header {
+	font-size: 30px;
+	margin: 50px 0 10px 0;
+}
+
+#hero-photo {
+	/*display: flex;
+	flex-flow: column;*/
+	display: none;
+
+}
+
+.photo {
+	width: 470px;
+	height: 100%;
+	/*display: block;*/
+	/*flex-direction: column;
+	flex: 1;*/
+	/*flex-grow: 1;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	position: absolute;
+	/*margin-top: 75px;
+	overflow: auto;
+*/}
+
+/*.photo:hover {
+	filter: blur(0px);
+}*/
+
+#original-img {
+	/*background-image: url("../img/kevin-transparent-background-2.png");*/
+	/*display: flex;*/
+}
+
+#design-img {
+	background-image: url("../img/kevin-design-transparent-background.png");
+	display: none;
+	filter: blur(7px);
+	/*transition: all 0.1s ease-out;*/
+	/*transition: 0.2s;*/
+}
+
+/*#design-button:hover #design-img {
+	filter: none;
+}
+*/
+#tech-img {
+	background-image: url("../img/kevin-tech-transparent-background.png");
+	display: none;
+}
+
+#about-button {
+	/*display: inline-block!important;*/
+	/*background-color: orange;*/
+}
+
+.category-photo {
+	/*filter: blur(20px);*/
+}
+
+#work-buttons-section {
+	/*margin: 80px 0 0 0;*/
+	display: flex;
+}
+
+.work-button {
+	/*width: 160px;*/
+	flex-grow: 100;
+	font-size: 20px;
+	color: #162a51!important;
+	border-color: #162a51!important;
+}
+
+.work-button:hover {
+	color: white!important;
+	background-color: #162a51!important;
+}
+
+#featured-button {
+	margin-right: 4px;
+}
+
+#work-explanation {
+	margin: 10px 0 0 0;
+	width: 365px;
+	font-family: "Proxima Thin", sans-serif;
+	font-size: 14.2px;
+	color: #162a51;
+	line-height: 18px;
+}
+
+#current-location {
+	display: flex;
+	flex-flow: row;
+	margin: 50px 0 0 0;
+}
+
+#current-location-img {
+	width: 40px;
+	height: 100%;
+}
+
+#location-info p {
+	margin: 0 0 -4px 10px;
+}
+
+#tag {
+	font-size: 15px;
+	color: #6392cc;
+}
+
+#location {
+	font-family: "Proxima Bold", Ariel, sans-serif;
+	font-size: 20px;
+	color: #162a51;
+}
+
+@media (min-width: 767px) {
+	html, body {
+		/*overflow: hidden;*/
+	}
+
+	button {
+		display: none;
+	}
+	a {
+
+	}
+	/*.designerbackground {
+		background-position: 60% 50%;
+		background-size: 20%;
+	}*/
+
+	#intro-content {
+		padding-top: 75px!important;
+	}
+
+	#hero-info {
+		margin-top: -75px;
+		/*height: 100%;*/
+		/*align-items: center;*/
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
+
+	.hero-row {
+		height: 100%;
+	}
+
+	.hero-col {
+		/*display: flex;
+		flex-flow: column;*/
+		/*align-items: center;*/
+		/*justify-content: center;*/
+	}
+
+	#work-buttons-section {
+		/*margin: 80px 0 0 0;*/
+		display: block;
+	}
+
+	.work-button {
+		width: 180px;
+		/*flex-grow: 100;*/
+	}
+
+	#featured-button {
+		margin-right: 0;
+	}
+
+	#hero-photo {
+		/*margin-top: 75px;*/
+	}
+
+	/*#designer-name {
+		font-size: 55px!important;
+	}*/
+
+	#original-img {
+		padding: 30px 25px 0 25px;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
+
+	#original-img img {
+		width: 100%;
+		/*height: 690px;*/
+	}
+
+	#designer-bio {
+		font-size: 22px!important;
+	}
+
+	/*.photo {
+		width: 100%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+	}*/
+}
+
+@media (min-width: 991px) {
+	.hero-col {
+		display: flex;
+		flex-flow: column;
+		/*align-items: flex-start;*/
+		justify-content: center;
+	}
+
+	#intro {
+		width: 420px;
+		margin-left: 50px;
+		/*margin-top: -75px;*/
+	}
+
+	#hero-photo {
+		margin: 0;
+		height: 100%;
+		display: flex;
+		width: 100%;
+		/*height: 500px;*/
+	}
+
+	.photo {
+		width: 100%;
+		/*margin: 20px 0 0 0;*/
+		/*display: block;*/
+		background-size: 90%;
+		background-repeat: no-repeat;
+		background-position: 40% 50%;
+		/*background-color: orange;*/
+	}
+}
+
+@media (min-width: 1441px) {
+	.photo {
+		/*background-size: 100%;*/
+		/*background-color: red;*/
+		background-position: 50% 60%;
+		/*margin-bottom: 500px;*/
+	}
+}

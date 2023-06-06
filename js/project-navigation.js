@@ -43,10 +43,9 @@ function locationInArray(inProjects) {
 	for (i = 0; i < inProjects.numberOfProjects; i++) {
 
 		let mySubString = currentLocation.substring(
-			currentLocation.indexOf("k/") + 2,
-			currentLocation.lastIndexOf(".")
+			currentLocation.indexOf("k/") + 2
 		);
-		// console.log(mySubString);
+		console.log(mySubString);
 		// console.log(inProjects.projects[i].link);
 		// console.log(currentLocation);
 		// if (currentProjectLocation.includes(mySubString)) {

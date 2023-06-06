@@ -88,7 +88,7 @@ function locationInArray(inProjects) {
 
 		}
 		else {
-			// console.log("none");
+			console.log("none");
 		}
 	}
 }

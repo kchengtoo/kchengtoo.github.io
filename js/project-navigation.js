@@ -63,7 +63,7 @@ function locationInArray(inProjects) {
 			// let previousProjectLocation = currentCategorytLocation + links[previousIndex] + ".html";
 			let previousProjectLocation = checkConnectivity(inProjects.projects[previousIndex].link);
 			// console.log(previousProjectLocation);
-			previousProjectLink.href = previousProjectLocation + "";
+			previousProjectLink.href = previousProjectLocation;
 
 			previousProjectBtn.style.backgroundColor = inProjects.projects[previousIndex].backgroundColor + "1)";
 			previousProjectImg.style.backgroundImage = "url('../../img/" + inProjects.projects[previousIndex].link + "-context-shot.png')";
@@ -77,7 +77,7 @@ function locationInArray(inProjects) {
 			// let nextProjectLocation = currentCategorytLocation + links[nextIndex] + ".html";
 			let nextProjectLocation = checkConnectivity(inProjects.projects[nextIndex].link);
 			// console.log(nextProjectLocation);
-			nextProjectLink.href = nextProjectLocation + "";
+			nextProjectLink.href = nextProjectLocation;
 
 			nextProjectBtn.style.backgroundColor = inProjects.projects[nextIndex].backgroundColor + "1)";
 			nextProjectImg.style.backgroundImage = "url('../../img/" + inProjects.projects[nextIndex].link + "-context-shot.png')";

@@ -90,7 +90,7 @@ function configComponents(location) {
 		// console.log(navbarElements[i].href);
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = navbarLinks[i];
-			navbarElements[i].href = checkConnectivity(navbarLinks[i]) + ".html";
+			navbarElements[i].href = checkConnectivity(navbarLinks[i]);
 			// console.log(navbarElements[i].href);
 
 			// console.log(checkOnlineOrOffline(navbarLinks[i]));
@@ -110,7 +110,7 @@ function configComponents(location) {
 	else if (location == "home") {
 		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
-			navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]) + ".html";
+			navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]);
 			// console.log(navbarElements[i].href);
 		}
 		homeLink.href = "/";

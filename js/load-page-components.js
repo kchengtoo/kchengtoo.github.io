@@ -103,9 +103,9 @@ function configComponents(location) {
 		}
 
 		// console.log(contactLink);
-		if (contactLink) {
-			// contactLink.href = checkConnectivity("contact");
-		}
+		// if (contactLink) {
+		// 	contactLink.href = checkConnectivity("contact");
+		// }
 	}
 	else if (location == "home") {
 		// console.log(homeLink);

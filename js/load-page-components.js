@@ -46,7 +46,7 @@ function configComponents(location) {
 
 	let contactLink = document.getElementById("contact-link");
 	let socialMediaElements = document.querySelectorAll(".social-media-link");
-	let socialMediaLinks = ["../img/linkedin-logo.svg", "../img/instagram-logo.svg", "../img/dribbble-logo.svg", "../img/github-logo.svg", "../img/email-logo.svg"];
+	let socialMediaLinks = ["../img/linkedin-logo.svg", "../img/instagram-logo.svg", "../img/dribbble-logo.svg", "../img/email-logo.svg"];
 	// console.log(offlineMode(currentLocation));
 
 	// console.log(navbarElements);

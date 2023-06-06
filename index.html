@@ -72,7 +72,7 @@
 						<a href="pages/about" role="button" id="about-button">More about me</a>
 						<h1 id="check-header" class="display-1 header">Check out my work!</h1>
 						<div id="work-buttons-section">
-							<a href="pages/work.html" role="button" id="featured-button" class="btn btn-outline-primary work-button">Featured</a>
+							<a href="pages/work" role="button" id="featured-button" class="btn btn-outline-primary work-button">Featured</a>
 							<a href="pages/work.html#archived-row" role="button" id="archived-button" class="btn btn-outline-primary work-button">Archived</a>
 						</div>
 						<p id="work-explanation">My most recent projects are in Featured, but feel free to check out my older projects in Archived!</p>
@@ -110,8 +110,9 @@
 	<script src="js/hover.js"></script> -->
 
 	<script>
-		let designButton = document.querySelector("#design-button");
-		let techButton = document.querySelector("#tech-button");
+		let featuredButton = document.querySelector("#featured-button");
+		let archivedButton = document.querySelector("#archived-button");
+		let aboutButton = document.querySelector("#about-button");
 		let workButtons = document.querySelectorAll(".work-button");
 
 		let categoryImg = document.querySelectorAll(".category-photo");
@@ -347,6 +348,8 @@
 
 		$(document).ready(function() {
 			setGreetingTime();
+			aboutButton.href = checkConnectivity(aboutButton.href);
+			featuredButton.href = checkConnectivity(featuredButton.href);
 		});
 
 	</script>

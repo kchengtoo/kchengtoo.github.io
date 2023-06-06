@@ -45,10 +45,10 @@ function displayProjectLinks(inProjects) {
 			let linkElement = document.createElement("a");
 
 			if (inProjects.projects[i].status == 0) {
-				linkElement.href = "../pages/" + checkConnectivity("construction") + ".html";
+				linkElement.href = "../pages/" + checkConnectivity("construction") + "";
 			}
 			else {
-				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + ".html";
+				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
 			}
 
 			let projectElement = document.createElement("div");
@@ -92,10 +92,10 @@ function displayProjectLinks(inProjects) {
 			let linkElement = document.createElement("a");
 
 			if (inProjects.projects[i].status == 0) {
-				linkElement.href = "../pages/" + checkConnectivity("construction") + ".html";
+				linkElement.href = "../pages/" + checkConnectivity("construction") + "";
 			}
 			else {
-				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + ".html";
+				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
 			}
 
 			let projectElement = document.createElement("div");

@@ -121,10 +121,10 @@ function configComponents(location) {
 	}
 }
 
-// for checking if we're using MAMP for PHP files
+// for checking if we're in local or GitHub file
 function checkConnectivity(href) {
 	// let newHref;
-	if (currentLocation.includes("localhost")) {
+	if (currentLocation.includes("Documents")) {
 		// console.log(href + ".php");
 		// newHref += 
 		return href + ".html";

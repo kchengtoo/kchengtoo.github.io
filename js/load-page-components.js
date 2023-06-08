@@ -124,7 +124,7 @@ function configComponents(location) {
 // for checking if we're in local or GitHub file
 function checkConnectivity(href) {
 	// let newHref;
-	if (currentLocation.includes("Documents")) {
+	if (currentLocation.includes("/Documents/")) {
 		// console.log(href + ".php");
 		// newHref += 
 		return href + ".html";

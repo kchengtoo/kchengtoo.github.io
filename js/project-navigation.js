@@ -20,6 +20,7 @@ let leftArrow = document.getElementById("left-arrow");
 let rightArrow = document.getElementById("right-arrow");
 
 $(document).ready(function() {
+	console.log(currentLocation);
 	if (currentLocation.includes("featured-work")) {
 		// currentProjectLinks = designProjectLinks;
 		// console.log(designProjects);
@@ -42,9 +43,20 @@ function locationInArray(inProjects) {
 	// console.log(inProjects.numberOfProjects);
 	for (i = 0; i < inProjects.numberOfProjects; i++) {
 
-		let mySubString = currentLocation.substring(
-			currentLocation.indexOf("k/") + 2
-		);
+		let mySubString
+
+		if (currentLocation.includes("Documents")) {
+			mySubString = currentLocation.substring(
+				currentLocation.indexOf("k/") + 2
+				, currentLocation.lastIndexOf(".")
+			);
+		}
+		else {
+			mySubString = currentLocation.substring(
+				currentLocation.indexOf("k/") + 2
+			);
+		}
+
 		console.log(mySubString);
 		// console.log(inProjects.projects[i].link);
 		// console.log(currentLocation);
@@ -87,7 +99,7 @@ function locationInArray(inProjects) {
 
 		}
 		else {
-			console.log("none");
+			console.log("Current project not found");
 		}
 	}
 }

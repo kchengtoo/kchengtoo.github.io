@@ -409,9 +409,9 @@ li {
 
 
 @media (min-width: 767px) {
-	/*button {
+	button {
 		display: none;
-	}*/
+	}
 
 	#project-title {
 		margin-top: 20px;

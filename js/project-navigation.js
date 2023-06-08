@@ -20,7 +20,7 @@ let leftArrow = document.getElementById("left-arrow");
 let rightArrow = document.getElementById("right-arrow");
 
 $(document).ready(function() {
-	console.log(currentLocation);
+	// console.log(currentLocation);
 	if (currentLocation.includes("featured-work")) {
 		// currentProjectLinks = designProjectLinks;
 		// console.log(designProjects);
@@ -57,7 +57,7 @@ function locationInArray(inProjects) {
 			);
 		}
 
-		console.log(mySubString);
+		// console.log(mySubString);
 		// console.log(inProjects.projects[i].link);
 		// console.log(currentLocation);
 		// if (currentProjectLocation.includes(mySubString)) {

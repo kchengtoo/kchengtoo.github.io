@@ -22,7 +22,7 @@ $(document).ready(function() {
 		}, 600);
 	}
 	else {
-		console.log("pages");
+		// console.log("pages");
 		$("#header-div").load("../pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("../pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {

@@ -39,7 +39,7 @@ function configComponents(location) {
 	// let dribbbleImg = document.getElementById("dribbble-logo");
 	// let emailImg = document.getElementById("email-logo");
 
-	let navbarLinks = ["work", "about"];
+	let navbarLinks = ["work", "about", "kevin-cheng-resume.pdf"];
 	let navbarElements = document.querySelectorAll(".nav-a");
 	let homeLink = document.getElementById("home-link");
 	let homeLogoImg = document.getElementById("main-logo");
@@ -58,8 +58,13 @@ function configComponents(location) {
 
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = "../" + navbarLinks[i];
-			navbarElements[i].href = "../" + checkConnectivity(navbarLinks[i]);
-			// console.log(navbarElements[i].href);
+			if (navbarElements[i].innerHTML == "RESUME") {
+				navbarElements[i].href = "../" + navbarLinks[i];
+			}
+			else {
+				navbarElements[i].href = "../" + checkConnectivity(navbarLinks[i]);
+				// console.log(navbarElements[i].href);
+			}
 
 		}
 
@@ -90,8 +95,14 @@ function configComponents(location) {
 		// console.log(navbarElements[i].href);
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = navbarLinks[i];
-			navbarElements[i].href = checkConnectivity(navbarLinks[i]);
-			// console.log(navbarElements[i].href);
+			if (navbarElements[i].innerHTML == "RESUME") {
+				navbarElements[i].href = navbarLinks[i];
+			}
+			else {
+				navbarElements[i].href = checkConnectivity(navbarLinks[i]);
+				// console.log(navbarElements[i].href);
+			}
+
 
 			// console.log(checkOnlineOrOffline(navbarLinks[i]));
 		}
@@ -110,8 +121,13 @@ function configComponents(location) {
 	else if (location == "home") {
 		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
-			navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]);
-			// console.log(navbarElements[i].href);
+			if (navbarElements[i].innerHTML == "RESUME") {
+				navbarElements[i].href = "pages/" + navbarLinks[i];
+			}
+			else {
+				navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]);
+				// console.log(navbarElements[i].href);
+			}
 		}
 		homeLink.href = "/";
 		homeLogoImg.src = "img/kevinlogo.svg";

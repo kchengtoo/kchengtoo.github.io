@@ -406,6 +406,15 @@ li {
 	width: 195px;
 }
 
+#email-span {
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+#email-span:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
 
 
 @media (min-width: 767px) {

@@ -68,12 +68,12 @@ p {
 	justify-content: center;*/
 }
 
-/*#resume-block {
+#resume-block {
 	margin-top: 20px;
-	display: flex;
+	/*display: flex;
 	flex-flow: row;
-	justify-content: center;
-}*/
+	justify-content: center;*/
+}
 
 #designer-img-div {
 	width: 100%;

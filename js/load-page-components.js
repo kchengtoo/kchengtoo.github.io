@@ -4,7 +4,7 @@ let currentLocation = top.location.href;
 
 $(document).ready(function() {
 
-// Loading html in other html does not work locally, only works when it's published
+// Loading html in other html only works when the directory is published, it does not work locally.
 	if (currentLocation.includes("featured-work")){
 		// console.log("featured project");
 		// $("#header-div").load("../pages/social-media-footer.html #navbar-header");
@@ -47,6 +47,8 @@ function configComponents(location) {
 	let contactLink = document.getElementById("contact-link");
 	let socialMediaElements = document.querySelectorAll(".social-media-link");
 	let socialMediaLinks = ["../img/linkedin-logo.svg", "../img/instagram-logo.svg", "../img/dribbble-logo.svg", "../img/email-logo.svg"];
+	const d = new Date();
+	let copyrightYear = document.getElementById("copyright-year");
 	// console.log(offlineMode(currentLocation));
 
 	// console.log(navbarElements);
@@ -135,6 +137,7 @@ function configComponents(location) {
 	else {
 		console.log("location error");
 	}
+	loadCopyrightYear(copyrightYear, d);
 }
 
 // for checking if we're in local or GitHub file
@@ -147,6 +150,11 @@ function checkConnectivity(href) {
 
 	}
 	return href;
+}
+
+function loadCopyrightYear(copyrightYear, d) {
+	console.log(d.getFullYear());
+	copyrightYear.innerHTML = d.getFullYear();
 }
 
 function checkConstruction(link) {

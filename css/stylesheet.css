@@ -121,11 +121,11 @@ a {
 }
 
 #designer-bio {
-	font-family: "Proxima Thin", Ariel, sans-serif;
-	font-size: 20px!important;
+	font-family: "Proxima Reg", Ariel, sans-serif;
+	font-size: 20px;
 	/*padding: 20px 0 20px 0;*/
 	color: #162a51;
-	line-height: 26px;
+/*	line-height: 26px;*/
 }
 
 #check-header {
@@ -322,7 +322,7 @@ a {
 	}
 
 	#designer-bio {
-		font-size: 22px!important;
+		font-size: 21px;
 	}
 
 	/*.photo {

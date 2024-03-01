@@ -137,7 +137,7 @@ function configComponents(location) {
 	else {
 		console.log("location error");
 	}
-	loadCopyrightYear(copyrightYear, d);
+	copyrightYear.innerHTML = d.getFullYear();
 }
 
 // for checking if we're in local or GitHub file
@@ -151,11 +151,10 @@ function checkConnectivity(href) {
 	}
 	return href;
 }
-
-function loadCopyrightYear(copyrightYear, d) {
-	console.log(d.getFullYear());
-	copyrightYear.innerHTML = d.getFullYear();
-}
+// function loadCopyrightYear(copyrightYear, d) {
+// 	console.log(d.getFullYear());
+// 	copyrightYear.innerHTML = d.getFullYear();
+// }
 
 function checkConstruction(link) {
 	if (link == "construction") {

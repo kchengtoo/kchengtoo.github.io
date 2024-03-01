@@ -1,303 +1,117 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-	<!-- :+++++++++++++++++++:          ./+++//::-.        
-		++++++++++++++++++++-        ./++++++++++++/:.    
-		++++++++++++++++++:`       ./++++++++++++++++++:. 
-		++++++++++++++++:`       -/++++++++++++++++++++++/
-		++++++++++++++-`       -++++++++++++++++++++++++/.
-		++++++++++++-`       -++++++++++++++++++++++++/.  
-		++++++++++-        -++++++++/:--..--:/++++++/.    
-		++++++++-        -+++++++:`            .:/:.      
-		++++++-        -+++++++-                          
-		++++-        -+++++++/`                           
-		 ..        -+++++++++`                            
-		         -++++++++++:                             
-		        /+++++++++++-                             
-		         -++++++++++:                             
-		           -+++++++++`                            
-		`://-        -+++++++/`                           
-		++++++-        -+++++++-                          
-		++++++++-        -+++++++:`            .:/:.      
-		++++++++++-        -++++++++/:--..--:/++++++/.    
-		++++++++++++-`       -++++++++++++++++++++++++/.  
-		++++++++++++++:`       -++++++++++++++++++++++++/.
-		++++++++++++++++:`       ./++++++++++++++++++++++/
-		++++++++++++++++++:`       ./++++++++++++++++++:. 
-		++++++++++++++++++++:        ./++++++++++++/:.    
-		:+++++++++++++++++++:          ./+++//::-.        -->
-	<title>Kevin Cheng - Data Aggregation</title>
-	<link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon' />
+    <!-- :+++++++++++++++++++:          ./+++//::-.        
+        ++++++++++++++++++++-        ./++++++++++++/:.    
+        ++++++++++++++++++:`       ./++++++++++++++++++:. 
+        ++++++++++++++++:`       -/++++++++++++++++++++++/
+        ++++++++++++++-`       -++++++++++++++++++++++++/.
+        ++++++++++++-`       -++++++++++++++++++++++++/.  
+        ++++++++++-        -++++++++/:--..--:/++++++/.    
+        ++++++++-        -+++++++:`            .:/:.      
+        ++++++-        -+++++++-                          
+        ++++-        -+++++++/`                           
+         ..        -+++++++++`                            
+                 -++++++++++:                             
+                /+++++++++++-                             
+                 -++++++++++:                             
+                   -+++++++++`                            
+        `://-        -+++++++/`                           
+        ++++++-        -+++++++-                          
+        ++++++++-        -+++++++:`            .:/:.      
+        ++++++++++-        -++++++++/:--..--:/++++++/.    
+        ++++++++++++-`       -++++++++++++++++++++++++/.  
+        ++++++++++++++:`       -++++++++++++++++++++++++/.
+        ++++++++++++++++:`       ./++++++++++++++++++++++/
+        ++++++++++++++++++:`       ./++++++++++++++++++:. 
+        ++++++++++++++++++++:        ./++++++++++++/:.    
+        :+++++++++++++++++++:          ./+++//::-.        -->
+    <title>Kevin Cheng - Data Aggregation</title>
+    <link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-protected-project.css">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-data-aggregation.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
-	<script src="../../js/google-analytics.js"></script>
-	<script src="../../js/projects-database.js"></script>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-	<div id="header-div">
-	</div>
-	<div class="container page-wrapper">
-		<div class="row general-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h1 id="project-title" class="bold">Data Aggregation.</h1>
-			</div>
-		</div>
-		<div class="row general-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<p>Data aggregation is the initiative to centralize multiple enterprise resource planning (ERP) systems by integrating them with the <a href="digital-commercial-bank.html">Digital Commercial Bank</a>. This allows clients to access all their financial information in one place and opens up free time to focus on strategy analysis and forecasting.</p>
-				<p>I was in charge of the ERP integration enrollment and the marketplace to introduce the ERPs available to connect to the Digital Commercial Bank.</p>
-				<!-- <p>I'm driving product strategy and design for <span class="bold">reports, statements, account visibility, ERP integration</span> and <span class="bold">marketplace</span>. An MVP was launched and this initiative received over $250 million in funding to expand on other capabilities.</p> -->
-			</div>
-		</div>
-		<!-- <div class="row general-row-space">
-			<div class="col col-4 col-lg-2 offset-lg-3">
-				<p><span class="bold">Team</span><br>8 designer<br>4 product managers<br>10+ developers</p>
-			</div>
-			<div class="col col-4 col-lg-2">
-				<p><span class="bold">Time Frame</span><br>Jan '23 - Ongoing</p>
-			</div>
-			<div class="col col-4 col-lg-2">
-				<p><span class="bold">My Role</span><br>Product Strategy<br>Research<br>Product Design<br>User Testing</p>
-			</div>
-		</div> -->
-<!-- 		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">High-level Overview</h3>
-			</div>
-		</div> -->
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
-						<p class="topic-h4 bold">User & Business Needs</p>
-						<p class="point-caption">User: One place for all data to live where they can access it<br>Business: Gather data to provide product recommendation</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-impact.png">
-						<p class="topic-h4 bold">Impact</p>
-						<p class="point-caption">Shipped an MVP. Integration enrollment <span class="bold">increased by 40%</span> and an average of <span class="bold">8 ERP systems</span> integrated per client.</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-contribution.png">
-						<p class="topic-h4 bold">Contribution</p>
-						<p class="point-caption">Lead designer for ERP integration enrollment and marketplace in collaboration with PMs and engineers</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- <div class="jumbotron jumbotron-fluid project-background">
-		<div class="container">
-		</div>
-	</div> -->
-	<div class="container project-background box-shadow">
-		<div class="row">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-			</div>
-		</div>
-	</div>
-	<div class="container container-fluid">
-		<!-- <div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">High-Level</h2>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/meerkat-synthesize-1.svg">
-						<p class="topic-h4 bold">User & Business Needs</p>
-						<p class="point-caption">Startup clients are looking for a bank to help them run their business and grow with it, but JPMC lacks the resources and needs to address that issue</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/meerkat-synthesize-2.svg">
-						<p class="topic-h4 bold">Impact</p>
-						<p class="point-caption">Shipped an MVP, received over $250 million in funding to accelerate the full launch of Digital Commercial Bank, got 50+ clients onboarded</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/meerkat-synthesize-3.svg">
-						<p class="topic-h4 bold">Contribution</p>
-						<p class="point-caption">I drove the research, design and testing for reports, statements, account visibility, ERP integration and marketplace</p>
-					</span>
-				</ul>
-			</div>
-		</div> -->
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Problem</h2>
-				<p>Startup clients use ERP systems to help streamline financial processes and help forecast business growth. However, using multiple siloed ERPs may end up making it difficult for clients to process information and plan for strategies. With Data Aggregation, it addresses the issue by connecting all of the client's ERPs to the Digital Commercial Bank, and my job is to design the experience for the enrollment of connecting the ERP systems and the marketplace where clients can find integrable ERPs that meet their business needs.</p>
-				<p class="bold"><span class="project-color-text">Challenge:</span> How might we help clients better introduce ERP systems for their business needs and streamline the integration process?</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Process</h2>
-				<p>Within a tight timeframe, I had to establish an MVP experience for the ERP integration enrollment to get clients onboarded and kickstart what clients are looking for in a marketplace. While the MVP for the ERP integration enrollment is shipped, the marketplace is still an ongoing initiative.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<div class="row">
-					<div class="col col-12">
-						<ul class="process-timeline">
-							<span class="process-step">
-								<div class="step-num bold">
-									1
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Discovery</h3>
-									<ul class="step-info">
-										<!-- <li>Platform Audit</li> -->
-										<li>Competitor Analysis</li>
-										<li>User Interviews</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									2
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Define</h3>
-									<ul class="step-info">
-										<li>Product Strategy</li>
-										<li>Feature Priority</li>
-										<li>Information Architecture</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									3
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Design</h3>
-									<ul class="step-info">
-										<li>Hi-Fi Wireframes</li>
-										<li>Desirability Test</li>
-										<li>Design System</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									4
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Develop</h3>
-									<ul class="step-info">
-										<!-- <li>Feature Prioritization</li> -->
-										<li>Usability Testing</li>
-										<li>Quality Assurance</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									5
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Deliver</h3>
-									<ul class="step-info">
-										<li>Client Onboarding</li>
-										<li>Monitor User Feedback</li>
-									</ul>
-								</span>
-							</span>
-						</ul>
-					</div>
-				</div>
-				<p class="caption">Started this process 5 months ago.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Solution</h2>
-				<p>Data Aggregation is a platform where users can integrate their transaction data with their ERPs, so they can gain strategic insights to level up their business. Users can easily set up this capability by going through the ERP integration enrollment and marketplace.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">ERP Integration Enrollment</h3>
-				<p>A seamless step-by-step process to guide users connect their ERP systems with Digital Commercial Bank.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/data-aggregation-ERP-integration-enrollment.png">
-				<p class="caption">Step-by-step process to complete the ERP integration.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">ERP Marketplace</h3>
-				<p>A marketplace that showcases all possible ERP integrations with Digital Commercial Bank and guides users how to integrate their desired ERPs.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/data-aggregation-ERP-marketplace.png">
-				<p class="caption">A marketplace for users to browse through ERPs.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Confidential</h2>
-				<p>Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Data Aggregation work.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Other Projects</h2>
-			</div>
-		</div>
-		<div class="row v-60-gap">
-			<div class="col col-12 project-navigation-col">
-				<div id="previous-project-button" class="project-navigation-button box-shadow">
-					<div id="previous-project-img" class="project-navigation-img"></div>
-					<a id="previous-project-link" href=""><div id="previous-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Previous</p>
-						<p id="previous-project-name" class="project-navigation-name bold"></p>
-						<img id="left-arrow" class="direction-img" src="">
-					</div></a>
-				</div>
-				<div id="next-project-button" class="project-navigation-button box-shadow">
-					<div id="next-project-img" class="project-navigation-img"></div>
-					<a id="next-project-link" href=""><div id="next-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Next</p>
-						<p id="next-project-name" class="project-navigation-name bold"></p>
-						<img id="right-arrow" class="direction-img" src="">
-					</div></a>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div id="footer-div">
-		</div>
-	</div>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <!-- <div id="dialogText">Hello there!</div> -->
+                <div id="passArea">
+                    <h1 id="dialogText" class="bold">Hello there!</h1>
+                    <p id="passwordPrompt">The content in this project contains some sensitive information. If you'd like the password to view it, please send me an email at <span id="email-span" class="bold">kchengtoo@gmail.com</span>.</p>
+                    <input id="pass" type="password" class="form-control text-box" name="pass" autofocus placeholder="Enter your password">
+                    <!-- <div id="buttonArea">
+                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
+                            <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
+                            <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
+                            &nbsp;
+                        </span>
+                        <div style="clear: both;"></div>
+                    </div> -->
+                    <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                    <!-- <div id="button-area">
+                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                        <button id="go-back-btn" class="btn btn-outline-tertiary">Go back</button>
+                    </div> -->
+                    <span id="messageWrapper">
+                        <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
+                        <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
+                        <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
+                        <!-- &nbsp; -->
+                    </span>
+                    <!-- <div style="clear: both;"></div> -->
+                </div>
+                <!-- <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
+                    </p>
+                </div> -->
+                <span id="securecontext" class="alert alert-danger error" role="alert">Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.</span>
+                <span id="nocrypto" class="alert alert-danger error" role="alert">Your web browser appears to be outdated. Please visit this page using a modern browser.</span>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    (function() {
 
-	<script src="../../js/project-navigation.js"></script>
-	<script src="../../js/load-page-components.js"></script>
-	<script src="../../js/navbar.js"></script>
-	<script>
-		const copyElement = document.getElementById("email-span");
+        // Replace this
+        var pl = "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";
 
-		$(copyElement).click(function() {
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var trycatcherror = document.getElementById('trycatcherror');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        const copyElement = document.getElementById("email-span");
+       
+        // console.log(top.location.href);
+
+
+        $("#go-back-btn").click(function() {
+            window.history.back();
+        });
+
+        $(copyElement).click(function() {
             document.execCommand("copy");
         });
 
@@ -309,6 +123,143 @@
                 alert("Copied to clipboard");
             }
         });
-	</script>
+
+
+        // Sanity checks
+
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+            return;
+        }
+
+        if (!isSecureContext) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#securecontext").style.display = "block";
+            return;
+        }
+
+        if (!crypto.subtle) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#nocrypto").style.display = "block";
+            return;
+        }
+        
+        function str2ab(str) {
+            var ustr = atob(str);
+            var buf = new ArrayBuffer(ustr.length);
+            var bufView = new Uint8Array(buf);
+            for (var i=0, strLen=ustr.length; i < strLen; i++) {
+                bufView[i] = ustr.charCodeAt(i);
+            }
+            return bufView;
+        }
+
+        async function deriveKey(salt, password) {
+            const encoder = new TextEncoder()
+            const baseKey = await crypto.subtle.importKey(
+                'raw',
+                encoder.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey'],
+            )
+            return await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+                baseKey,
+                { name: 'AES-GCM', length: 256 },
+                true,
+                ['decrypt'],
+            )
+        }
+        
+        async function doSubmit(evt) {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+
+            let iv, ciphertext, key;
+            
+            try {
+                var unencodedPl = str2ab(pl);
+
+                const salt = unencodedPl.slice(0, 32)
+                iv = unencodedPl.slice(32, 32 + 16)
+                ciphertext = unencodedPl.slice(32 + 16)
+
+                key = await deriveKey(salt, passEl.value);
+            } catch (e) {
+                trycatcherror.style.display = "block";
+                console.error(e);
+                return;
+            }
+
+            try {
+                const decryptedArray = new Uint8Array(
+                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
+                );
+
+                let decrypted = new TextDecoder().decode(decryptedArray);
+
+                if (decrypted === "") throw "No data returned";
+
+                const basestr = '<base href="." target="_top">';
+                const anchorfixstr = `
+                    <script>
+                        Array.from(document.links).forEach((anchor) => {
+                            const href = anchor.getAttribute("href");
+                            if (href.startsWith("#")) {
+                                anchor.addEventListener("click", function(e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href").substring(1);
+                                    const targetEl = document.getElementById(targetId);
+                                    targetEl.scrollIntoView();
+                                });
+                            }
+                        });
+                    <\/script>
+                `;
+                
+                // Set default iframe link targets to _top so all links break out of the iframe
+                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
+                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
+                else decrypted = basestr + decrypted;
+
+                // Fix fragment links
+                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
+                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
+                else decrypted = decrypted + anchorfixstr;
+                
+                contentFrame.srcdoc = decrypted;
+                
+                invalidPassEl.style.display = "none";
+                successEl.style.display = "block";
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "block";
+                passEl.value = "";
+                submitPass.disabled = false;
+                passEl.disabled = false;
+                console.error(e);
+                return;
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+    })();
+    </script>
+
 </body>
 </html>

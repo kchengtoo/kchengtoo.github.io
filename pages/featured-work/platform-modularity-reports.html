@@ -1,427 +1,265 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-	<!-- :+++++++++++++++++++:          ./+++//::-.        
-		++++++++++++++++++++-        ./++++++++++++/:.    
-		++++++++++++++++++:`       ./++++++++++++++++++:. 
-		++++++++++++++++:`       -/++++++++++++++++++++++/
-		++++++++++++++-`       -++++++++++++++++++++++++/.
-		++++++++++++-`       -++++++++++++++++++++++++/.  
-		++++++++++-        -++++++++/:--..--:/++++++/.    
-		++++++++-        -+++++++:`            .:/:.      
-		++++++-        -+++++++-                          
-		++++-        -+++++++/`                           
-		 ..        -+++++++++`                            
-		         -++++++++++:                             
-		        /+++++++++++-                             
-		         -++++++++++:                             
-		           -+++++++++`                            
-		`://-        -+++++++/`                           
-		++++++-        -+++++++-                          
-		++++++++-        -+++++++:`            .:/:.      
-		++++++++++-        -++++++++/:--..--:/++++++/.    
-		++++++++++++-`       -++++++++++++++++++++++++/.  
-		++++++++++++++:`       -++++++++++++++++++++++++/.
-		++++++++++++++++:`       ./++++++++++++++++++++++/
-		++++++++++++++++++:`       ./++++++++++++++++++:. 
-		++++++++++++++++++++:        ./++++++++++++/:.    
-		:+++++++++++++++++++:          ./+++//::-.        -->
-	<title>Kevin Cheng - Platform Modularity Reports</title>
-	<link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon' />
+    <!-- :+++++++++++++++++++:          ./+++//::-.        
+        ++++++++++++++++++++-        ./++++++++++++/:.    
+        ++++++++++++++++++:`       ./++++++++++++++++++:. 
+        ++++++++++++++++:`       -/++++++++++++++++++++++/
+        ++++++++++++++-`       -++++++++++++++++++++++++/.
+        ++++++++++++-`       -++++++++++++++++++++++++/.  
+        ++++++++++-        -++++++++/:--..--:/++++++/.    
+        ++++++++-        -+++++++:`            .:/:.      
+        ++++++-        -+++++++-                          
+        ++++-        -+++++++/`                           
+         ..        -+++++++++`                            
+                 -++++++++++:                             
+                /+++++++++++-                             
+                 -++++++++++:                             
+                   -+++++++++`                            
+        `://-        -+++++++/`                           
+        ++++++-        -+++++++-                          
+        ++++++++-        -+++++++:`            .:/:.      
+        ++++++++++-        -++++++++/:--..--:/++++++/.    
+        ++++++++++++-`       -++++++++++++++++++++++++/.  
+        ++++++++++++++:`       -++++++++++++++++++++++++/.
+        ++++++++++++++++:`       ./++++++++++++++++++++++/
+        ++++++++++++++++++:`       ./++++++++++++++++++:. 
+        ++++++++++++++++++++:        ./++++++++++++/:.    
+        :+++++++++++++++++++:          ./+++//::-.        -->
+    <title>Kevin Cheng - Platform Modularity Reports</title>
+    <link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-protected-project.css">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-platform-modularity-reports.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
-	<script src="../../js/google-analytics.js"></script>
-	<script src="../../js/projects-database.js"></script>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-	<div id="header-div">
-	</div>
-	<div class="container page-wrapper">
-		<div class="row general-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h1 id="project-title" class="bold">Platform Modularity Reports.</h1>
-			</div>
-		</div>
-		<div class="row general-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<p>Reporting in <a href="https://www.chase.com/commercial-banking/chase-connect" target="_blank">Chase Connect</a> allows clients to create balance and transactions reports for their bank accounts. With Platform Modularity, clients with <a href="https://access.jpmorgan.com/jpmalogon" target="_blank">J.P. Morgan Access</a> accounts are now able to create Access reports within Connect.</p>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
-						<p class="topic-h4 bold">User & Business Needs</p>
-						<p class="point-caption">User: A simplier way to create Access reports.<br>Business: Improve reports conversion rate</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-impact.png">
-						<p class="topic-h4 bold">Impact</p>
-						<p class="point-caption">Drop rate to create Access reports <span class="bold">decreased by 300%</span> and well-received by users with a <span class="bold">high NPS</span></p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/project-contribution.png">
-						<p class="topic-h4 bold">Contribution</p>
-						<p class="point-caption">Lead designer and led the collaboration efforts with PMs and engineers</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="container project-background box-shadow">
-		<div class="row">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-			</div>
-		</div>
-	</div>
-	<div class="container container-fluid">
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Problem</h2>
-				<p>Emerging Middle Market (EMM) clients enjoy the simplicity of Chase Connect. However, when they move to J.P. Morgan Access for richer product features, it results in dissatisfaction due to Access being difficult to use. With Platform Modularity, it addresses the issue by unlocking specific Access features within the Connect experience, and my job is to design that experience for creating Access reports in Connect.</p>
-				<p class="bold"><span class="project-color-text">Challenge:</span> How might we help EMM clients create Access reports, which are more robust yet complicated, within the simplicity of the Connect experience?</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Process</h2>
-				<p>Coming to this project, some work had been done by previous designers who explored different flows of reporting. I built upon their work with my own research and designs that allow clients to create complex reports about their bank accounts with ease. Here's what I did:</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<div class="row">
-					<div class="col col-12">
-						<ul class="process-timeline">
-							<span class="process-step">
-								<div class="step-num bold">
-									1
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Discover</h3>
-									<ul class="step-info">
-										<li>Platform Audit</li>
-										<li>Prior Work</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									2
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Define</h3>
-									<ul class="step-info">
-										<li>Design Takeaways</li>
-										<li>Design Challenge</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									3
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Design</h3>
-									<ul class="step-info">
-										<li>Information Architecture</li>
-										<li>Hi-Fi Wireframes</li>
-										<li>Usability Testing</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									4
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Develop</h3>
-									<ul class="step-info">
-										<li>Greenline</li>
-										<li>Refinement</li>
-										<li>Quality Assurance</li>
-									</ul>
-								</span>
-							</span>
-							<span class="process-step">
-								<div class="step-num bold">
-									5
-								</div>
-								<span class="step-detail">
-									<h3 class="topic-h4 bold">Deliver</h3>
-									<ul class="step-info">
-										<li>User Feedback</li>
-										<li>Adoption Metrics</li>
-									</ul>
-								</span>
-							</span>
-						</ul>
-					</div>
-				</div>
-				<p class="caption">Completed the whole process within 6 months.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Research</h2>
-				<p>Connect has its own report creation and my job is to design an experience that integrates Access reporting with Connect's. I started off by analyzing the reporting process in both platforms to get an understanding of their capabilities. Then, I looked at past research traces, initial user flows and designs that were explored to see what can be built upon.</p>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<ul class="callout-section research-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-research-1.svg">
-						<p class="topic-h4 bold">Platform Audit</p>
-						<p class="point-caption">Analyzed reports creation process in both Connect and Access</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-research-2.svg">
-						<p class="topic-h4 bold">Prior Work</p>
-						<p class="point-caption">Reviewed past research, user flows and designs</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Synthesize</h2>
-				<p>After my research findings, I formulated takeaways about how clients create their reports using what's available in Access and Connects, and identified the challenge to guide my design. Here are the design takeaways and HMW statement:</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Takeaways</h3>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-1.svg">
-						<p class="topic-h4 bold">Simplify the Complexity</p>
-						<p class="point-caption">Simplify reports, so users would not need to rely on detailed instructions to use the module</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-2.svg">
-						<p class="topic-h4 bold">Clear User Flows</p>
-						<p class="point-caption">Allow users to know what is available to them and what action to take next</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-3.svg">
-						<p class="topic-h4 bold">Reuse Reports</p>
-						<p class="point-caption">Allow users to easily locate and reuse their favorite reports</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Challenge</h3>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<div class="">
-					<p class="single-HMW-caption hmw-box">How might we <span class="bold">streamline</span> the report creation process that allows EMM clients to <span class="bold">easily navigate through the available actions</span> and <span class="bold">reuse their favorite reports</span> after they completed the process?</p>
-				</div>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Ideate & Design</h2>
-				<p>Before I went into design, I mapped out different user flows with the PMs to ensure that we cover all the product requirements, while also exploring for the most streamlined reporting flow.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Information Architecture</h3>
-				<p>I proposed an integrated experience that allowed users to switch between Connect and Access reports  during the creation process. Here's a high-level structure of how this experience works:</p>
-				<ul>
-					<li>User chooses to create between U.S. (Connect) and International (Access) reports, and they'll have to fill out the respective fields</li>
-					<li>Once a report is created, it will generate a report file. Users can edit or run these reports again</li>
-					<li>All the generated report files will be organized in a table for users to perform actions, like download and delete</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<img class="featured-image" src="../../img/platform-modularity-reports-user-flow.png">
-				<p class="caption">Information architecture of integrated reporting.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Create New Report</h3>
-				<p>There are 3 steps in creating a report: Basic Information, Data & Display and Schedule. The 3-step process helps guide clients to fill out information like choosing between a US or international report, what transaction type they want to see and if they want to place the report on a schedule.</p>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-1.png">
-						</span>
-					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-2.png">
-						</span>
-					</div>
-				</div>
-				<p class="caption">3-step process to create a report.</p>
-			</div>	
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Saved Reports</h3>
-				<p>Once a report is created, it will automatically generate a report file, unless scheduled for another time. Due to limited capabilities, only US reports can be saved in the left navigation under a collapsible tab. Clients can edit or rerun these reports by assigning them to a new schedule.</p>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-saved-reports-1.png">
-						</span>
-					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-saved-reports-2.png">
-						</span>
-					</div>
-				</div>
-				<p class="caption">US reports are saved and displayed on the left navigation.</p>
-			</div>	
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">View Report Files</h3>
-				<p>Report files are stored and organized in a table which can be switched between US and international using the dropdown menu. Clients can download these report files in PDF or CSV to share with others, or delete them if they no longer need the files.</p>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-view-report-files-1.png">
-						</span>
-					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-view-report-files-2.png">
-						</span>
-					</div>
-				</div>
-				<p class="caption">Generated report files are stored and organized in a switchable table.</p>
-			</div>	
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Usability Testing</h3>
-				<p>I talked to 3 clients and they loved the simplicity of creating an international report on Connect. However, there was some confusion around the scheduling options and they would also like to be able to save international reports. Here were the 3 major improvements made:</p>
-				<ul>
-					<li>Removed unpopular schedule frequency options, e.g. quarterly, on event and on specific dates</li>
-					<li>Created a new page to store reports in a table that can be switched between US and international, similar to the report files table (renamed to "View/Download Reports")</li>
-					<li>Updated the experience for editing a report</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12">
-				<img class="featured-image" src="../../img/platform-modularity-reports-usability-testing.png">
-			</div>
-		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Prototype</h2>
-				<p>After some minor design changes due to feasibility and outlining the greenlines to provide accessibility across the experience, my team and I were able to ship platform modularity reports on Connect. Here are the prototypes of the reporting experience:</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-prototype-1.gif">
-				<p class="caption">Creating a report by filling out the required fields.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-prototype-2.gif">
-				<p class="caption">Editing reports and downloading the generated report files</p>
-			</div>
-		</div>
-		<!-- <div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Conclusion</h2>
-				<p>Platform modularity reports was an interesting project to work on. While the report creation process is relatively straightforward, it was challenging to combine Access and Connect reporting together due to how differently they work. My takeaway would be to fully understand the product before going into the design, which is essential for me moving forward with designing reports in a new banking platform that I'm working on now.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image" src="../../img/platform-modularity-reports-conclusion.png">
-				<p class="caption">Going through reports user journey in Connect and Access.</p>
-			</div>
-		</div> -->
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Impact</h2>
-				<p>We designed the success metrics from the beginning, and measured the success from both the user and business side.</p>
-				<ul>
-					<li>Drop rate decrease: Majority of the clients stopped at the scheduling step when creating reports on Access. After the new reports was launched, drop-out rate dropped from <span class="bold">60% to 20%</span></li>
-					<li>Time-on-task: Based on A/B testing results, the report creation time decreased from <span class="bold">6:30min to 4:15min</span></li>
-					<li>User satisfaction: Our bankers and clients appreciate the simplicity of the new Access reports creation, with an <span class="bold">NPS of +30</span></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Other Projects</h2>
-			</div>
-		</div>
-		<div class="row v-60-gap">
-			<div class="col col-12 project-navigation-col">
-				<div id="previous-project-button" class="project-navigation-button box-shadow">
-					<div id="previous-project-img" class="project-navigation-img"></div>
-					<a id="previous-project-link" href=""><div id="previous-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Previous</p>
-						<p id="previous-project-name" class="project-navigation-name bold"></p>
-						<img id="left-arrow" class="direction-img" src="">
-					</div></a>
-				</div>
-				<div id="next-project-button" class="project-navigation-button box-shadow">
-					<div id="next-project-img" class="project-navigation-img"></div>
-					<a id="next-project-link" href=""><div id="next-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Next</p>
-						<p id="next-project-name" class="project-navigation-name bold"></p>
-						<img id="right-arrow" class="direction-img" src="">
-					</div></a>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div id="footer-div">
-		</div>
-	</div>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <!-- <div id="dialogText">Hello there!</div> -->
+                <div id="passArea">
+                    <h1 id="dialogText" class="bold">Hello there!</h1>
+                    <p id="passwordPrompt">The content in this project contains some sensitive information. If you'd like the password to view it, please send me an email at <span id="email-span" class="bold">kchengtoo@gmail.com</span>.</p>
+                    <input id="pass" type="password" class="form-control text-box" name="pass" autofocus placeholder="Enter your password">
+                    <!-- <div id="buttonArea">
+                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
+                            <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
+                            <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
+                            &nbsp;
+                        </span>
+                        <div style="clear: both;"></div>
+                    </div> -->
+                    <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                    <!-- <div id="button-area">
+                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
+                        <button id="go-back-btn" class="btn btn-outline-tertiary">Go back</button>
+                    </div> -->
+                    <span id="messageWrapper">
+                        <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
+                        <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
+                        <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
+                        <!-- &nbsp; -->
+                    </span>
+                    <!-- <div style="clear: both;"></div> -->
+                </div>
+                <!-- <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
+                    </p>
+                </div> -->
+                <span id="securecontext" class="alert alert-danger error" role="alert">Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.</span>
+                <span id="nocrypto" class="alert alert-danger error" role="alert">Your web browser appears to be outdated. Please visit this page using a modern browser.</span>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    (function() {
 
-	<script src="../../js/project-navigation.js"></script>
-	<script src="../../js/load-page-components.js"></script>
-	<script src="../../js/navbar.js"></script>
+        // Replace this
+        var pl = "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";
+        
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var trycatcherror = document.getElementById('trycatcherror');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        const copyElement = document.getElementById("email-span");
+       
+        // console.log(top.location.href);
+
+
+        $("#go-back-btn").click(function() {
+            window.history.back();
+        });
+
+        $(copyElement).click(function() {
+            document.execCommand("copy");
+        });
+
+        copyElement.addEventListener("copy", function(event) {
+            event.preventDefault();
+            if (event.clipboardData) {
+                event.clipboardData.setData("text/plain", copyElement.textContent);
+                // console.log(event.clipboardData.getData("text"));
+                alert("Copied to clipboard");
+            }
+        });
+
+
+        // Sanity checks
+
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+            return;
+        }
+
+        if (!isSecureContext) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#securecontext").style.display = "block";
+            return;
+        }
+
+        if (!crypto.subtle) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#nocrypto").style.display = "block";
+            return;
+        }
+        
+        function str2ab(str) {
+            var ustr = atob(str);
+            var buf = new ArrayBuffer(ustr.length);
+            var bufView = new Uint8Array(buf);
+            for (var i=0, strLen=ustr.length; i < strLen; i++) {
+                bufView[i] = ustr.charCodeAt(i);
+            }
+            return bufView;
+        }
+
+        async function deriveKey(salt, password) {
+            const encoder = new TextEncoder()
+            const baseKey = await crypto.subtle.importKey(
+                'raw',
+                encoder.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey'],
+            )
+            return await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+                baseKey,
+                { name: 'AES-GCM', length: 256 },
+                true,
+                ['decrypt'],
+            )
+        }
+        
+        async function doSubmit(evt) {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+
+            let iv, ciphertext, key;
+            
+            try {
+                var unencodedPl = str2ab(pl);
+
+                const salt = unencodedPl.slice(0, 32)
+                iv = unencodedPl.slice(32, 32 + 16)
+                ciphertext = unencodedPl.slice(32 + 16)
+
+                key = await deriveKey(salt, passEl.value);
+            } catch (e) {
+                trycatcherror.style.display = "block";
+                console.error(e);
+                return;
+            }
+
+            try {
+                const decryptedArray = new Uint8Array(
+                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
+                );
+
+                let decrypted = new TextDecoder().decode(decryptedArray);
+
+                if (decrypted === "") throw "No data returned";
+
+                const basestr = '<base href="." target="_top">';
+                const anchorfixstr = `
+                    <script>
+                        Array.from(document.links).forEach((anchor) => {
+                            const href = anchor.getAttribute("href");
+                            if (href.startsWith("#")) {
+                                anchor.addEventListener("click", function(e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href").substring(1);
+                                    const targetEl = document.getElementById(targetId);
+                                    targetEl.scrollIntoView();
+                                });
+                            }
+                        });
+                    <\/script>
+                `;
+                
+                // Set default iframe link targets to _top so all links break out of the iframe
+                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
+                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
+                else decrypted = basestr + decrypted;
+
+                // Fix fragment links
+                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
+                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
+                else decrypted = decrypted + anchorfixstr;
+                
+                contentFrame.srcdoc = decrypted;
+                
+                invalidPassEl.style.display = "none";
+                successEl.style.display = "block";
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "block";
+                passEl.value = "";
+                submitPass.disabled = false;
+                passEl.disabled = false;
+                console.error(e);
+                return;
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+    })();
+    </script>
+
 </body>
 </html>

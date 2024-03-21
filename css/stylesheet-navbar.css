@@ -102,6 +102,16 @@
 	width: 100%;
 }
 
+.portfolio-button {
+	color: #162a51!important;
+	border-color: #162a51!important;
+}
+
+.portfolio-button:hover {
+	color: white!important;
+	background-color: #162a51!important;
+}
+
 @media (min-width: 767px) {
 	.nav-header {
 		height: 75px;

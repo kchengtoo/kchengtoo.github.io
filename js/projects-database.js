@@ -29,9 +29,9 @@ class Projects {
 
 // Edit here to add, delete or modify projects
 let designProjects = new Projects();
-designProjects.newProject("Data Aggregation", "Connecting ERP systems to Digital Commercial Bank and introducing available ERP for integration", "data-aggregation", "white", "rgba(6,41,91,", 0, 0);
-designProjects.newProject("Digital Commercial Bank", "A new digital banking platform for the Commercial Banking segment to help startups scale their businesses", "digital-commercial-bank", "white", "rgba(6,41,91,", 0, 0);
-designProjects.newProject("Platform Modularity Reports", "Report creation for clients with J.P. Morgan Access accounts within Chase Connect", "platform-modularity-reports", "white", "rgba(13,67,132,", 0, 0);
+designProjects.newProject("Data Aggregation", "Connecting ERP systems to Digital Commercial Bank and introducing available ERP for integration", "data-aggregation", "white", "rgba(6,41,91,", 1, 0);
+designProjects.newProject("Digital Commercial Bank", "A new digital banking platform for the Commercial Banking segment to help startups scale their businesses", "digital-commercial-bank", "white", "rgba(6,41,91,", 1, 0);
+designProjects.newProject("Platform Modularity Reports", "Report creation for clients with J.P. Morgan Access accounts within Chase Connect", "platform-modularity-reports", "white", "rgba(13,67,132,", 1, 0);
 designProjects.newProject("ChowDown", "Thesis project for a food management app that helps young adults use up food in their pantry to reduce food waste", "chowdown", "white", "rgba(205,226,157,", 1, 0);
 designProjects.newProject("Meerkat", "UX design project for a platform that stores, visualizes and connects insights for design innovation teams", "meerkat", "white", "rgba(116,193,107,", 1, 1);
 designProjects.newProject("Arity", "UX design project with Arity to design unique workout experiences on Strava by incorporating Arity's SDK", "arity", "white", "rgba(255,176,87,", 1, 1);

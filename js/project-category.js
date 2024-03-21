@@ -44,12 +44,15 @@ function displayProjectLinks(inProjects) {
 
 			let linkElement = document.createElement("a");
 
-			if (inProjects.projects[i].status == 0) {
-				linkElement.href = "../pages/" + checkConnectivity("construction") + "";
-			}
-			else {
-				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
-			}
+			// if (inProjects.projects[i].status == 0) {
+			// 	linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity("construction") + "";
+			// }
+			// else {
+			// 	linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
+			// }
+
+			linkElement.href = checkConstructionStatus(inProjects.projects[i].status, inProjects.projects[i].link);
+
 
 			let projectElement = document.createElement("div");
 			projectElement.classList.add("project-div");
@@ -91,12 +94,14 @@ function displayProjectLinks(inProjects) {
 
 			let linkElement = document.createElement("a");
 
-			if (inProjects.projects[i].status == 0) {
-				linkElement.href = "../pages/" + checkConnectivity("construction") + "";
-			}
-			else {
-				linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
-			}
+			// if (inProjects.projects[i].status == 0) {
+			// 	linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity("construction") + "";
+			// }
+			// else {
+			// 	linkElement.href = "../pages/" + categoryName + "/" + checkConnectivity(inProjects.projects[i].link) + "";
+			// }
+
+			linkElement.href = checkConstructionStatus(inProjects.projects[i].status, inProjects.projects[i].link);
 
 			let projectElement = document.createElement("div");
 			projectElement.classList.add("archived-div");

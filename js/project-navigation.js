@@ -43,7 +43,8 @@ function locationInArray(inProjects) {
 	// console.log(inProjects.numberOfProjects);
 	for (i = 0; i < inProjects.numberOfProjects; i++) {
 
-		let mySubString
+		let mySubString;
+		let statusLink;
 
 		if (currentLocation.includes("Documents")) {
 			mySubString = currentLocation.substring(
@@ -72,21 +73,31 @@ function locationInArray(inProjects) {
 			let previousIndex = previousProjectIndex(i, inProjects.numberOfProjects);
 			// console.log(previousIndex);
 			// let previousProjectLocation = currentCategorytLocation + links[previousIndex] + ".html";
-			let previousProjectLocation = checkConnectivity(inProjects.projects[previousIndex].link);
+
+			// statusLink = setConstruction(inProjects.projects[previousIndex].status, inProjects.projects[previousIndex].link);
+			// let previousProjectLocation = checkConnectivity(statusLink);
+
+			let previousProjectLocation = checkConstructionStatus(inProjects.projects[previousIndex].status, inProjects.projects[previousIndex].link);
+
 			// console.log(previousProjectLocation);
 			previousProjectLink.href = previousProjectLocation;
+
 
 			previousProjectBtn.style.backgroundColor = inProjects.projects[previousIndex].backgroundColor + "1)";
 			previousProjectImg.style.backgroundImage = "url('../../img/" + inProjects.projects[previousIndex].link + "-context-shot.png')";
 			previousProjectLabel.style.backgroundColor = inProjects.projects[previousIndex].backgroundColor + "0.7)";
 			previousProjectLabel.style.color = inProjects.projects[previousIndex].fontColor;
 			previousProjectName.innerHTML = inProjects.projects[previousIndex].name + ".";
+			// previousProjectName.innerHTML = setConstruction(inProjects.projects[previousIndex].status, inProjects.projects[previousIndex].name);
 			leftArrow.src = "../../img/" + setArrow("left", inProjects.projects[previousIndex].fontColor);
 
 
 			let nextIndex = nextProjectIndex(i, inProjects.numberOfProjects);
 			// let nextProjectLocation = currentCategorytLocation + links[nextIndex] + ".html";
-			let nextProjectLocation = checkConnectivity(inProjects.projects[nextIndex].link);
+			// statusLink = setConstruction(inProjects.projects[nextIndex].status, inProjects.projects[nextIndex].link);
+			// let nextProjectLocation = checkConnectivity(statusLink);
+
+			let nextProjectLocation = checkConstructionStatus(inProjects.projects[nextIndex].status, inProjects.projects[nextIndex].link);
 			// console.log(nextProjectLocation);
 			nextProjectLink.href = nextProjectLocation;
 
@@ -95,11 +106,12 @@ function locationInArray(inProjects) {
 			nextProjectLabel.style.backgroundColor = inProjects.projects[nextIndex].backgroundColor + "0.7)";
 			nextProjectLabel.style.color = inProjects.projects[nextIndex].fontColor;
 			nextProjectName.innerHTML = inProjects.projects[nextIndex].name + ".";
+			// nextProjectName.innerHTML = setConstruction(inProjects.projects[nextIndex].status, inProjects.projects[nextIndex].name);
 			rightArrow.src = "../../img/" + setArrow("right", inProjects.projects[nextIndex].fontColor);
 
 		}
 		else {
-			console.log("Current project not found");
+			// console.log("Current project not found");
 		}
 	}
 }
@@ -154,7 +166,6 @@ function setArrow(direction, color) {
 	}
 	return arrowColor;
 }
-// console.log(window.location.href);
 
 // function checkConnectivity(href) {
 // 	console.log(href);

@@ -140,6 +140,25 @@ function configComponents(location) {
 	copyrightYear.innerHTML = d.getFullYear();
 }
 
+// for checking project status and providing the correct file navigation
+function checkConstructionStatus (status, link) {
+	if (status == 0) {
+		if (!currentLocation.includes("/featured-work/")) {
+			return checkConnectivity("construction"); // current location outside of featured-work
+		}
+		return checkConnectivity("../construction"); // current location inside of featured-work
+	}
+	else if (status == 1) {
+		if (currentLocation.includes("/featured-work/")) {
+			return checkConnectivity(link);
+		}
+		return "featured-work/" + checkConnectivity(link);
+	}
+	else {
+		console.log("CONSTRUCTION PAGE CHECK ERROR");
+	}
+}
+
 // for checking if we're in local or GitHub file
 function checkConnectivity(href) {
 	// let newHref;
@@ -150,14 +169,4 @@ function checkConnectivity(href) {
 
 	}
 	return href;
-}
-// function loadCopyrightYear(copyrightYear, d) {
-// 	console.log(d.getFullYear());
-// 	copyrightYear.innerHTML = d.getFullYear();
-// }
-
-function checkConstruction(link) {
-	if (link == "construction") {
-		
-	}
 }

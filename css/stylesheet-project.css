@@ -416,6 +416,10 @@ li {
     opacity: 0.6;
 }
 
+.image-filter {
+	filter: blur(4px);
+}
+
 
 @media (min-width: 767px) {
 	button {

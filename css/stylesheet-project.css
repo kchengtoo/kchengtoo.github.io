@@ -176,6 +176,7 @@ li {
 .featured-image {
 	width: 100%;
 	margin-bottom: 20px;
+	pointer-events: none;
 }
 
 .featured-icon {

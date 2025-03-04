@@ -29,6 +29,7 @@ class Projects {
 
 // Edit here to add, delete or modify projects
 let designProjects = new Projects();
+designProjects.newProject("Merchant Restrictions", "New setting feature that gives admins control over orders placed at specific stores using company funded meal credits", "merchant-restrictions", "white", "rgba(255,128,0,", 1, 0);
 designProjects.newProject("Meal Credit Schedule", "An enhanced schedule settings that enable when diners can receive their Grubhub orders paid for with the meal credit", "meal-credit-schedule", "white", "rgba(255,128,0,", 1, 0);
 designProjects.newProject("Tiered Accounts", "An enhanced account structure to support large clients with a tiered structure for using Grubhub Corporate Accounts", "tiered-accounts", "white", "rgba(255,128,0,", 1, 0);
 designProjects.newProject("Digital Commercial Bank", "A new digital banking platform for the Commercial Banking segment to help startups scale their businesses", "digital-commercial-bank", "white", "rgba(6,41,91,", 1, 0);

@@ -68,7 +68,9 @@
 					<div id="intro">
 						<h1 id="greeting" class="display-1 header"><span id="greeting-time"></span>, I'm</h1>
 						<h1 id="designer-name" class="display-1"><span id="name-tag">Kevin Cheng.</span></h1>
-						<h2 id="designer-bio" class="display-1">I'm currently a Product Designer at <a href="https://corporate.grubhub.com/?utm_source=grubhub_webdinerapp&utm_medium=content_owned&utm_campaign=product_footer-link&page=Homepage" target="_blank">Grubhub Corporate</a>. Previously at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a> and <a href="https://www.epsilon.com/us" target="_blank">Epsilon</a>.</h2>
+						<h2 id="designer-bio" class="display-1">Product Designer currently expanding the corporate product offerings at <a href="https://corporate.grubhub.com/?utm_source=grubhub_webdinerapp&utm_medium=content_owned&utm_campaign=product_footer-link&page=Homepage" target="_blank">Grubhub</a>. Previously at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>.</h2>
+
+						<!-- <h2 id="designer-bio" class="display-1">I'm currently a Product Designer at <a href="https://corporate.grubhub.com/?utm_source=grubhub_webdinerapp&utm_medium=content_owned&utm_campaign=product_footer-link&page=Homepage" target="_blank">Grubhub Corporate</a>. Previously at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a> and <a href="https://www.epsilon.com/us" target="_blank">Epsilon</a>.</h2> -->
 						<a href="pages/about" role="button" id="about-button">More about me</a>
 						<h1 id="check-header" class="display-1 header">Check out my work!</h1>
 						<div id="work-buttons-section">
@@ -104,10 +106,6 @@
 
 	<script src="js/load-page-components.js"></script>
 	<script src="js/navbar.js"></script>
-
-<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js" integrity="sha256-tAVw6WRAXc3td2Esrjd28l54s3P2y7CDFu1271mu5LE=" crossorigin="anonymous"></script>
-	<script src="js/hover.js"></script> -->
 
 	<script>
 		let featuredButton = document.querySelector("#featured-button");
@@ -302,50 +300,6 @@
 		        // '-o-transition':'0.3s ease-in'
 			});
 		}
-
-		// var newAnimation = new hoverEffect({
-		// 	parent: photoElement,
-		// 	intensity: 0.3,
-		// 	image1: originalImgUrl,
-		// 	image2: designImgUrl,
-		// 	displacementImage: displacementImg
-		// });
-
-		// function createImage() {
-		// 	imageWidth = image.width;
-		// 	imageHeight = image.height;
-		// 	row = imageHeight;
-		// 	requestAnimationFrame(animate);
-		// }
-
-		// function animate() {
-		// 	context.drawImage(image, 0, row, imageWidth, 1, 0, 0, imageWidth, row);
-		// 	if (row > 0) {
-		// 		row--;
-		// 	}
-		// 	else {
-		// 		row = imageHeight;
-		// 		requestAnimationFrame(animate);
-		// 	}
-		// }
-
-		// function createImage() {
-		// 	let n = max;
-		// 	let divs = "";
-		// 	for (let i = 0; i < n; i++) {
-		// 		divs += "<div class='bg' style='background-image: " + designPhotoUrl + "background-position: 0px -" + n + "px;'></div>";
-		// 	}
-		// 	photoElement.innerHTML = divs;
-		// 	if (max > 0) {
-		// 		max--;
-		// 		requestAnimationFrame(createImage);
-		// 	}
-		// }
-
-		// function setImage(url) {
-		// 	photoElement.style.backgroundImage = url;
-		// }
-
 		$(document).ready(function() {
 			setGreetingTime();
 			aboutButton.href = checkConnectivity(aboutButton.href);

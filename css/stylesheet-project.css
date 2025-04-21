@@ -184,6 +184,12 @@ li {
 	margin-bottom: 20px;
 }
 
+.align-items-center {
+	display: flex; 
+  	align-items: center;  /*Aligns vertically center */
+  	justify-content: center;
+}
+
 .box-shadow {
 	box-shadow: 5px 5px 18px #d4d4d4;
 }
@@ -419,6 +425,18 @@ li {
 
 .image-filter {
 	filter: blur(4px);
+}
+
+.corner-radius-4 {
+	border-radius: 4px;
+}
+
+.corner-radius-8 {
+	border-radius: 8px;
+}
+
+.corner-radius-12 {
+	border-radius: 12px;
 }
 
 

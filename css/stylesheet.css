@@ -128,6 +128,12 @@ a {
 /*	line-height: 26px;*/
 }
 
+#current-role {
+/*	font-family: "Proxima Thin", Ariel, sans-serif;*/
+	font-size: 18px;
+	color: #162a51;
+}
+
 #check-header {
 	font-size: 30px;
 	margin: 50px 0 10px 0;

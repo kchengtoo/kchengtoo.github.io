@@ -334,6 +334,7 @@ a {
 	transition: 0.2s;
 	margin: 0 5px 0 10px;
 	opacity: 0.2;
+	display: none;
 }
 
 .archived-block:hover .direction-img {
@@ -449,6 +450,10 @@ a {
 
 	.archived-label h2 {
 		font-size: 16px;
+	}
+
+	.direction-img {
+		display: block;
 	}
 }
 

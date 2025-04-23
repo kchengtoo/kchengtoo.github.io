@@ -1,117 +1,457 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- :+++++++++++++++++++:          ./+++//::-.        
-        ++++++++++++++++++++-        ./++++++++++++/:.    
-        ++++++++++++++++++:`       ./++++++++++++++++++:. 
-        ++++++++++++++++:`       -/++++++++++++++++++++++/
-        ++++++++++++++-`       -++++++++++++++++++++++++/.
-        ++++++++++++-`       -++++++++++++++++++++++++/.  
-        ++++++++++-        -++++++++/:--..--:/++++++/.    
-        ++++++++-        -+++++++:`            .:/:.      
-        ++++++-        -+++++++-                          
-        ++++-        -+++++++/`                           
-         ..        -+++++++++`                            
-                 -++++++++++:                             
-                /+++++++++++-                             
-                 -++++++++++:                             
-                   -+++++++++`                            
-        `://-        -+++++++/`                           
-        ++++++-        -+++++++-                          
-        ++++++++-        -+++++++:`            .:/:.      
-        ++++++++++-        -++++++++/:--..--:/++++++/.    
-        ++++++++++++-`       -++++++++++++++++++++++++/.  
-        ++++++++++++++:`       -++++++++++++++++++++++++/.
-        ++++++++++++++++:`       ./++++++++++++++++++++++/
-        ++++++++++++++++++:`       ./++++++++++++++++++:. 
-        ++++++++++++++++++++:        ./++++++++++++/:.    
-        :+++++++++++++++++++:          ./+++//::-.        -->
-    <title>Kevin Cheng - Digital Commercial Bank</title>
-    <link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon'/>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheet-protected-project.css">
+	<!-- :+++++++++++++++++++:          ./+++//::-.        
+		++++++++++++++++++++-        ./++++++++++++/:.    
+		++++++++++++++++++:`       ./++++++++++++++++++:. 
+		++++++++++++++++:`       -/++++++++++++++++++++++/
+		++++++++++++++-`       -++++++++++++++++++++++++/.
+		++++++++++++-`       -++++++++++++++++++++++++/.  
+		++++++++++-        -++++++++/:--..--:/++++++/.    
+		++++++++-        -+++++++:`            .:/:.      
+		++++++-        -+++++++-                          
+		++++-        -+++++++/`                           
+		 ..        -+++++++++`                            
+		         -++++++++++:                             
+		        /+++++++++++-                             
+		         -++++++++++:                             
+		           -+++++++++`                            
+		`://-        -+++++++/`                           
+		++++++-        -+++++++-                          
+		++++++++-        -+++++++:`            .:/:.      
+		++++++++++-        -++++++++/:--..--:/++++++/.    
+		++++++++++++-`       -++++++++++++++++++++++++/.  
+		++++++++++++++:`       -++++++++++++++++++++++++/.
+		++++++++++++++++:`       ./++++++++++++++++++++++/
+		++++++++++++++++++:`       ./++++++++++++++++++:. 
+		++++++++++++++++++++:        ./++++++++++++/:.    
+		:+++++++++++++++++++:          ./+++//::-.        -->
+	<title>Kevin Cheng - Digital Commercial Bank</title>
+	<link rel='shortcut icon' href='../../img/favicon.ico' type='image/x-icon' />
 
-    <meta name="robots" content="noindex, nofollow">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
+	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/stylesheet-digital-commercial-bank.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
+	<script src="../../js/google-analytics.js"></script>
+	<script src="../../js/projects-database.js"></script>
+	<style>
+		.project-background {
+			background-image: url("../../img/digital-commercial-bank-context-shot.png");
+			background-position: 50% 50%;
+		}
+
+		.step-num {
+			background-color: #06295b;
+			color: white;
+		}
+
+		.project-color-text {
+			color: #06295b;
+		}
+
+		.hmw-box {
+			background-color: rgba(3, 65, 153, 0.4);
+			padding: 25px;
+			color: #06295b;
+		}
+
+		@media (min-width: 767px) {
+			.project-background {
+	
+				background-position: 50% 40%;
+			}
+
+			.research-section {
+			}
+			
+		}
+
+		@media (min-width: 991px) {
+			.project-background {
+				background-position: 50% 45%;
+			}
+
+			.research-section {
+			}
+		}
+
+		@media (min-width: 1441px) {
+		}
+	</style>
 </head>
 <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <!-- <div id="dialogText">Hello there!</div> -->
-                <div id="passArea">
-                    <h1 id="dialogText" class="bold">Hello there!</h1>
-                    <p id="passwordPrompt">The content in this project contains some sensitive information. If you'd like the password to view it, please send me an email at <span id="email-span" class="bold">kchengtoo@gmail.com</span>.</p>
-                    <input id="pass" type="password" class="form-control text-box" name="pass" autofocus placeholder="Enter your password">
-                    <!-- <div id="buttonArea">
-                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
-                            <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
-                            <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
-                            &nbsp;
-                        </span>
-                        <div style="clear: both;"></div>
-                    </div> -->
-                    <!-- <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button> -->
-                    <div id="button-area">
-                        <button id="go-back-btn" class="btn btn-outline-tertiary">Go back</button>
-                        <button id="submitPass" class="btn btn-outline-primary" type="button">Submit</button>
-                    </div>
-                    <span id="messageWrapper">
-                        <span id="invalidPass" class="alert alert-danger error" role="alert">Incorrect password. Please try again.</span>
-                        <span id="trycatcherror" class="alert alert-danger error" role="alert">Sorry, something went wrong.</span>
-                        <span id="success" class="alert alert-success notifyText" role="alert">Success!</span>
-                        <!-- &nbsp; -->
-                    </span>
-                    <!-- <div style="clear: both;"></div> -->
-                </div>
-                <!-- <div id="securecontext" class="error">
-                    <p>
-                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
-                    </p>
-                </div> -->
-                <span id="securecontext" class="alert alert-danger error" role="alert">Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.</span>
-                <span id="nocrypto" class="alert alert-danger error" role="alert">Your web browser appears to be outdated. Please visit this page using a modern browser.</span>
+	<div id="header-div">
+	</div>
+	<div class="container page-wrapper">
+		<div class="row general-row-space">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h1 id="project-title" class="bold">Digital Commercial Bank.</h1>
+			</div>
+		</div>
+		<div class="row general-row-space">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<p>Digital Commercial Bank is the new digital banking platform for the <a href="https://www.jpmorgan.com/commercial-banking" target="_blank">Commercial Banking</a> segment, specifically for startups. The platform not only accommodates their growing challenges as they scale, but also provides a new banking experience that helps clients get aquinted with the platform.</p>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<ul class="callout-section synthesize-section">
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
+						<p class="topic-h4 bold">User & Business Needs</p>
+						<p class="point-caption"><span class="bold">User</span>: Find a digital banking platform that's easy to use for startups<br><span class="bold">Business</span>: Deliver an MVP in a tight timeframe to onboard startup clients</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-impact.png">
+						<p class="topic-h4 bold">Impact</p>
+						<p class="point-caption">Shipped an MVP, received <span class="bold">over $250 million</span> in funding to accelerate the full launch of Digital Commercial Bank, got <span class="bold">50+ clients</span> onboarded on the beta version</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-contribution.png">
+						<p class="topic-h4 bold">Contribution</p>
+						<p class="point-caption">Drove product strategy. Lead designer for dashboard, payments, reports, statements and account visibility in collaboration with PM and engineers</p>
+					</span>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="jumbotron jumbotron-fluid project-background">
+		<div class="container">
+		</div>
+	</div> -->
+	<div class="container project-background box-shadow">
+		<div class="row">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+			</div>
+		</div>
+	</div>
+	<div class="container container-fluid">
+		<div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Problem</h2>
+				<p>The Commercial Banking (CB) segment at JPMC had traditionally <a href="platform-modularity-reports.html">relied</a> on legacy platforms like <a href="https://www.chase.com/commercial-banking/chase-connect" target="_blank">Connect</a> and <a href="https://access.jpmorgan.com/jpmalogon" target="_blank">Access</a> to serve its clients. However, as startups became one of CB's fastest-growing client segments, it became clear that these platforms weren’t meeting their needs. Many startup users struggled with complex financial tools and unfamiliar banking terminology. So in response, we began developing a new digital banking platform specifically tailored to startups.</p>
+				<p class="bold"><span class="project-color-text">Challenge:</span> Startup clients are unable to bank with confidence using JPMC’s legacy banking platforms, because of their limited knowledge in financial tools and banking terminologies.</p>
+			</div>
+		</div>
+		<div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Process</h2>
+				<p>Our design team collaboratively defined the product strategy and identified the core functionalities to prioritize for the MVP. I led the design efforts for key areas including the dashboard, payments, reporting, documents, and account visibility.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<div class="row">
+					<div class="col col-12">
+						<ul class="process-timeline">
+							<span class="process-step">
+								<div class="step-num bold">
+									1
+								</div>
+								<span class="step-detail">
+									<h3 class="topic-h4 bold">Discovery</h3>
+									<ul class="step-info">
+										<li>Stakeholder Interviews</li>
+										<li>Heuristic Analysis</li>
+										<li>Competitive Research</li>
+									</ul>
+								</span>
+							</span>
+							<span class="process-step">
+								<div class="step-num bold">
+									2
+								</div>
+								<span class="step-detail">
+									<h3 class="topic-h4 bold">Define</h3>
+									<ul class="step-info">
+										<!-- <li>Product Strategy</li> -->
+										<li>Feature Priority</li>
+										<li>Design Requirements</li>
+										<li>Information Architecture</li>
+									</ul>
+								</span>
+							</span>
+							<span class="process-step">
+								<div class="step-num bold">
+									3
+								</div>
+								<span class="step-detail">
+									<h3 class="topic-h4 bold">Design</h3>
+									<ul class="step-info">
+										<li>Hi-Fi Wireframes</li>
+										<li>Banking Copy</li>
+										<li>Desirability Test</li>
+									</ul>
+								</span>
+							</span>
+							<span class="process-step">
+								<div class="step-num bold">
+									4
+								</div>
+								<span class="step-detail">
+									<h3 class="topic-h4 bold">Develop</h3>
+									<ul class="step-info">
+										<!-- <li>Feature Prioritization</li> -->
+										<li>Refinement</li>
+										<li>Quality Assurance</li>
+									</ul>
+								</span>
+							</span>
+							<span class="process-step">
+								<div class="step-num bold">
+									5
+								</div>
+								<span class="step-detail">
+									<h3 class="topic-h4 bold">Deliver</h3>
+									<ul class="step-info">
+										<li>Funding Presentation</li>
+										<li>Client Onboarding</li>
+									</ul>
+								</span>
+							</span>
+						</ul>
+					</div>
+				</div>
+				<p class="caption">Completed the whole process within 6 months.</p>
+			</div>
+		</div>
+		<div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Research</h2>
+				<p>I started off by talking to startup clients and bankers who help with these clients to learn about their experience using JPMC legacy banking platforms. Then, I conducted heuristic analysis to evaluate the usability of Chase Connect to identify opportunities for improvement. And lastly, I researched competitors within the digital banking platform space to understand what makes them popular among the startup community.</p>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<ul class="callout-section research-section">
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-research-1.svg">
+						<p class="topic-h4 bold">Stakeholder Interview</p>
+						<p class="point-caption">Talked to 28 startup clients and bankers who help these clients</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-research-2.svg">
+						<p class="topic-h4 bold">Competitive Research</p>
+						<p class="point-caption">Analyzed 5 most popular digital banking platforms</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-research-3.svg">
+						<p class="topic-h4 bold">Heuristic Analysis</p>
+						<p class="point-caption">Evaluated the usability of Chase Connect for improvement</p>
+					</span>
+				</ul>
+			</div>
+		</div>
+		<div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Synthesize</h2>
+				<p>Once I concluded my research, I highlighted the pain points of using Chase Connect and identified opportunities for improvement to define design requirements for the new banking platform. Here are the design requirements and the HMW statement:</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Design Requirements</h3>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<ul class="callout-section synthesize-section">
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-design-requirement-1.svg">
+						<p class="topic-h4 bold">Low Barrier to Entry</p>
+						<p class="point-caption">Allow new clients to easily find the features they need to complete their banking tasks and not feel overwhelmed by them</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-design-requirement-2.svg">
+						<p class="topic-h4 bold">User-friendly Banking Language</p>
+						<p class="point-caption">Use user-friendly languages to help bring familiarity while increasing confidence in themselves and the bank</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/digital-commercial-bank-design-requirement-3.svg">
+						<p class="topic-h4 bold">Customize and Configure</p>
+						<p class="point-caption">Customize the platform to prioritize what they want to see and configure their financial data</p>
+					</span>
+				</ul>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Design Challenge</h3>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<div class="">
+					<p class="single-HMW-caption hmw-box">How might we provide a <span class="bold">new banking experience</span> that allows startup clients to <span class="bold">quickly get acquainted</span> with the platform and its core features to <span class="bold">complete their banking tasks based on their business needs</span>?</p>
+				</div>
+			</div>
+		</div>
+		<div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Solution</h2>
+				<p>Using a new design system, we created a digital banking platform with core functionalities designed for startup clients. We translated banking terminologies to user language to help their understanding, and redesigned the information architecture to be clear, comprehensive and simple.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Dashboard</h3>
+				<p>A snapshot of your account health with core metrics, which is also customizable where all information pertinent to the user's role is visible.</p>
+			</div>
+		</div>
+		<div class="row v-40-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="featured-image" src="https://drive.google.com/thumbnail?id=1k_ECd2jSEBvrINC9Og1pXrb7gx8Mclxz&sz=w1250">
+				<p class="caption">Dashboard showing action items and account health.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Payments</h3>
+				<p>Tackle all payment-related activity in one place, like setting up payments to vendors, and add and approve new recipients or edit existing ones.</p>
+			</div>
+		</div>
+		<div class="row v-40-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="featured-image" src="https://drive.google.com/thumbnail?id=1iloD7JQH8ZcQiw958CipqDCbTexlp-8u&sz=w1250">
+				<p class="caption">All payment-related activity in one place.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Accounts Overview</h3>
+				<p>Users can check out the health of their accounts and balances by accessing specific accounts, credit cards and recent transactions.</p>
+			</div>
+		</div>
+		<div class="row v-40-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="featured-image" src="https://drive.google.com/thumbnail?id=1CSRoblbwuQ2XfQ5zS78VrWW-DcWv-q1h&sz=w1250">
+				<p class="caption">Access accounts, credit cards and recent transactions.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Reports</h3>
+				<p>Access the transaction data of all accounts in one place, and users can select a preset or create a customized report for their specific needs.</p>
+			</div>
+		</div>
+		<div class="row v-40-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="featured-image" src="https://drive.google.com/thumbnail?id=1lw9XamfoZH7o21V-N1SB1Bs7ypW5U_Fi&sz=w1250">
+				<p class="caption">Real-time transaction data breakdown.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Documents</h3>
+				<p>Users can find files, like statements, notices, legal documents and uploads, in a consolidated place for easy skimming.</p>
+			</div>
+		</div>
+		<div class="row v-40-gap">
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="featured-image" src="https://drive.google.com/thumbnail?id=1m5mzgqioeblFt2sZDFZCfRd1zsbFF3-B&sz=w1250">
+				<p class="caption">Important documents in one place.</p>
+			</div>
+		</div>
+		<!-- <div class="row specific-row-space v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Ideate & Design</h2>
+				<p>Before I went into design, I mapped out different user flows with the PMs to ensure that we cover all the product requirements, while also exploring for the most streamlined reporting flow.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Information Architecture</h3>
+				<p>I proposed an integrated experience that allowed users to switch between Connect and Access reports  during the creation process. Here's a high-level structure of how this experience works:</p>
+				<ul>
+					<li>User chooses to create between U.S. (Connect) and International (Access) reports, and they'll have to fill out the respective fields</li>
+					<li>Once a report is created, it will generate a report file. Users can edit or run these reports again</li>
+					<li>All the generated report files will be organized in a table for users to perform actions, like download and delete</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<img class="featured-image" src="../../img/platform-modularity-reports-user-flow.png">
+				<p class="caption">Information architecture of integrated reporting.</p>
+			</div>
+		</div>
+		<div class="row v-20-gap">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="topic-h3 bold v-20-gap">Create New Report</h3>
+				<p>There are 3 steps in creating a report: Basic Information, Data & Display and Schedule. The 3-step process helps guide clients to fill out information like choosing between a US or international report, what transaction type they want to see and if they want to place the report on a schedule.</p>
+			</div>
+		</div>
+		<div class="row v-30-gap">
+			<div class="col col-12">
+				<div class="row">
+					<div class="col col-12 col-md-6">
+						<span class="">
+							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-1.png">
+						</span>
+					</div>
+					<div class="col col-12 col-md-6">
+						<span class="">
+							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-2.png">
+						</span>
+					</div>
+				</div>
+				<p class="caption">3-step process to create a report.</p>
+			</div>	
+		</div> -->
+		<div class="row specific-row-space">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="topic-h2 bold">Confidential</h2>
+				<p>Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Digital Commercial Bank work.</p>
+			</div>
+		</div>
+		<div class="row specific-row-space">
+			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
+				<h2 class="topic-h2 bold">Other Projects</h2>
+			</div>
+		</div>
+		<div class="row v-60-gap">
+			<div class="col col-12 project-navigation-col">
+				<div id="previous-project-button" class="project-navigation-button box-shadow">
+					<div id="previous-project-img" class="project-navigation-img"></div>
+					<a id="previous-project-link" href=""><div id="previous-project-label" class="navigation-button-label">
+						<p class="navigation-direction bold">Previous</p>
+						<p id="previous-project-name" class="project-navigation-name bold"></p>
+						<img id="left-arrow" class="direction-img" src="">
+					</div></a>
+				</div>
+				<div id="next-project-button" class="project-navigation-button box-shadow">
+					<div id="next-project-img" class="project-navigation-img"></div>
+					<a id="next-project-link" href=""><div id="next-project-label" class="navigation-button-label">
+						<p class="navigation-direction bold">Next</p>
+						<p id="next-project-name" class="project-navigation-name bold"></p>
+						<img id="right-arrow" class="direction-img" src="">
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div id="footer-div">
+		</div>
+	</div>
 
-                <!-- <div id="nocrypto" class="error">
-                    <p>
-                        Your web browser appears to be outdated. Please visit this page using a modern browser.
-                    </p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    (function() {
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        // Replace this
-        var pl = "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";
-        
-        var submitPass = document.getElementById('submitPass');
-        var passEl = document.getElementById('pass');
-        var invalidPassEl = document.getElementById('invalidPass');
-        var trycatcherror = document.getElementById('trycatcherror');
-        var successEl = document.getElementById('success');
-        var contentFrame = document.getElementById('contentFrame');
-        const copyElement = document.getElementById("email-span");
-       
-        // console.log(top.location.href);
+	<script src="../../js/project-navigation.js"></script>
+	<script src="../../js/load-page-components.js"></script>
+	<script src="../../js/navbar.js"></script>
+	<script>
+		const copyElement = document.getElementById("email-span");
 
-
-        $("#go-back-btn").click(function() {
-            window.history.back();
-        });
-
-        $(copyElement).click(function() {
+		$(copyElement).click(function() {
             document.execCommand("copy");
         });
 
@@ -123,143 +463,6 @@
                 alert("Copied to clipboard");
             }
         });
-
-
-        // Sanity checks
-
-        if (pl === "") {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
-            return;
-        }
-
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
-
-        if (!crypto.subtle) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#nocrypto").style.display = "block";
-            return;
-        }
-        
-        function str2ab(str) {
-            var ustr = atob(str);
-            var buf = new ArrayBuffer(ustr.length);
-            var bufView = new Uint8Array(buf);
-            for (var i=0, strLen=ustr.length; i < strLen; i++) {
-                bufView[i] = ustr.charCodeAt(i);
-            }
-            return bufView;
-        }
-
-        async function deriveKey(salt, password) {
-            const encoder = new TextEncoder()
-            const baseKey = await crypto.subtle.importKey(
-                'raw',
-                encoder.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey'],
-            )
-            return await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-                baseKey,
-                { name: 'AES-GCM', length: 256 },
-                true,
-                ['decrypt'],
-            )
-        }
-        
-        async function doSubmit(evt) {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-
-            let iv, ciphertext, key;
-            
-            try {
-                var unencodedPl = str2ab(pl);
-
-                const salt = unencodedPl.slice(0, 32)
-                iv = unencodedPl.slice(32, 32 + 16)
-                ciphertext = unencodedPl.slice(32 + 16)
-
-                key = await deriveKey(salt, passEl.value);
-            } catch (e) {
-                trycatcherror.style.display = "block";
-                console.error(e);
-                return;
-            }
-
-            try {
-                const decryptedArray = new Uint8Array(
-                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
-                );
-
-                let decrypted = new TextDecoder().decode(decryptedArray);
-
-                if (decrypted === "") throw "No data returned";
-
-                const basestr = '<base href="." target="_top">';
-                const anchorfixstr = `
-                    <script>
-                        Array.from(document.links).forEach((anchor) => {
-                            const href = anchor.getAttribute("href");
-                            if (href.startsWith("#")) {
-                                anchor.addEventListener("click", function(e) {
-                                    e.preventDefault();
-                                    const targetId = this.getAttribute("href").substring(1);
-                                    const targetEl = document.getElementById(targetId);
-                                    targetEl.scrollIntoView();
-                                });
-                            }
-                        });
-                    <\/script>
-                `;
-                
-                // Set default iframe link targets to _top so all links break out of the iframe
-                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
-                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
-                else decrypted = basestr + decrypted;
-
-                // Fix fragment links
-                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
-                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
-                else decrypted = decrypted + anchorfixstr;
-                
-                contentFrame.srcdoc = decrypted;
-                
-                invalidPassEl.style.display = "none";
-                successEl.style.display = "block";
-                setTimeout(function() {
-                    dialogWrap.style.display = "none";
-                }, 1000);
-            } catch (e) {
-                invalidPassEl.style.display = "block";
-                passEl.value = "";
-                submitPass.disabled = false;
-                passEl.disabled = false;
-                console.error(e);
-                return;
-            }
-        }
-        
-        submitPass.onclick = doSubmit;
-        passEl.onkeypress = function(e){
-            if (!e) e = window.event;
-            var keyCode = e.keyCode || e.which;
-            invalidPassEl.style.display = "none";
-            if (keyCode == '13'){
-              // Enter pressed
-              doSubmit();
-              return false;
-            }
-        }
-    })();
-    </script>
-
+	</script>
 </body>
 </html>

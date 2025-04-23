@@ -35,11 +35,60 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-chowdown.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/stylesheet-chowdown.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
 	<script src="../../js/google-analytics.js"></script>
 	<script src="../../js/projects-database.js"></script>
+	<style>
+		.project-background {
+			background-image: url("../../img/chowdown-context-shot.png");
+		}
+
+		.step-num {
+			background-color: #597e5c;
+			color: white;
+		}
+
+		.project-color-text {
+			color: #597e5c;
+		}
+
+		.synthesize-section {
+
+		}
+
+		.hmw-box {
+			background-color: rgba(205,226,157,0.5);
+			padding: 25px;
+			color: #597e5c;
+		}
+
+
+		@media (min-width: 767px) {
+			.project-background {
+				background-position: 50% 30%;
+			}
+
+			.research-section {
+				padding: 0 50px 0 50px;
+			}
+			
+		}
+
+		@media (min-width: 991px) {
+			.project-background {
+				background-position: 50% 45%;
+			}
+
+			.research-section {
+			}
+		}
+
+		@media (min-width: 1441px) {
+
+		}
+	</style>
 </head>
 <body>
 	<div id="header-div">
@@ -52,11 +101,32 @@
 		</div>
 		<div class="row general-row-space">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<p>ChowDown is a food management app that catalogs user's grocery items, and uses that data to keep track of their pantry, promote sustainable shopping decisions and suggest meals that will help them use up their food.</p>
-				<p>This project was created for my EDI Master's Thesis and <a href="https://docs.google.com/presentation/d/1HnmfuuSxx_RLkxPT9VbCrOQDxSJ1KwbN5C6Jif-UTTc/edit?usp=sharing" target="_blank">presented</a> during the <a href="https://northwestern.zoom.us/rec/play/blspxvfH8HV-yZaPRiOp8kkO5vDiAlnrcJA2ccL5WDgVt_2pAqp7W7Vghg_RkGLbkli2kzHu_A1pJfFV.OKaq7qMASm3yWmcg?startTime=1647095849000&_x_zm_rtaid=A_Xe4P5ASs2aCz1Uh0l_mw.1653035803518.5705b52cfa763dab15f3c5c88e8f6bf9&_x_zm_rhtaid=154" target="_blank">EDI Thesis Presentation '22</a> (starts at 1:54:09).</p>
+				<p>ChowDown is a food management app that helps users catalog their groceries, track pantry inventory, make more sustainable shopping choices, and discover meal suggestions to reduce food waste.</p>
+				<p>Started as my Master's Thesis, which was <a href="https://docs.google.com/presentation/d/1HnmfuuSxx_RLkxPT9VbCrOQDxSJ1KwbN5C6Jif-UTTc/edit?usp=sharing" target="_blank">presented</a> at the <a href="https://northwestern.zoom.us/rec/play/blspxvfH8HV-yZaPRiOp8kkO5vDiAlnrcJA2ccL5WDgVt_2pAqp7W7Vghg_RkGLbkli2kzHu_A1pJfFV.OKaq7qMASm3yWmcg?startTime=1647095849000&_x_zm_rtaid=A_Xe4P5ASs2aCz1Uh0l_mw.1653035803518.5705b52cfa763dab15f3c5c88e8f6bf9&_x_zm_rhtaid=154" target="_blank">EDI Thesis Presentation '22</a> (starts at 1:54:09), it evolved into a full-fledged product that my co-founder and I eventually soft-launched to gather real-world feedback.</p>
 			</div>
 		</div>
-		<div class="row general-row-space">
+		<div class="row v-30-gap">
+			<div class="col col-12 col-lg-10 offset-lg-1">
+				<ul class="callout-section synthesize-section">
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
+						<p class="topic-h4 bold">User & Business Needs</p>
+						<p class="point-caption"><span class="bold">User</span>: Better manage food in pantry to reduce food waste<br><span class="bold">Business</span>: Become rich while saving the environment</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-impact.png">
+						<p class="topic-h4 bold">Impact</p>
+						<p class="point-caption">Acquired <span class="bold">400+</span> users and helped saved an annual estimate of <span class="bold">$200K+</span> worth of food from going to waste.</p>
+					</span>
+					<span class="callout">
+						<img class="callout-icon" src="../../img/project-contribution.png">
+						<p class="topic-h4 bold">Contribution</p>
+						<p class="point-caption">Self-initatied and soloed all design efforts from research to design system development</p>
+					</span>
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="row general-row-space">
 			<div class="col col-4 col-lg-2 offset-lg-3">
 				<p><span class="bold">Team</span><br>1 designer<br>3 thesis supervisors</p>
 			</div>
@@ -66,7 +136,7 @@
 			<div class="col col-4 col-lg-2">
 				<p><span class="bold">My Role</span><br>Product Design<br>User Research<br>Visual Design<br>User Testing</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- <div class="jumbotron jumbotron-fluid project-background">
 		<div class="container">
@@ -246,9 +316,9 @@
 		<div class="row v-30-gap">
 			<div class="col col-12 col-lg-8 offset-lg-2">
 				<div class="">
-					<p class="point-caption hmw-box">How might we help young adults make <span class="bold">sustainable grocery shopping decisions</span>?</p>
-					<p class="point-caption hmw-box">How might we make the shelf life of food <span class="bold">more transparent</span>?</p>
-					<p class="point-caption hmw-box">How might we guide young adults to <span class="bold">use up food</span> before they become spoiled?</p>
+					<p class="single-HMW-caption hmw-box">How might support young adults in <span class="bold">managing their pantry</span>—from <span class="bold">grocery shopping</span>, to <span class="bold">storing food properly</span>, to <span class="bold">using it up</span> before it goes to waste?</p>
+					<!-- <p class="point-caption hmw-box">How might we make the shelf life of food <span class="bold">more transparent</span>?</p>
+					<p class="point-caption hmw-box">How might we guide young adults to <span class="bold">use up food</span> before they become spoiled?</p> -->
 				</div>
 			</div>
 		</div>

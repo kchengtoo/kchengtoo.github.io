@@ -1,6 +1,7 @@
 .nav-header {
 	position: fixed;
 	width: 100%;
+	z-index: 3;
 	box-shadow: 0 0.5px 1px #888888;
 	transition: 0.3s;
 	padding: 12px 0 12px 0;

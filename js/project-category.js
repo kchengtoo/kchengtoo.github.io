@@ -14,15 +14,16 @@ $(document).ready(function() {
 	// else {
 	// 	console.log("ERROR");
 	// }
-	console.log(currentLocation);
-	if (currentLocation.includes("index")) {
+	console.log(currentLocation === "/" || "/index.html");
+	if (currentLocation === "/" || "/index.html") {
+		console.log("HERE")
 		categoryName = "featured-work";
 		displayProjectLinks(designProjects);
 	}
-	else if (currentLocation.includes("archived")) {
-		categoryName = "archived";
-		displayProjectLinks(techProjects);
-	}
+	// else if (currentLocation.includes("archived")) {
+	// 	categoryName = "archived";
+	// 	displayProjectLinks(techProjects);
+	// }
 	else {
 		console.log("currentLocation ERROR");
 	}

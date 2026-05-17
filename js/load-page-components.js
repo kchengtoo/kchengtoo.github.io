@@ -1,4 +1,5 @@
-let currentLocation = top.location.href;
+// let currentLocation = top.location.href;
+let currentLocation = location.pathname;
 
 // let linkedinImg2 = document.querySelector("#linkedin-logo");
 

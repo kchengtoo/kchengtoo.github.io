@@ -194,6 +194,7 @@
 </head>
 <body>
 	<div id="header-div">
+
 	</div>
 	<div class="container container-fluid gap-lg">
 		<div class="row landing-section">
@@ -203,7 +204,7 @@
 				<p class="body-text">Currently optimizing healthcare workflows with intranet and AI at <a href="https://www.mountsinai.org/" target="_blank">Mount Sinai Health System</a>. Previously at <a href="https://business.grubhub.com/" target="_blank">Grubhub</a> and <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>.</p>
 				<div class="col col-12 d-flex flex-row gap-0 column-gap-2 align-items-center">
 					<a href="#featured-row" role="button" class="btn btn-primary primary-btn-portfolio">🎨 Check out my work</a>
-					<a href="pages/about.html" role="button" class="btn tertiary-btn-portfolio">👋 About me</a>
+					<a id="about-button" href="pages/about" role="button" class="btn tertiary-btn-portfolio">👋 About me</a>
 				</div>
 				<!-- <a href="pages/about" role="button" id="about-button">More about me</a> -->
 				<!-- <div class="current-location center-left gap-x-small">
@@ -289,7 +290,6 @@
 		$(document).ready(function() {
 			setGreetingTime();
 			aboutButton.href = checkConnectivity(aboutButton.href);
-			featuredButton.href = checkConnectivity(featuredButton.href);
 		});
 	</script>
 </body>

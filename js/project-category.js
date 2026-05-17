@@ -14,9 +14,9 @@ $(document).ready(function() {
 	// else {
 	// 	console.log("ERROR");
 	// }
-	console.log(currentLocation === "/" || "/index.html");
+	// console.log(currentLocation === "/" || "/index.html");
 	if (currentLocation === "/" || "/index.html") {
-		console.log("HERE")
+		// console.log("HERE")
 		categoryName = "featured-work";
 		displayProjectLinks(designProjects);
 	}

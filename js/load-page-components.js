@@ -4,10 +4,10 @@ let currentLocation = location.pathname;
 // let linkedinImg2 = document.querySelector("#linkedin-logo");
 
 $(document).ready(function() {
-
+	console.log(currentLocation);
 // Loading html in other html only works when the directory is published, it does not work locally.
 	if (currentLocation.includes("featured-work")){
-		// console.log("featured project");
+		console.log("featured project");
 		// $("#header-div").load("../pages/social-media-footer.html #navbar-header");
 		$("#header-div").load("../shared-page-components.html #navbar-div");
 		$("#footer-div").load("../shared-page-components.html #load-social-media-div");
@@ -15,8 +15,8 @@ $(document).ready(function() {
 			configComponents("projects");
 		}, 600);
 	}
-	else if (currentLocation === "/" || "/index.html") {
-		// console.log("homepage");
+	else if (!currentLocation.includes("pages")) {
+		console.log("homepage");
 		$("#header-div").load("pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}, 600);
 	}
 	else {
-		// console.log("pages");
+		console.log("pages");
 		$("#header-div").load("../pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("../pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {

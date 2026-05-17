@@ -4,10 +4,10 @@ let currentLocation = location.pathname;
 // let linkedinImg2 = document.querySelector("#linkedin-logo");
 
 $(document).ready(function() {
-	console.log(currentLocation);
+	// console.log(currentLocation);
 // Loading html in other html only works when the directory is published, it does not work locally.
 	if (currentLocation.includes("featured-work")){
-		console.log("featured project");
+		// console.log("featured project");
 		// $("#header-div").load("../pages/social-media-footer.html #navbar-header");
 		$("#header-div").load("../shared-page-components.html #navbar-div");
 		$("#footer-div").load("../shared-page-components.html #load-social-media-div");
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}, 600);
 	}
 	else if (!currentLocation.includes("pages")) {
-		console.log("homepage");
+		// console.log("homepage");
 		$("#header-div").load("pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		}, 600);
 	}
 	else {
-		console.log("pages");
+		// console.log("pages");
 		$("#header-div").load("../pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("../pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {
@@ -53,7 +53,7 @@ function configComponents(location) {
 	let copyrightYear = document.getElementById("copyright-year");
 	// console.log(offlineMode(currentLocation));
 
-	console.log(navbarElements);
+	// console.log(navbarElements);
 
 	// In one of the projects
 	if (location == "projects") {
@@ -62,7 +62,7 @@ function configComponents(location) {
 		// console.log(homeLink);
 
 		for (i = 0; i < navbarElements.length; i++) {
-			console.log(navbarElements[i].innerHTML);
+			// console.log(navbarElements[i].innerHTML);
 			// navbarElements[i].href = "../" + navbarLinks[i];
 			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = "../" + navbarLinks[i];
@@ -105,7 +105,6 @@ function configComponents(location) {
 		// console.log(navbarElements[i].href);
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = navbarLinks[i];
-			console.log(navbarElements[i].innerHTML);
 			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = navbarLinks[i];
 			}
@@ -134,15 +133,12 @@ function configComponents(location) {
 	}
 	// In homepage
 	else if (location == "home") {
-		console.log(homeLink);
-		console.log(navbarElements.length);
+		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
-			console.log(navbarElements[i].innerHTML);
 			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = "pages/" + navbarLinks[i];
 			}
 			else if (navbarElements[i].innerHTML == "Work") {
-				console.log("HERE");
 				navbarElements[i].href = navbarLinks[i];
 			}
 			else {

@@ -6,7 +6,7 @@ $(document).ready(function () {
 });
 
 function navbarPage() {
-	console.log(window.location.href);
+	// console.log(window.location.href);
 	$(function() {
 		$('.nav-a').each(function() {
 			if ($(this).prop('href') == window.location.href) {

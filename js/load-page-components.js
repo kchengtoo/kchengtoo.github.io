@@ -15,9 +15,10 @@ $(document).ready(function() {
 			configComponents("projects");
 		}, 600);
 	}
-	else if (!currentLocation.includes("pages")) {
+	else if (currentLocation === "/" || "/index.html") {
 		// console.log("homepage");
 		$("#header-div").load("pages/shared-page-components.html #navbar-div");
+		$("#footer-div").load("pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {
 			configComponents("home");
 		}, 600);
@@ -130,7 +131,7 @@ function configComponents(location) {
 		// }
 	}
 	// In homepage
-	else if (location == "home") {
+	else if (currentLocation === "/" || "/index.html") {
 		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
 			console.log(navbarElements[i].innerHTML);

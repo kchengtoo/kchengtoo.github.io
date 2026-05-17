@@ -31,8 +31,10 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
@@ -41,7 +43,6 @@
 	<script src="../../js/projects-database.js"></script>
 	<style>
 		.project-background {
-			background-image: url("../../img/merchant-restrictions-context-shot.png");
 			background-position: 60% 50%;
 		}
 
@@ -54,112 +55,84 @@
 			color: #FF8000;
 		}
 
-		.hmw-box {
+		.hmw {
 			background-color: rgba(255, 128, 0, 0.2);
-			padding: 25px;
 			color: #FF8000;
-			/*text-align: left;*/
 		}
 
 		@media (min-width: 767px) {
 			.project-background {
 				background-position: 50% 40%;
-			}
-
-			.research-section {
-				padding: 0 50px 0 50px;
-			}
-			
+			}		
 		}
 
 		@media (min-width: 991px) {
-			.project-background {
-/*				background-position: 50% 45%;*/
-			}
-
-			.research-section {
-/*				padding: 0 90px 0 90px;*/
-			}
 		}
 
 		@media (min-width: 1441px) {
-			/*.project-background {
-				height: 900px!important;
-			}*/
 		}
 	</style>
 </head>
 <body>
 	<div id="header-div">
+		
 	</div>
-	<div class="container page-wrapper">
-		<div class="row general-row-space">
+	<div class="container container-fluid gap-lg">
+		<div class="row project-landing-section gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h1 id="project-title" class="bold">Merchant Restrictions.</h1>
+				<h1 class="heading-primary">Merchant Restrictions</h1>
 			</div>
-		</div>
-		<div class="row general-row-space">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<p>Merchant Restrictions is a setting within the <a href="https://corporate.grubhub.com/?page=Homepage" target="_blank">meal credit program</a> that allows admins to prevent company-funded credits from being used at non-restaurant merchants, such as grocery or liquor stores, giving clients greater control over how their meal perks are used by corporate diners.</p>
+				<p class="body-text">Merchant Restrictions is a setting within the <a href="https://corporate.grubhub.com/?page=Homepage" target="_blank">meal credit program</a> that allows admins to prevent company-funded credits from being used at non-restaurant merchants, such as grocery or liquor stores, giving clients greater control over how their meal perks are used by corporate diners.</p>
 			</div>
-		</div>
-		<div class="row v-30-gap">
 			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
+				<ul class="callout-list">
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
-						<p class="topic-h4 bold">User & Business Needs</p>
-						<p class="point-caption"><span class="bold">User</span>: Control over where employees spend their meal credits<br><span class="bold">Business</span>: Become the most flexible meal perks program to retain and acquire clients</p>
+						<h4 class="heading-4">User & Business Needs</h4>
+						<p><span>User</span>: Control over where employees spend their meal credits<br><span>Business</span>: Become the most flexible meal perks program to retain and acquire clients</p>
 					</span>
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-impact.png">
-						<p class="topic-h4 bold">Impact</p>
-						<p class="point-caption">Retained and protected <span class="bold">$50+ million</span> in annual spend, and unlocked an annual estimate of <span class="bold">$7 million</span> in Gross Food Sales by our enterprise product tier</p>
+						<h4 class="heading-4">Impact</h4>
+						<p>Retained and protected <span>$50+ million</span> in annual spend, and unlocked an annual estimate of <span>$7 million</span> in Gross Food Sales by our enterprise product tier</p>
 					</span>
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-contribution.png">
-						<p class="topic-h4 bold">Contribution</p>
-						<p class="point-caption">Lead designer in collaboration with PM, UX writer and engineers</p>
+						<h4 class="heading-4">Contribution</h4>
+						<p>Lead designer in collaboration with PM, UX writer and engineers</p>
 					</span>
 				</ul>
 			</div>
-		</div>
-	</div>
-	<!-- <div class="jumbotron jumbotron-fluid project-background">
-		<div class="container">
-		</div>
-	</div> -->
-	<div class="container project-background box-shadow">
-		<div class="row">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-			</div>
-		</div>
-	</div>
-	<div class="container container-fluid">
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Problem</h2>
-				<p>Grubhub Corporate positions itself as “the industry’s most flexible meal perks platform,” and clients expect granular control over how company-funded meal credits are spent, especially when it comes to restricting purchases from grocery, convenience, and other non-restaurant merchants. However, this level of control didn’t exist; clients could only rely on internal policy reminders, hoping employees would follow them. To address this gap, I introduced merchant restrictions, allowing admins to customize meal credit settings and exclude specific merchant categories.</p>
-				<p class="bold"><span class="project-color-text">Challenge:</span> Client admins are frustrated by the lack of in-product controls to enforce ordering policies, making it difficult to prevent employees from using company funds at certain merchant types.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Process</h2>
-				<p>I collaborated with PM and engineering through workshops to align on business goals, user needs, and technical constraints. We scoped the initiative into milestones—first delivering merchant-level restrictions as a near-term solution, with plans to introduce more granular item-level controls in future phases.</p>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col col-12 col-lg-10 offset-lg-1">
-				<div class="row">
-					<div class="col col-12">
-						<ul class="process-timeline">
+				<img class="project-background box-shadow" src="../../img/merchant-restrictions-context-shot.png">
+			</div>
+		</div>
+		<!-- <div class="row">
+			<img class="col col-12 project-background box-shadow">
+		</div> -->
+		<div class="row gap-md">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Problem</h2>
+				<p class="body-text">Grubhub Corporate positions itself as “the industry’s most flexible meal perks platform,” and clients expect granular control over how company-funded meal credits are spent, especially when it comes to restricting purchases from grocery, convenience, and other non-restaurant merchants. However, this level of control didn’t exist; clients could only rely on internal policy reminders, hoping employees would follow them. To address this gap, I introduced merchant restrictions, allowing admins to customize meal credit settings and exclude specific merchant categories.</p>
+				<p class="body-text challenge"><span class="project-color-text">Challenge:</span> Client admins are frustrated by the lack of in-product controls to enforce ordering policies, making it difficult to prevent employees from using company funds at certain merchant types.</p>
+			</div>
+		</div>
+		<div class="row gap-md">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Process</h2>
+				<p class="body-text">I collaborated with PM and engineering through workshops to align on business goals, user needs, and technical constraints. We scoped the initiative into milestones—first delivering merchant-level restrictions as a near-term solution, with plans to introduce more granular item-level controls in future phases.</p>
+			</div>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-10 offset-lg-1">
+						<ul class="callout-list">
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									1
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Discovery</h3>
+									<h4 class="heading-4">Discovery</h4>
 									<ul class="step-info">
 										<li>Voice of Customers</li>
 										<li>Competitor Analysis</li>
@@ -168,11 +141,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									2
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Define</h3>
+									<h4 class="heading-4">Define</h4>
 									<ul class="step-info">
 										<li>Milestone Breakdown</li>
 										<li>Merchant Touch Points</li>
@@ -181,11 +154,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									3
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Design</h3>
+									<h4 class="heading-4">Design</h4>
 									<ul class="step-info">
 										<li>Hi-Fi Wireframes</li>
 										<li>Merchant Copy</li>
@@ -194,11 +167,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									4
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Develop</h3>
+									<h4 class="heading-4">Develop</h4>
 									<ul class="step-info">
 										<li>Refinement</li>
 										<li>Quality Assurance</li>
@@ -206,11 +179,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									5
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Deliver</h3>
+									<h4 class="heading-4">Deliver</h4>
 									<ul class="step-info">
 										<li>Corp-Wide Training</li>
 										<li>Go-To-Market Strategy</li>
@@ -219,200 +192,222 @@
 							</span>
 						</ul>
 					</div>
+					<div class="col col-12">
+						<p class="text-secondary caption">Completed the first milestone within 5 months.</p>
+					</div>
 				</div>
-				<p class="caption">Completed the first milestone within 5 months.</p>
 			</div>
 		</div>
-		<div class="row specific-row-space v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Research</h2>
-				<p>I started off by working with our client success team to talk to client admins and get their thoughts on how the meal credit program is meeting their needs. Then, I researched our competitors that offer meal credit programs to corporate clients and analyzed how they restrict meal credits being used on orders on the merchant level.</p>
+				<h2 class="heading-secondary">Research</h2>
+				<p class="body-text">I started off by working with our client success team to talk to client admins and get their thoughts on how the meal credit program is meeting their needs. Then, I researched our competitors that offer meal credit programs to corporate clients and analyzed how they restrict meal credits being used on orders on the merchant level.</p>
 			</div>
-		</div>
-		<div class="row v-30-gap">
 			<div class="col col-12 col-lg-8 offset-lg-2">
-				<ul class="callout-section research-section">
+				<ul class="callout-list">
 					<span class="callout">
-						<img class="callout-icon" src="../../img/merchant-restrictions-research-1.svg">
-						<p class="topic-h4 bold">Voice of Customers</p>
-						<p class="point-caption">Talked and identified 50+ clients at risk of churn that gave direct feedback on the meal credit program</p>
+						<img class="callout-icon" src="../../img/research-user-interview.svg">
+						<h4 class="heading-4">Voice of Customers</h4>
+						<p>Talked and identified 50+ clients at risk of churn that gave direct feedback on the meal credit program</p>
 					</span>
 					<span class="callout">
-						<img class="callout-icon" src="../../img/merchant-restrictions-research-2.svg">
-						<p class="topic-h4 bold">Competitor Analysis</p>
-						<p class="point-caption">Analyzed our competitor's meal credit program and how they set restrictions on meal credits</p>
+						<img class="callout-icon" src="../../img/research-competitor-analysis.svg">
+						<h4 class="heading-4">Competitor Analysis</h4>
+						<p>Analyzed our competitor's meal credit program and how they set restrictions on meal credits</p>
 					</span>
 				</ul>
 			</div>
 		</div>
-		<div class="row specific-row-space v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Synthesize</h2>
-				<p>As I moved into synthesis, I mapped out key touchpoints across the Grubhub experience where both admins and diners might encounter merchant restrictions. This helped surface opportunities to ensure the feature is intuitive and clearly communicated. From this, I identified core design takeaways to guide the experience.</p>
+				<h2 class="heading-secondary">Synthesize</h2>
+				<p class="body-text">As I moved into synthesis, I mapped out key touchpoints across the Grubhub experience where both admins and diners might encounter merchant restrictions. This helped surface opportunities to ensure the feature is intuitive and clearly communicated. From this, I identified core design takeaways to guide the experience.</p>
 			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Takeaways</h3>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Design Takeaways</h3>
+					</div>
+					<div class="col col-12 col-lg-10 offset-lg-1">
+						<ul class="callout-list">
+							<span class="callout">
+								<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-1.svg">
+								<h4 class="heading-4">Flexible Options</h4>
+								<p>Admins need to be able to restrict different types of merchant from different levels in their corporate account</p>
+							</span>
+							<span class="callout">
+								<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-2.svg">
+								<h4 class="heading-4">Clear Definitions</h4>
+								<p>Merchant-level restriction is relatively broad, so clarity on the definition is essential for both admins and diners</p>
+							</span>
+							<span class="callout">
+								<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-3.svg">
+								<h4 class="heading-4">Undisruptive Experience</h4>
+								<p>Even with restrictions in place, diners should still have the flexibility to place orders from their preferred merchants</p>
+							</span>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-1.svg">
-						<p class="topic-h4 bold">Flexible Options</p>
-						<p class="point-caption">Admins need to be able to restrict different types of merchant from different levels in their corporate account</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-2.svg">
-						<p class="topic-h4 bold">Clear Definitions</p>
-						<p class="point-caption">Merchant-level restriction is relatively broad, so clarity on the definition is essential for both admins and diners</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/merchant-restrictions-takeaway-3.svg">
-						<p class="topic-h4 bold">Undisruptive Experience</p>
-						<p class="point-caption">Even with restrictions in place, diners should still have the flexibility to place orders from their preferred merchants</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Challenge</h3>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<div class="">
-					<p class="single-HMW-caption hmw-box">How might we <span class="bold">empower</span> admins to <span class="bold">restrict</span> meal credits by item and merchant while ensuring <span class="bold">clear</span>, <span class="bold">transparent communication</span> of these restrictions to diners?</p>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Design Challenge</h3>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<div class="hmw">
+							<p>How might we <span>empower</span> admins to <span>restrict</span> meal credits by item and merchant while ensuring <span>clear</span>, <span>transparent communication</span> of these restrictions to diners?</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row specific-row-space v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Solution</h2>
-				<p>On the admin side, I added a dedicated section within the account and meal credit settings, giving admins control over which merchant types are eligible for meal credits. On the diner side, I designed clear labels and contextual error messages in the Grubhub app to help diners understand why certain merchants may be unavailable. These updates ensure both parties stay informed and aligned.</p>
+				<h2 class="heading-secondary">Solution</h2>
+				<p class="body-text">On the admin side, I added a dedicated section within the account and meal credit settings, giving admins control over which merchant types are eligible for meal credits. On the diner side, I designed clear labels and contextual error messages in the Grubhub app to help diners understand why certain merchants may be unavailable. These updates ensure both parties stay informed and aligned.</p>
 			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Restricting Merchants in Account Settings</h3>
-				<p>Admins can now restrict meal credits from being used at convenience stores, grocery stores, pet stores, florists, pharmacies, liquor stores, and office supply stores. These restrictions are set at the account level and automatically apply to all meal credits associated with the account.</p>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Restricting Merchants in Account Settings</h3>
+						<p class="body-text">Admins can now restrict meal credits from being used at convenience stores, grocery stores, pet stores, florists, pharmacies, liquor stores, and office supply stores. These restrictions are set at the account level and automatically apply to all meal credits associated with the account.</p>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-demo-1.gif">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Setting up merchant restrictions on the account-level.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="row v-40-gap">
+			<!-- <div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="heading-tertiary">Restricting Merchants in Account Settings</h3>
+				<p class="body-text">Admins can now restrict meal credits from being used at convenience stores, grocery stores, pet stores, florists, pharmacies, liquor stores, and office supply stores. These restrictions are set at the account level and automatically apply to all meal credits associated with the account.</p>
+			</div>
 			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-demo-1.gif">
-				<p class="caption">Setting up merchant restrictions on the account-level.</p>
+				<img class="project-img box-shadow" src="../../img/merchant-restrictions-demo-1.gif">
 			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Restricting Merchants in Meal Credit Settings</h3>
-				<p>Admins who want to set different merchant restrictions for specific meal credits can configure them directly within the meal credit settings. These settings offer the same merchant type options available at the account level, allowing for more tailored control.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-demo-2.gif">
-				<p class="caption">Setting merchant restrictions in the meal credit-level.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Communicating Restrictions on the Diner Side</h3>
-				<p>Once merchant restrictions are applied to a meal credit, corporate diners will see the details in their Grubhub app wallet. At checkout, if their cart contains items from restricted merchants, they can still place the order, but the corporate meal credit will not be applied. An error message will clearly communicate the applicable restrictions.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-demo-3.gif">
-				<p class="caption">Clear merchant restriction details and error messaging in the diner experience.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Merchant Restrictions on the Mobile Experience</h3>
-				<p>Since the majority of corporate diners place their orders on the mobile app, the merchant restriction experience mirrors that of the desktop version and appears across the same touchpoints.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap justify-content-md-center">
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-wallet-2.png">
-			</div>
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-checkout-1.png">
-			</div>
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/merchant-restrictions-checkout-2.png">
-			</div>
-			<!-- <div class="col col-lg-3">
-				<img class="featured-image box-shadow" src="../../img/meal-credit-schedule-diner-side-3.png">
+			<div class="col col-12">
+				<p class="text-secondary caption">Setting up merchant restrictions on the account-level.</p>
 			</div> -->
 			<div class="col col-12">
-				<p class="caption">Diners viewing merchant restriction details and error messages on mobile.</p>
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Restricting Merchants in Meal Credit Settings</h3>
+						<p class="body-text">Admins who want to set different merchant restrictions for specific meal credits can configure them directly within the meal credit settings. These settings offer the same merchant type options available at the account level, allowing for more tailored control.</p>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-demo-2.gif">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Setting merchant restrictions in the meal credit-level.</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="heading-tertiary">Restricting Merchants in Meal Credit Settings</h3>
+				<p class="body-text">Admins who want to set different merchant restrictions for specific meal credits can configure them directly within the meal credit settings. These settings offer the same merchant type options available at the account level, allowing for more tailored control.</p>
+			</div>
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="project-img box-shadow" src="../../img/merchant-restrictions-demo-2.gif">
+			</div>
+			<div class="col col-12">
+				<p class="text-secondary caption">Setting merchant restrictions in the meal credit-level.</p>
+			</div> -->
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Communicating Restrictions on the Diner Side</h3>
+						<p class="body-text">Once merchant restrictions are applied to a meal credit, corporate diners will see the details in their Grubhub app wallet. At checkout, if their cart contains items from restricted merchants, they can still place the order, but the corporate meal credit will not be applied. An error message will clearly communicate the applicable restrictions.</p>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-demo-3.gif">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Clear merchant restriction details and error messaging in the diner experience.</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col col-12 col-lg-6 offset-lg-3">
+				<h3 class="heading-tertiary">Communicating Restrictions on the Diner Side</h3>
+				<p class="body-text">Once merchant restrictions are applied to a meal credit, corporate diners will see the details in their Grubhub app wallet. At checkout, if their cart contains items from restricted merchants, they can still place the order, but the corporate meal credit will not be applied. An error message will clearly communicate the applicable restrictions.</p>
+			</div>
+			<div class="col col-12 col-lg-8 offset-lg-2">
+				<img class="project-img box-shadow" src="../../img/merchant-restrictions-demo-3.gif">
+			</div>
+			<div class="col col-12">
+				<p class="text-secondary caption">Clear merchant restriction details and error messaging in the diner experience.</p>
+			</div> -->
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Merchant Restrictions on the Mobile Experience</h3>
+						<p class="body-text">Since the majority of corporate diners place their orders on the mobile app, the merchant restriction experience mirrors that of the desktop version and appears across the same touchpoints.</p>
+					</div>
+					<div class="col col-12 col-lg-10 offset-lg-1">
+						<div class="row justify-content-md-center">
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-wallet-2.png">
+							</div>
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-checkout-1.png">
+							</div>
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/merchant-restrictions-checkout-2.png">
+							</div>
+						</div>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Diners viewing merchant restriction details and error messages on mobile.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row specific-row-space">
+		<div class="row">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Confidential</h2>
-				<p>Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Merchant Restrictions work.</p>
+				<h2 class="heading-secondary">Confidential</h2>
+				<p class="body-text">Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Merchant Restrictions work.</p>
 			</div>
 		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Other Projects</h2>
+		<div class="row gap-sm">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Other Projects</h2>
 			</div>
-		</div>
-		<div class="row v-60-gap">
-			<div class="col col-12 project-navigation-col">
+			<div class="col col-12 col-lg-10 offset-lg-1 project-navigation-col">
 				<div id="previous-project-button" class="project-navigation-button box-shadow">
 					<div id="previous-project-img" class="project-navigation-img"></div>
 					<a id="previous-project-link" href=""><div id="previous-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Previous</p>
-						<p id="previous-project-name" class="project-navigation-name bold"></p>
+						<p class="navigation-direction">Previous</p>
+						<h3 id="previous-project-name" class="project-navigation-name"></h3>
 						<img id="left-arrow" class="direction-img" src="">
 					</div></a>
 				</div>
 				<div id="next-project-button" class="project-navigation-button box-shadow">
 					<div id="next-project-img" class="project-navigation-img"></div>
 					<a id="next-project-link" href=""><div id="next-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Next</p>
-						<p id="next-project-name" class="project-navigation-name bold"></p>
+						<p class="navigation-direction">Next</p>
+						<h3 id="next-project-name" class="project-navigation-name"></h3>
 						<img id="right-arrow" class="direction-img" src="">
 					</div></a>
 				</div>
 			</div>
 		</div>
-		<hr>
 		<div id="footer-div">
+			<hr>
 		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script src="../../js/project-navigation.js"></script>
 	<script src="../../js/load-page-components.js"></script>
 	<script src="../../js/navbar.js"></script>
 	<script>
-		const copyElement = document.getElementById("email-span");
 
-		$(copyElement).click(function() {
-            document.execCommand("copy");
-        });
-
-        copyElement.addEventListener("copy", function(event) {
-            event.preventDefault();
-            if (event.clipboardData) {
-                event.clipboardData.setData("text/plain", copyElement.textContent);
-                // console.log(event.clipboardData.getData("text"));
-                alert("Copied to clipboard");
-            }
-        });
 	</script>
 </body>
 </html>

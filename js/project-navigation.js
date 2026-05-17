@@ -19,6 +19,8 @@ let nextProjectName = document.getElementById("next-project-name");
 let leftArrow = document.getElementById("left-arrow");
 let rightArrow = document.getElementById("right-arrow");
 
+const copyElement = document.getElementById("email-span");
+
 $(document).ready(function() {
 	// console.log(currentLocation);
 	if (currentLocation.includes("featured-work")) {
@@ -36,6 +38,19 @@ $(document).ready(function() {
 	else {
 		console.log("ERROR");
 	}
+});
+
+$(copyElement).click(function() {
+    document.execCommand("copy");
+});
+
+copyElement.addEventListener("copy", function(event) {
+    event.preventDefault();
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", copyElement.textContent);
+        // console.log(event.clipboardData.getData("text"));
+        alert("Copied to clipboard");
+    }
 });
 
 function locationInArray(inProjects) {
@@ -87,7 +102,7 @@ function locationInArray(inProjects) {
 			previousProjectImg.style.backgroundImage = "url('../../img/" + inProjects.projects[previousIndex].link + "-context-shot.png')";
 			previousProjectLabel.style.backgroundColor = inProjects.projects[previousIndex].backgroundColor + "0.7)";
 			previousProjectLabel.style.color = inProjects.projects[previousIndex].fontColor;
-			previousProjectName.innerHTML = inProjects.projects[previousIndex].name + ".";
+			previousProjectName.innerHTML = inProjects.projects[previousIndex].name;
 			// previousProjectName.innerHTML = setConstruction(inProjects.projects[previousIndex].status, inProjects.projects[previousIndex].name);
 			leftArrow.src = "../../img/" + setArrow("left", inProjects.projects[previousIndex].fontColor);
 
@@ -105,7 +120,7 @@ function locationInArray(inProjects) {
 			nextProjectImg.style.backgroundImage = "url('../../img/" + inProjects.projects[nextIndex].link + "-context-shot.png')";
 			nextProjectLabel.style.backgroundColor = inProjects.projects[nextIndex].backgroundColor + "0.7)";
 			nextProjectLabel.style.color = inProjects.projects[nextIndex].fontColor;
-			nextProjectName.innerHTML = inProjects.projects[nextIndex].name + ".";
+			nextProjectName.innerHTML = inProjects.projects[nextIndex].name;
 			// nextProjectName.innerHTML = setConstruction(inProjects.projects[nextIndex].status, inProjects.projects[nextIndex].name);
 			rightArrow.src = "../../img/" + setArrow("right", inProjects.projects[nextIndex].fontColor);
 

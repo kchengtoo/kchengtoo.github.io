@@ -1,4 +1,4 @@
-let displayElement = document.getElementById("projects-row");
+let displayElement = document.getElementById("featured-row");
 let archivedElement = document.getElementById("archived-row");
 let categoryName;
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	// else {
 	// 	console.log("ERROR");
 	// }
-	if (currentLocation.includes("work")) {
+	if (currentLocation.includes("index")) {
 		categoryName = "featured-work";
 		displayProjectLinks(designProjects);
 	}
@@ -40,6 +40,7 @@ function displayProjectLinks(inProjects) {
 			colElement.classList.add("col");
 			colElement.classList.add("col-12");
 			colElement.classList.add("col-md-6");
+			colElement.classList.add("col-lg-4");
 			colElement.classList.add("block");
 
 			let linkElement = document.createElement("a");
@@ -59,23 +60,23 @@ function displayProjectLinks(inProjects) {
 
 			let imgElement = document.createElement("img");
 			imgElement.classList.add("project-thumbnail");
-			imgElement.src = "../img/" + inProjects.projects[i].link + "-thumbnail.jpg";
+			imgElement.src = "img/" + inProjects.projects[i].link + "-thumbnail.jpg";
 
 			let labelElement = document.createElement("div");
 			labelElement.classList.add("label");
-			labelElement.style.color = inProjects.projects[i].fontColor;
-			labelElement.style.backgroundColor = inProjects.projects[i].backgroundColor + "0.8)";
+			// labelElement.style.color = inProjects.projects[i].fontColor;
+			// labelElement.style.backgroundColor = inProjects.projects[i].backgroundColor + "0.8)";
 
-			let h1Element = document.createElement("h1");
-			h1Element.classList.add("display-6");
-			h1Element.innerHTML = inProjects.projects[i].name + ".";
+			let h3Element = document.createElement("h3");
+			// h3Element.classList.add("display-6");
+			h3Element.innerHTML = inProjects.projects[i].name;
 
-			let h2Element = document.createElement("h2");
-			// h2Element.classList.add("display-7");
-			h2Element.innerHTML = inProjects.projects[i].projectType + ".";
+			let pElement = document.createElement("p");
+			pElement.classList.add("text-muted");
+			pElement.innerHTML = inProjects.projects[i].projectType + ".";
 
-			labelElement.appendChild(h1Element);
-			labelElement.appendChild(h2Element);
+			labelElement.appendChild(h3Element);
+			labelElement.appendChild(pElement);
 
 			projectElement.appendChild(imgElement);
 			projectElement.appendChild(labelElement);
@@ -108,24 +109,25 @@ function displayProjectLinks(inProjects) {
 
 			let imgElement = document.createElement("img");
 			imgElement.classList.add("archived-project-thumbnail");
-			imgElement.src = "../img/" + inProjects.projects[i].link + "-thumbnail.jpg";
+			imgElement.src = "img/" + inProjects.projects[i].link + "-thumbnail.jpg";
 
 			let labelElement = document.createElement("div");
 			labelElement.classList.add("archived-label");
 
-			let h1Element = document.createElement("h1");
-			h1Element.classList.add("display-6");
-			h1Element.innerHTML = inProjects.projects[i].name + ".";
+			let h3Element = document.createElement("h3");
+			// h3Element.classList.add("display-6");
+			h3Element.innerHTML = inProjects.projects[i].name;
 
-			let h2Element = document.createElement("h2");
-			h2Element.innerHTML = inProjects.projects[i].projectType + ".";
+			let pElement = document.createElement("p");
+			pElement.classList.add("text-muted");
+			pElement.innerHTML = inProjects.projects[i].projectType + ".";
 
-			labelElement.appendChild(h1Element);
-			labelElement.appendChild(h2Element);
+			labelElement.appendChild(h3Element);
+			labelElement.appendChild(pElement);
 
 			let arrowElement = document.createElement("img");
 			arrowElement.classList.add("direction-img");
-			arrowElement.src = "../img/right-arrow-black.svg";
+			arrowElement.src = "img/right-arrow-black.svg";
 
 			projectElement.appendChild(imgElement);
 			projectElement.appendChild(labelElement);

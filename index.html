@@ -26,98 +26,247 @@
 		++++++++++++++++++:`       ./++++++++++++++++++:. 
 		++++++++++++++++++++:        ./++++++++++++/:.    
 		:+++++++++++++++++++:          ./+++//::-.        -->
-	<title>Kevin Cheng - Home</title>
-	<link rel='icon' href='img/favicon.ico' type='image/x-icon'> 
+	<title>Kevin Cheng - Work</title>
 	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/>
-<!-- 	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet-navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet-navbar.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/stylesheet-category.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/stylesheet-social-media-footer.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
 	<script src="js/google-analytics.js"></script>
+	<script src="js/projects-database.js"></script>
+	<style>
+
+		.current-location {
+			display: flex;
+			flex-flow: row;
+		}
+
+		.current-location img {
+			padding: 0;
+			width: 32px;
+		}
+
+		#featured-row {
+		}
+
+		.adaptive-gap {
+
+		}
+
+		.project-div {
+			width: 100%;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			gap: 16px;
+		}
+
+		.project-div:hover .project-thumbnail {
+			transition: 0.2s;
+			opacity: 0.8;
+			/*background-color: rgba(0, 0, 0, 1.0);*/
+		}
+
+		.label {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-flow: column;
+			color: gray;
+		}
+
+		.label h3 {
+			font-size: 24px;
+			color: #162a51;
+		}
+
+		.label p {
+			font-size: 18px;
+			margin: 0;
+		}
+
+		.project-thumbnail {
+			width: 100%;
+			border-radius: 12px;
+		}
+
+		#archived-row {
+		}
+
+		.archived-div {
+			width: 100%;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			gap: 16px;
+		}
+
+		.archived-project-thumbnail {
+			width: 100%;
+			border-radius: 12px;
+		}
+
+		.archived-label {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+		}
+
+		.archived-label h3 {
+			font-size: 24px;
+			color: #162a51;
+		}
+
+		.archived-label p {
+			font-size: 18px;
+			margin: 0;
+		}
+
+		.direction-img {
+			width: 24px;
+			transition: 0.2s;
+			margin: 0 5px 0 10px;
+			opacity: 0.2;
+			display: none;
+		}
+
+		.archived-block:hover .direction-img {
+			transform: translate(10px, 0);
+			opacity: 1;
+		}
+
+
+		@media (min-width: 767px) {
+			#featured-row {
+				/*column-gap: 0;*/
+			}
+
+			/*.adaptive-gap {
+			column-gap: 0;
+		}*/
+
+			.archived-div {
+				flex-flow: row;
+				gap: 32px;
+			}
+
+			.archived-block {
+			}
+
+			.archived-project-thumbnail {
+				width: 100px;
+				height: 100px;
+			}
+
+			.archived-label {
+				width: 100%;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+			}
+
+			.archived-label h3 {
+				/*font-family: "Proxima Bold", Ariel, sans-serif;
+				font-size: 28px;*/
+			}
+
+			.archived-label p {
+				/*font-family: "Proxima Reg", sans-serif;
+				font-size: 15px;*/
+			}
+
+			.direction-img {
+				display: block;
+			}
+		}
+
+		@media (min-width: 991px) {
+			.direction-img {
+				width: 32px;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div id="header-div">
 	</div>
-	<!-- <div class="pos-f-t nav-header">
-		<nav id="navbar-section" class="navbar navbar-light bg-light">
-			<div id="logo-div">
-				<a href="index.html"><img id="main-logo" src="img/kevinlogo.svg"></a>
-			</div>
-			<button class="navbar-toggler navbar-icon" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</nav>
-		<div class="collapse" id="navbarToggleExternalContent">
-			<div class="bg-light p-4 nav-list">
-				<a class="text-muted nav-a" href="pages/design.html">DESIGN</a>
-				<a class="text-muted nav-a" href="pages/tech.html">TECH</a>
-				<a class="text-muted nav-a" href="pages/about.html">ABOUT</a>
-				<a class="text-muted nav-a" href="pages/contact.php">CONTACT</a>
+	<div class="container container-fluid gap-lg">
+		<div class="row landing-section">
+			<div class="col col-12">
+				<h2 class="heading-eyebrow"><span id="greeting-time"></span>, I'm Kevin</h2>
+				<h1 class="heading-primary">Product designer turning complex problems into intuitive experiences, one thoughtful design at a time.</h1>
+				<p class="body-text">Currently optimizing healthcare workflows with intranet and AI at <a href="https://www.mountsinai.org/" target="_blank">Mount Sinai Health System</a>. Previously at <a href="https://business.grubhub.com/" target="_blank">Grubhub</a> and <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>.</p>
+				<div class="col col-12 d-flex flex-row gap-0 column-gap-2 align-items-center">
+					<a href="#featured-row" role="button" class="btn btn-primary primary-btn-portfolio">🎨 Check out my work</a>
+					<a href="pages/about.html" role="button" class="btn tertiary-btn-portfolio">👋 About me</a>
+				</div>
+				<!-- <a href="pages/about" role="button" id="about-button">More about me</a> -->
+				<!-- <div class="current-location center-left gap-x-small">
+					<img src="img/location-icon.svg">
+					<div id="location-info">
+						<h2>Currently in</h2>
+						<h1 class="heading-primary-sm margin-none">New York City, New York</h1>
+					</div>
+				</div> -->
 			</div>
 		</div>
-	</div> -->
-	<div id="intro-content" class="jumbotron jumbotron-fluid page-wrapper">
-		<div id="hero" class="container">
-			<div class="row hero-row">
-				<div id="hero-info" class="col col-12 col-md-8 offset-md-2 col-lg-5 offset-lg-0 hero-col">
-					<div id="intro">
-						<h1 id="greeting" class="display-1 header"><span id="greeting-time"></span>, I'm</h1>
-						<h1 id="designer-name" class="display-1"><span id="name-tag">Kevin Cheng.</span></h1>
-						<h2 id="designer-bio" class="display-1">Product Designer currently expanding the corporate product offerings at <a href="https://corporate.grubhub.com/?utm_source=grubhub_webdinerapp&utm_medium=content_owned&utm_campaign=product_footer-link&page=Homepage" target="_blank">Grubhub</a>. Previously at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>.</h2>
-
-						<!-- <h2 id="designer-bio" class="display-1">I'm currently a Product Designer at <a href="https://corporate.grubhub.com/?utm_source=grubhub_webdinerapp&utm_medium=content_owned&utm_campaign=product_footer-link&page=Homepage" target="_blank">Grubhub Corporate</a>. Previously at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a> and <a href="https://www.epsilon.com/us" target="_blank">Epsilon</a>.</h2> -->
-						<a href="pages/about" role="button" id="about-button">More about me</a>
-						<h1 id="check-header" class="display-1 header">Check out my work!</h1>
-						<div id="work-buttons-section">
-							<a href="pages/work" role="button" id="featured-button" class="btn btn-outline-primary work-button">Featured</a>
-							<a href="pages/work.html#archived-row" role="button" id="archived-button" class="btn btn-outline-primary work-button">Archived</a>
+		<div id="featured-row" class="row gap-md adaptive-gap">
+			<h2 class="heading-secondary">Featured projects</h2>
+		</div>
+		<!-- <div class="row">
+			<div class="col section-gap">
+				<h2 class="heading-secondary">Featured projects.</h2>
+				<div id="projects-row" class="row">
+		
+			</div>
+		</div> -->
+		<div id="archived-row" class="row gap-md" name="archived">
+			<h2 class="heading-secondary">Older but also cool stuff I've done</h2>
+			<!-- <div class="col col-12 archived-block">
+				<a href="../pages/featured-work/sentry">
+					<div class="archived-div">
+						<img class="archived-project-thumbnail" src="../img/sentry-thumbnail.jpg">
+						<div id="" class="archived-label">
+							<h1 class="display-6 archived-project-name">Sentry.</h1>
+							<h2 class="display-7 archived-project-description">An extremely portable and easy-to-use home security device.</h2>
 						</div>
-						<p id="work-explanation">My most recent projects are in Featured, but feel free to check out my older projects in Archived!</p>
-						<div id="current-location">
-							<img id="current-location-img" src="img/location-icon.svg">
-							<div id="location-info">
-								<p id="tag">Currently in</p>
-								<p id="location">New York, New York</p>
-							</div>
-						</div>
-						<!-- <p>Email: kevincheng2021@u.northwestern.edu</p> -->
+						<img id="left-arrow" class="direction-img" src="../img/right-arrow-black.svg">
 					</div>
-				</div>
-				<div id="hero-photo" class="col col-12 col-lg-7 hero-col">
-					<!-- <div class="navbar-gap"></div> -->
-					<div id="original-img" class="photo">
-						<img src="img/kevin-transparent-background-2.png">
-					</div>
-					<div id="design-img" class="photo category-photo"></div>
-					<div id="tech-img" class="photo category-photo"></div>
+				</a>
+			</div> -->
+		</div>
+		<!-- <div class="row">
+			<div class="col section-gap">
+				<div id="archived-row" class="row" name="archived">
+					<h2 class="heading-secondary">Older but also cool stuff I've done.</h2>
+			
 				</div>
 			</div>
+		</div> -->
+		<div id="footer-div">
+			<hr>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="js/project-category.js"></script>
 	<script src="js/load-page-components.js"></script>
 	<script src="js/navbar.js"></script>
 
 	<script>
-		let featuredButton = document.querySelector("#featured-button");
-		let archivedButton = document.querySelector("#archived-button");
 		let aboutButton = document.querySelector("#about-button");
-		let workButtons = document.querySelectorAll(".work-button");
-
-		let categoryImg = document.querySelectorAll(".category-photo");
-
-		let originalImgUrl = "url('img/kevin-transparent-background-2.png')";
-		let designImgUrl = "url('img/kevin-design-transparent-background.png')";
-		let techImgUrl = "url('img/kevin-tech-transparent-background-2.png')";
 
 		let greetingSpan = document.getElementById("greeting-time");
 		var today = new Date();
@@ -138,174 +287,11 @@
 			}
 		}
 
-
-		// designButton.addEventListener("mouseover", function(e) {
-		// 	photoElement.style.backgroundImage = designImgUrl;
-		// 	// setImage(designPhotoUrl);
-		// 	// requestAnimationFrame(createImage);
-		// 	// image.src = designPhotoUrl;
-		// 	// createImage();
-		// });
-
-		// techButton.addEventListener("mouseover", function(e) {
-		// 	photoElement.style.backgroundImage = techImgUrl;
-		// });
-
-		$("#design-button").mouseover(function() {
-
-			// $("original-img").animate({
-			// 	// filter: "blur(20px)"
-			// 	// opacity: '0.5'
-			// 	left : "250px"
-			// });
-			// $("#original-img").hide();
-			// $("#design-img").hide();
-			// blurAnimation("#design-img", 0);
-			$("#original-img").stop(true).fadeOut(500, function() {
-				// $(this).show();
-				$(this).hide();
-				// $(this).css("transform", "scale(1.03)");
-				// $("#design-img").show();
-				// $("#design-img").fadeIn(300, function() {
-				// 	// $(this).show();
-				// });
-				// $(this).css("filter", "blur(20px)");
-				// $(this).animate( {
-				// 	filter: "blur(20px)"
-				// }, 100, function() {
-
-				// });
-				blurAnimation(this, 7);
-			});
-			// $("#design-img").hide();
-			$("#design-img").fadeIn(500, function() {
-				$(this).show();
-				// $(this).css("transform", "scale(1)");
-				// $(this).css("filter", "blur(0px)");
-				blurAnimation(this, 0);
-			});
-
-			// $("#design-img").fadeIn(300, function() {
-			// 	$(this).show();
-			// });
-
-
-			// $("#photo").fadeToggle(300, function() {
-			// 	$(this).css("background-image", "");
-			// 	$(this).css("background-image", designImgUrl);
-			// });
-
-			// $(photoElement).fadeOut(200, function() {
-			// 	// $(this).css("transform", "scale(1.03)");
-			// 	// $(this).css("filter", "blur(20px)");
-			// 	$(this).css("background-image", designImgUrl);
-			// 	// $(this).css("background-image", "");
-			// },fadeIn(300));
-
-			// {
-				// $(this).css("background-image", designImgUrl);
-				// $(this).css("transform", "scale(1)");
-				// $(this).css("filter", "blur(0px)");
-				// $(this).css("background-image", "");	
-			// });
-
-			// $(photoElement).fadeOut(300, function() {
-			// 	// $(this).css("transform", "scale(1.05)");
-			// 	$(this).css("background-image", designImgUrl);
-			// 	$(this).fadeIn(300, function() {
-			// 		$(this).css("transform", "scale(1.05)");
-			// 		$(this).css("transform", "scale(1)");
-			// 	});
-			// 	// $(this).css("background-image", "");	
-			// });
-
-			// $(photoElement).fadeTo(300, 0, function() {
-			// 	$(this).fadeIn(300, function() {
-			// 		$(this).css("background-image", designImgUrl);
-			// 	});
-			// 	// $(this).css("background-image", designImgUrl);
-			// });
-
-			// $(photoElement).fadeOut(300, function() {
-			// 	// $(this).css("background-image", designImgUrl);
-			// });
-		});
-
-		// $("#design-button").mouseleave(function() {
-		// 	$("#design-img").fadeOut(400, function() {
-		// 		// $(this).css("transform", "scale(1)");
-		// 		// $(this).css("filter", "blur(0px)");
-		// 		blurAnimation(this, 20);
-		// 	});
-		// });
-
-		$("#tech-button").mouseover(function() {
-
-			$("#original-img").stop(true).fadeOut(500, function() {
-				// $(this).hide();
-				// $("#design-img").show();
-				// $("#design-img").fadeIn(300, function() {
-				// 	// $(this).show();
-				// });
-				blurAnimation(this, 7);
-			});
-			$("#tech-img").fadeIn(500, function() {
-				blurAnimation(this, 0)
-			});
-		});
-
-		for (let i = 0; i < workButtons.length; i++) {
-			workButtons[i].addEventListener("mouseleave", function(e) {
-				// photoElement.style.backgroundImage = originalImgUrl;
-
-				for (let i = 0; i < categoryImg.length; i++) {
-					// blurAnimation(categoryImg[i], 20);
-					$(categoryImg[i]).stop(true).fadeOut(500, function() {
-						$(this).hide();
-						blurAnimation(this, 7);
-					});
-				}
-
-				// $("#design-img").stop(true).fadeOut(500, function() {
-				// 	$(this).hide();
-				// });
-				// $("#tech-img").stop(true).fadeOut(500, function() {
-				// 	$(this).hide();
-				// });
-				$("#original-img").fadeIn(500, function() {
-					$(this).show();
-					// $(this).animate( {
-					// 	filter: "blur(0px)"
-					// }, 100, function() {
-
-					// });
-					blurAnimation(this, 0);
-
-					// $(this).css("filter", "blur(0px)");
-				});
-			});
-		}
-
-		function blurAnimation(element, size) {
-			var filterVal = "blur(" + size + "px)";
-			$(element).css({
-				'filter' : filterVal,
-				'webkitFilter':filterVal,
-        		'mozFilter':filterVal,
-        		'oFilter':filterVal,
-		        'msFilter':filterVal
-		        // 'transition':'0.3s ease-in',
-		        // '-webkit-transition':'0.3s ease-in',
-		        // '-moz-transition':'0.3s ease-in',
-		        // '-o-transition':'0.3s ease-in'
-			});
-		}
 		$(document).ready(function() {
 			setGreetingTime();
 			aboutButton.href = checkConnectivity(aboutButton.href);
 			featuredButton.href = checkConnectivity(featuredButton.href);
 		});
-
 	</script>
 </body>
 </html>

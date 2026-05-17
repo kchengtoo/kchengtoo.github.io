@@ -39,20 +39,21 @@ function configComponents(location) {
 	// let dribbbleImg = document.getElementById("dribbble-logo");
 	// let emailImg = document.getElementById("email-logo");
 
-	let navbarLinks = ["work", "about", "kevin-cheng-resume.pdf"];
+	let navbarLinks = ["/", "about", "kevin-cheng-resume.pdf"];
 	let navbarElements = document.querySelectorAll(".nav-a");
 	let homeLink = document.getElementById("home-link");
 	let homeLogoImg = document.getElementById("main-logo");
 
 	let contactLink = document.getElementById("contact-link");
 	let socialMediaElements = document.querySelectorAll(".social-media-link");
-	let socialMediaLinks = ["../img/linkedin-logo.svg", "../img/instagram-logo.svg", "../img/dribbble-logo.svg", "../img/email-logo.svg"];
+	let socialMediaLinks = ["img/linkedin-logo.svg", "img/instagram-logo.svg", "img/dribbble-logo.svg", "img/email-logo.svg"];
 	const d = new Date();
 	let copyrightYear = document.getElementById("copyright-year");
 	// console.log(offlineMode(currentLocation));
 
 	// console.log(navbarElements);
 
+	// In one of the projects
 	if (location == "projects") {
 		// console.log(navbarElements.length);
 		// console.log(navbarElements[i].href);
@@ -60,8 +61,11 @@ function configComponents(location) {
 
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = "../" + navbarLinks[i];
-			if (navbarElements[i].innerHTML == "RESUME") {
+			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = "../" + navbarLinks[i];
+			}
+			else if (navbarElements[i].innerHTML == "Work") {
+				navbarElements[i].href = "../.." + navbarLinks[i];
 			}
 			else {
 				navbarElements[i].href = "../" + checkConnectivity(navbarLinks[i]);
@@ -79,7 +83,7 @@ function configComponents(location) {
 			// test = $(socialMediaLinks[i]).attr('src');
 			// console.log(test);
 
-			socialMediaElements[i].src = "../" + socialMediaLinks[i];
+			socialMediaElements[i].src = "../../" + socialMediaLinks[i];
 
 		}
 		// contactLink.href = "../contact";
@@ -92,13 +96,17 @@ function configComponents(location) {
 		// emailImg.src = "../../img/email-logo.svg";
 		// contactLink.href = "../contact.php";
 	}
+	// In one of the "pages"
 	else if (location == "pages") {
 		// console.log(homeLogoImg);
 		// console.log(navbarElements[i].href);
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = navbarLinks[i];
-			if (navbarElements[i].innerHTML == "RESUME") {
+			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = navbarLinks[i];
+			}
+			else if (navbarElements[i].innerHTML == "Work") {
+				navbarElements[i].href = ".." + navbarLinks[i];
 			}
 			else {
 				navbarElements[i].href = checkConnectivity(navbarLinks[i]);
@@ -112,7 +120,7 @@ function configComponents(location) {
 		homeLogoImg.src = "../img/kevinlogo.svg";
 
 		for (i = 0; i < socialMediaElements.length; i++) {
-			socialMediaElements[i].src = socialMediaLinks[i];
+			socialMediaElements[i].src = "../" + socialMediaLinks[i];
 		}
 
 		// console.log(contactLink);
@@ -120,11 +128,16 @@ function configComponents(location) {
 		// 	contactLink.href = checkConnectivity("contact");
 		// }
 	}
+	// In homepage
 	else if (location == "home") {
 		// console.log(homeLink);
 		for (i = 0; i < navbarElements.length; i++) {
-			if (navbarElements[i].innerHTML == "RESUME") {
+			console.log(navbarElements[i].innerHTML);
+			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = "pages/" + navbarLinks[i];
+			}
+			else if (navbarElements[i].innerHTML == "Work") {
+				navbarElements[i].href = navbarLinks[i];
 			}
 			else {
 				navbarElements[i].href = "pages/" + checkConnectivity(navbarLinks[i]);
@@ -133,6 +146,10 @@ function configComponents(location) {
 		}
 		homeLink.href = "/";
 		homeLogoImg.src = "img/kevinlogo.svg";
+
+		for (i = 0; i < socialMediaElements.length; i++) {
+			socialMediaElements[i].src = socialMediaLinks[i];
+		}
 	}
 	else {
 		console.log("location error");
@@ -144,7 +161,7 @@ function configComponents(location) {
 function checkConstructionStatus (status, link) {
 	if (status == 0) {
 		if (!currentLocation.includes("/featured-work/")) {
-			return checkConnectivity("construction"); // current location outside of featured-work
+			return checkConnectivity("pages/construction"); // current location outside of featured-work
 		}
 		return checkConnectivity("../construction"); // current location inside of featured-work
 	}
@@ -152,7 +169,7 @@ function checkConstructionStatus (status, link) {
 		if (currentLocation.includes("/featured-work/")) {
 			return checkConnectivity(link);
 		}
-		return "featured-work/" + checkConnectivity(link);
+		return "pages/featured-work/" + checkConnectivity(link);
 	}
 	else {
 		console.log("CONSTRUCTION PAGE CHECK ERROR");

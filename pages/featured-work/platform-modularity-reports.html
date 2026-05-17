@@ -31,18 +31,18 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-project.css">
-	<!-- <link rel="stylesheet" type="text/css" href="../../css/stylesheet-platform-modularity-reports.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../css/stylesheet-social-media-footer.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML3S5QSBCR"></script>
 	<script src="../../js/google-analytics.js"></script>
 	<script src="../../js/projects-database.js"></script>
 	<style>
 		.project-background {
-			background-image: url("../../img/platform-modularity-reports-context-shot.png");
 			background-position: 50% 50%;
 		}
 
@@ -55,9 +55,8 @@
 			color: #0d4384;
 		}
 
-		.hmw-box {
+		.hmw {
 			background-color: rgba(3, 65, 153, 0.4);
-			padding: 25px;
 			color: #0d4384;
 		}
 
@@ -66,93 +65,72 @@
 			.project-background {
 				background-position: 50% 40%;
 			}
-
-			.research-section {
-				padding: 0 50px 0 50px;
-			}
-			
 		}
 
 		@media (min-width: 991px) {
-			.project-background {
-			}
-
-			.research-section {
-			}
 		}
 
 		@media (min-width: 1441px) {
-
 		}
 	</style>
 </head>
 <body>
 	<div id="header-div">
+		
 	</div>
-	<div class="container page-wrapper">
-		<div class="row general-row-space">
+	<div class="container container-fluid gap-lg">
+		<div class="row project-landing-section gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h1 id="project-title" class="bold">Platform Modularity Reports.</h1>
+				<h1 class="heading-primary">Platform Modularity Reports</h1>
 			</div>
-		</div>
-		<div class="row general-row-space">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<p><a href="https://www.chase.com/commercial-banking/chase-connect" target="_blank">Chase Connect’s</a> reporting feature enables clients to generate balance and transaction reports for their accounts. With the introduction of Platform Modularity, clients who also use <a href="https://access.jpmorgan.com/jpmalogon" target="_blank">J.P. Morgan Access</a> can now create Access reports directly within the Connect platform, streamlining workflows across both systems.</p>
+				<p class="body-text"><a href="https://www.chase.com/commercial-banking/chase-connect" target="_blank">Chase Connect’s</a> reporting feature enables clients to generate balance and transaction reports for their accounts. With the introduction of Platform Modularity, clients who also use <a href="https://access.jpmorgan.com/jpmalogon" target="_blank">J.P. Morgan Access</a> can now create Access reports directly within the Connect platform, streamlining workflows across both systems.</p>
 			</div>
-		</div>
-		<div class="row v-30-gap">
 			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
+				<ul class="callout-list">
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-user-and-business-needs.png">
-						<p class="topic-h4 bold">User & Business Needs</p>
-						<p class="point-caption"><span class="bold">User</span>: Be able to create Access reports within the Connect experience.<br><span class="bold">Business</span>: Improve reports creation rate</p>
+						<h4 class="heading-4">User & Business Needs</h4>
+						<p><span>User</span>: Be able to create Access reports within the Connect experience.<br><span>Business</span>: Improve reports creation rate</p>
 					</span>
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-impact.png">
-						<p class="topic-h4 bold">Impact</p>
-						<p class="point-caption">Access report creation rate <span class="bold">increased by 30%</span> and Access report creation time <span class="bold">reduced by 53%</span></p>
+						<h4 class="heading-4">Impact</h4>
+						<p>Access report creation rate <span>increased by 30%</span> and Access report creation time <span>reduced by 53%</span></p>
 					</span>
 					<span class="callout">
 						<img class="callout-icon" src="../../img/project-contribution.png">
-						<p class="topic-h4 bold">Contribution</p>
-						<p class="point-caption">Lead designer and led the collaboration efforts with PMs and engineers</p>
+						<h4 class="heading-4">Contribution</h4>
+						<p>Lead designer and led the collaboration efforts with PMs and engineers</p>
 					</span>
 				</ul>
 			</div>
-		</div>
-	</div>
-	<div class="container project-background box-shadow">
-		<div class="row">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-			</div>
-		</div>
-	</div>
-	<div class="container container-fluid">
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Problem</h2>
-				<p>Emerging Middle Market (EMM) clients appreciate the simplicity and usability of Chase Connect. However, as their needs grow and they transition to J.P. Morgan Access for more advanced features, many experience frustration due to the platform’s complexity. Platform Modularity addresses this gap by unlocking key Access functionalities within the Connect experience. My role was to design the user experience that enables clients to create Access reports directly within Chase Connect—preserving the simplicity they value while meeting their evolving reporting needs</p>
-				<p class="bold"><span class="project-color-text">Challenge:</span> Clients value the simplicity of Chase Connect, but often become frustrated when transitioning to J.P. Morgan Access, as its complexity can hinder usability despite offering more advanced features.</p>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Process</h2>
-				<p>I collaborated closely with product managers and engineers to align on key requirements and technical constraints. Then, I conducted user research and platform audits to identify usability gaps. Using these insights, I focused my design on simplifying the process of creating complex bank account reports, ensuring users can easily create Access reports in Connect.</p>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col col-12 col-lg-10 offset-lg-1">
-				<div class="row">
-					<div class="col col-12">
-						<ul class="process-timeline">
+				<img class="project-background box-shadow" src="../../img/platform-modularity-reports-context-shot.png">
+			</div>
+		</div>
+		<div class="row gap-md">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Problem</h2>
+				<p class="body-text">Emerging Middle Market (EMM) clients appreciate the simplicity and usability of Chase Connect. However, as their needs grow and they transition to J.P. Morgan Access for more advanced features, many experience frustration due to the platform’s complexity. Platform Modularity addresses this gap by unlocking key Access functionalities within the Connect experience. My role was to design the user experience that enables clients to create Access reports directly within Chase Connect—preserving the simplicity they value while meeting their evolving reporting needs</p>
+				<p class="body-text challenge"><span class="project-color-text">Challenge:</span> Clients value the simplicity of Chase Connect, but often become frustrated when transitioning to J.P. Morgan Access, as its complexity can hinder usability despite offering more advanced features.</p>
+			</div>
+		</div>
+		<div class="row gap-md">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Process</h2>
+				<p class="body-text">I collaborated closely with product managers and engineers to align on key requirements and technical constraints. Then, I conducted user research and platform audits to identify usability gaps. Using these insights, I focused my design on simplifying the process of creating complex bank account reports, ensuring users can easily create Access reports in Connect.</p>
+			</div>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="ol col-12 col-lg-10 offset-lg-1">
+						<ul class="callout-list">
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									1
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Discover</h3>
+									<h4 class="heading-4">Discover</h4>
 									<ul class="step-info">
 										<li>Platform Audit</li>
 										<li>User Interview</li>
@@ -160,11 +138,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									2
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Define</h3>
+									<h4 class="heading-4">Define</h4>
 									<ul class="step-info">
 										<li>Information Architecture</li>
 										<li>Design Takeaways</li>
@@ -172,11 +150,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									3
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Design</h3>
+									<h4 class="heading-4">Design</h4>
 									<ul class="step-info">
 										<li>Hi-Fi Wireframes</li>
 										<li>Responsive Design</li>
@@ -185,11 +163,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									4
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Develop</h3>
+									<h4 class="heading-4">Develop</h4>
 									<ul class="step-info">
 										<li>Greenline</li>
 										<li>Refinement</li>
@@ -198,11 +176,11 @@
 								</span>
 							</span>
 							<span class="process-step">
-								<div class="step-num bold">
+								<div class="step-num">
 									5
 								</div>
 								<span class="step-detail">
-									<h3 class="topic-h4 bold">Deliver</h3>
+									<h4 class="heading-4">Deliver</h4>
 									<ul class="step-info">
 										<li>User Feedback</li>
 										<li>Adoption Metrics</li>
@@ -211,290 +189,185 @@
 							</span>
 						</ul>
 					</div>
+					<div class="col col-12">
+						<p class="text-secondary caption">Completed the whole process within 4 months.</p>
+					</div>
 				</div>
-				<p class="caption">Completed the whole process within 4 months.</p>
 			</div>
 		</div>
-		<div class="row specific-row-space v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Research</h2>
-				<p>I began by analyzing the reporting workflows in both J.P. Morgan Access and Chase Connect to understand their respective strengths and limitations. From there, I conducted interviews with EMM clients to uncover how they currently use these features and the challenges they encounter, particularly when switching between systems.</p>
+				<h2 class="heading-secondary">Research</h2>
+				<p class="body-text">I began by analyzing the reporting workflows in both J.P. Morgan Access and Chase Connect to understand their respective strengths and limitations. From there, I conducted interviews with EMM clients to uncover how they currently use these features and the challenges they encounter, particularly when switching between systems.</p>
 			</div>
-		</div>
-		<div class="row v-30-gap">
 			<div class="col col-12 col-lg-8 offset-lg-2">
-				<ul class="callout-section research-section">
+				<ul class="callout-list">
 					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-research-1.svg">
-						<p class="topic-h4 bold">Platform Audit</p>
-						<p class="point-caption">Analyzed reports creation process in both Connect and Access</p>
+						<img class="callout-icon" src="../../img/research-heuristic-analysis.svg">
+						<h4 class="heading-4">Platform Audit</h4>
+						<p>Analyzed reports creation process in both Connect and Access</p>
 					</span>
 					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-research-2.svg">
-						<p class="topic-h4 bold">User Interviews</p>
-						<p class="point-caption">Talked to 12 EMM clients and bankers who work with them</p>
-					</span>
-				</ul>
-			</div>
-		</div>
-		<div class="row specific-row-space v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Synthesize</h2>
-				<p>After my research findings, I formulated takeaways about how clients create their reports using what's available in Access and Connects, and identified the challenge to guide my design. Here are the design takeaways and HMW statement:</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Takeaways</h3>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<ul class="callout-section synthesize-section">
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-1.svg">
-						<p class="topic-h4 bold">Simplify the Complexity</p>
-						<p class="point-caption">Simplify reports, so users would not need to rely on detailed instructions to use the module</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-2.svg">
-						<p class="topic-h4 bold">Clear User Flows</p>
-						<p class="point-caption">Allow users to know what is available to them and what action to take next</p>
-					</span>
-					<span class="callout">
-						<img class="callout-icon" src="../../img/platform-modularity-reports-insight-3.svg">
-						<p class="topic-h4 bold">Reuse Reports</p>
-						<p class="point-caption">Allow users to easily locate and reuse their favorite reports</p>
+						<img class="callout-icon" src="../../img/research-user-interview.svg">
+						<h4 class="heading-4">User Interviews</h4>
+						<p>Talked to 12 EMM clients and bankers who work with them</p>
 					</span>
 				</ul>
 			</div>
 		</div>
-		<div class="row v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Design Challenge</h3>
+				<h2 class="heading-secondary">Synthesize</h2>
+				<p class="body-text">After my research findings, I formulated takeaways about how clients create their reports using what's available in Access and Connects, and identified the challenge to guide my design. Here are the design takeaways and HMW statement:</p>
 			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<div class="">
-					<p class="single-HMW-caption hmw-box">How might we <span class="bold">streamline</span> the report creation process that allows EMM clients to <span class="bold">easily navigate through the available actions</span> and <span class="bold">reuse their favorite reports</span> after they completed the process?</p>
+			<div class="col col-12">
+				<div class="row gap-md">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Design Takeaways</h3>
+					</div>
+					<div class="col col-12 col-lg-10 offset-lg-1">
+						<ul class="callout-list">
+							<span class="callout">
+								<img class="callout-icon" src="../../img/platform-modularity-reports-insight-1.svg">
+								<h4 class="heading-4">Simplify the Complexity</h4>
+								<p>Simplify reports, so users would not need to rely on detailed instructions to use the module</p>
+							</span>
+							<span class="callout">
+								<img class="callout-icon" src="../../img/platform-modularity-reports-insight-2.svg">
+								<h4 class="heading-4">Clear User Flows</h4>
+								<p>Allow users to know what is available to them and what action to take next</p>
+							</span>
+							<span class="callout">
+								<img class="callout-icon" src="../../img/platform-modularity-reports-insight-3.svg">
+								<h4 class="heading-4">Reuse Reports</h4>
+								<p>Allow users to easily locate and reuse their favorite reports</p>
+							</span>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col col-12">
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Design Challenge</h3>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<div class="hmw">
+							<p>How might we <span>streamline</span> the report creation process that allows EMM clients to <span>easily navigate through the available actions</span> and <span>reuse their favorite reports</span> after they completed the process?</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row specific-row-space v-20-gap">
+		<div class="row gap-md">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Solution</h2>
-				<p>I redesigned the information architecture and proposed an integrated experience that allowed clients to switch between Connect and Access reports during the creation process, which streamlines the reporting flow between the two report types.</p>
+				<h2 class="heading-secondary">Solution</h2>
+				<p class="body-text">I redesigned the information architecture and proposed an integrated experience that allowed clients to switch between Connect and Access reports during the creation process, which streamlines the reporting flow between the two report types.</p>
 			</div>
-		</div>
-		<!-- <div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Information Architecture</h3>
-				<p>I proposed an integrated experience that allowed users to switch between Connect and Access reports during the creation process. Here's a high-level structure of how this experience works:</p>
-				<ul>
-					<li>User chooses to create between U.S. (Connect) and International (Access) reports, and they'll have to fill out the respective fields</li>
-					<li>Once a report is created, it will generate a report file. Users can edit or run these reports again</li>
-					<li>All the generated report files will be organized in a table for users to perform actions, like download and delete</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row v-30-gap">
-			<div class="col col-12 col-lg-10 offset-lg-1">
-				<img class="featured-image" src="../../img/platform-modularity-reports-user-flow.png">
-				<p class="caption">Information architecture of integrated reporting.</p>
-			</div>
-		</div> -->
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Create New Report</h3>
-				<p>Complete a 3-step process in creating a report, which helps guide clients to fill out a report's basic information, what data to display and scheduling.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-create-new-report.png">
-				<p class="caption">3-step process to create a report.</p>
-			</div>
-		</div>
-		<!-- <div class="row v-30-gap">
 			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-1.png">
-						</span>
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Create New Report</h3>
+						<p class="body-text">Complete a 3-step process in creating a report, which helps guide clients to fill out a report's basic information, what data to display and scheduling.</p>
 					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-createt-new-report-2.png">
-						</span>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow" src="../../img/platform-modularity-reports-create-new-report.png">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">3-step process to create a report.</p>
 					</div>
 				</div>
-				<p class="caption">3-step process to create a report.</p>
-			</div>	
-		</div> -->
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Report Library</h3>
-				<p>Newly created report are stored in a library, which can be edited, by going through the same 3-step process, and deleted.</p>
 			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-reports-library.png">
-				<p class="caption">A library to store reports.</p>
-			</div>
-		</div>
-		<!-- <div class="row v-30-gap">
 			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-saved-reports-1.png">
-						</span>
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Report Library</h3>
+						<p class="body-text">Newly created report are stored in a library, which can be edited, by going through the same 3-step process, and deleted.</p>
 					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-saved-reports-2.png">
-						</span>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow" src="../../img/platform-modularity-reports-reports-library.png">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">A library to store reports.</p>
 					</div>
 				</div>
-				<p class="caption">US reports are saved and displayed on the left navigation.</p>
-			</div>	
-		</div> -->
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">View and Download Reports</h3>
-				<p>Once a report has ran on a recurring schedule or adhoc, it generates a report file, which is organized in a table where clients download or delete them.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-view-and-download-reports.png">
-				<p class="caption">Generated report files are stored for access.</p>
-			</div>
-		</div>
-		<div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Responsive Web Design</h3>
-				<p>The reporting feature is responsive, so clients will still be able to access their reports through their phones if they are not at their desk.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap justify-content-md-center">
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/platform-modularity-reports-responsive-web-design-1.png">
-			</div>
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/platform-modularity-reports-responsive-web-design-2.png">
-			</div>
-			<div class="col col-lg-3">
-				<img class="featured-image box-shadow corner-radius-12" src="../../img/platform-modularity-reports-responsive-web-design-3.png">
 			</div>
 			<div class="col col-12">
-				<p class="caption">Mobile screens of the reporting feature.</p>
-			</div>
-		</div>
-		<!-- <div class="row v-30-gap">
-			<div class="col col-12">
-				<div class="row">
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-view-report-files-1.png">
-						</span>
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">View and Download Reports</h3>
+						<p class="body-text">Once a report has ran on a recurring schedule or adhoc, it generates a report file, which is organized in a table where clients download or delete them.</p>
 					</div>
-					<div class="col col-12 col-md-6">
-						<span class="">
-							<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-view-report-files-2.png">
-						</span>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<img class="project-img box-shadow" src="../../img/platform-modularity-reports-view-and-download-reports.png">
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Generated report files are stored for access.</p>
 					</div>
 				</div>
-				<p class="caption">Generated report files are stored and organized in a switchable table.</p>
-			</div>	
-		</div> -->
-		<!-- <div class="row v-20-gap">
-			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h3 class="topic-h3 bold v-20-gap">Usability Testing</h3>
-				<p>I talked to 3 clients and they loved the simplicity of creating an international report on Connect. However, there was some confusion around the scheduling options and they would also like to be able to save international reports. Here were the 3 major improvements made:</p>
-				<ul>
-					<li>Removed unpopular schedule frequency options, e.g. quarterly, on event and on specific dates</li>
-					<li>Created a new page to store reports in a table that can be switched between US and international, similar to the report files table (renamed to "View/Download Reports")</li>
-					<li>Updated the experience for editing a report</li>
-				</ul>
 			</div>
-		</div>
-		<div class="row v-30-gap">
 			<div class="col col-12">
-				<img class="featured-image" src="../../img/platform-modularity-reports-usability-testing.png">
-			</div>
-		</div> -->
-		<!-- <div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Prototype</h2>
-				<p>After some minor design changes due to feasibility and outlining the greenlines to provide accessibility across the experience, my team and I were able to ship platform modularity reports on Connect. Here are the prototypes of the reporting experience:</p>
+				<div class="row gap-sm">
+					<div class="col col-12 col-lg-6 offset-lg-3">
+						<h3 class="heading-tertiary">Responsive Web Design</h3>
+						<p class="body-text">The reporting feature is responsive, so clients will still be able to access their reports through their phones if they are not at their desk.</p>
+					</div>
+					<div class="col col-12 col-lg-10 offset-lg-1">
+						<div class="row justify-content-md-center">
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/platform-modularity-reports-responsive-web-design-1.png">
+							</div>
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/platform-modularity-reports-responsive-web-design-2.png">
+							</div>
+							<div class="col col-lg-3">
+								<img class="project-img box-shadow rounded-img" src="../../img/platform-modularity-reports-responsive-web-design-3.png">
+							</div>
+						</div>
+					</div>
+					<div class="col col-12 col-lg-8 offset-lg-2">
+						<p class="text-secondary caption">Mobile screens of the reporting feature.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-prototype-1.gif">
-				<p class="caption">Creating a report by filling out the required fields.</p>
-			</div>
-		</div>
-		<div class="row v-40-gap">
-			<div class="col col-12 col-lg-8 offset-lg-2">
-				<img class="featured-image box-shadow" src="../../img/platform-modularity-reports-prototype-2.gif">
-				<p class="caption">Editing reports and downloading the generated report files</p>
-			</div>
-		</div> -->
-		<!-- <div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Impact</h2>
-				<p>We designed the success metrics from the beginning, and measured the success from both the user and business side.</p>
-				<ul>
-					<li>Drop rate decrease: Majority of the clients stopped at the scheduling step when creating reports on Access. After the new reports was launched, drop-out rate dropped from <span class="bold">60% to 20%</span></li>
-					<li>Time-on-task: Based on A/B testing results, the report creation time decreased from <span class="bold">6:30min to 4:15min</span></li>
-					<li>User satisfaction: Our bankers and clients appreciate the simplicity of the new Access reports creation, with an <span class="bold">NPS of +30</span></li>
-				</ul>
-			</div>
-		</div> -->
-		<div class="row specific-row-space">
+		<div class="row">
 			<div class="col col-12 col-lg-6 offset-lg-3">
-				<h2 class="topic-h2 bold">Confidential</h2>
-				<p>Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Platform Modularity Reports work.</p>
+				<h2 class="heading-secondary">Confidential</h2>
+				<p class="body-text">Please contact me via <span id="email-span" class="bold">kchengtoo@gmail.com</span> for a portfolio review of all Merchant Restrictions work.</p>
 			</div>
 		</div>
-		<div class="row specific-row-space">
-			<div class="col col-12 col-lg-6 offset-lg-3 v-20-gap">
-				<h2 class="topic-h2 bold">Other Projects</h2>
+		<div class="row gap-sm">
+			<div class="col col-12 col-lg-6 offset-lg-3">
+				<h2 class="heading-secondary">Other Projects</h2>
 			</div>
-		</div>
-		<div class="row v-60-gap">
-			<div class="col col-12 project-navigation-col">
+			<div class="col col-12 col-lg-10 offset-lg-1 project-navigation-col">
 				<div id="previous-project-button" class="project-navigation-button box-shadow">
 					<div id="previous-project-img" class="project-navigation-img"></div>
 					<a id="previous-project-link" href=""><div id="previous-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Previous</p>
-						<p id="previous-project-name" class="project-navigation-name bold"></p>
+						<p class="navigation-direction">Previous</p>
+						<h3 id="previous-project-name" class="project-navigation-name"></h3>
 						<img id="left-arrow" class="direction-img" src="">
 					</div></a>
 				</div>
 				<div id="next-project-button" class="project-navigation-button box-shadow">
 					<div id="next-project-img" class="project-navigation-img"></div>
 					<a id="next-project-link" href=""><div id="next-project-label" class="navigation-button-label">
-						<p class="navigation-direction bold">Next</p>
-						<p id="next-project-name" class="project-navigation-name bold"></p>
+						<p class="navigation-direction">Next</p>
+						<h3 id="next-project-name" class="project-navigation-name"></h3>
 						<img id="right-arrow" class="direction-img" src="">
 					</div></a>
 				</div>
 			</div>
 		</div>
-		<hr>
 		<div id="footer-div">
+			<hr>
 		</div>
 	</div>
-
+	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script src="../../js/project-navigation.js"></script>

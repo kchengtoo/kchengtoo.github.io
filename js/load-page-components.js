@@ -53,7 +53,7 @@ function configComponents(location) {
 	let copyrightYear = document.getElementById("copyright-year");
 	// console.log(offlineMode(currentLocation));
 
-	// console.log(navbarElements);
+	console.log(navbarElements);
 
 	// In one of the projects
 	if (location == "projects") {
@@ -135,6 +135,7 @@ function configComponents(location) {
 	// In homepage
 	else if (location == "home") {
 		console.log(homeLink);
+		console.log(navbarElements.length);
 		for (i = 0; i < navbarElements.length; i++) {
 			console.log(navbarElements[i].innerHTML);
 			if (navbarElements[i].innerHTML == "Resume") {

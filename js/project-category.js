@@ -74,7 +74,7 @@ function displayProjectLinks(inProjects) {
 			h3Element.innerHTML = inProjects.projects[i].name;
 
 			let pElement = document.createElement("p");
-			pElement.classList.add("text-muted");
+			pElement.classList.add("text-secondary");
 			pElement.innerHTML = inProjects.projects[i].projectType + ".";
 
 			labelElement.appendChild(h3Element);
@@ -121,7 +121,7 @@ function displayProjectLinks(inProjects) {
 			h3Element.innerHTML = inProjects.projects[i].name;
 
 			let pElement = document.createElement("p");
-			pElement.classList.add("text-muted");
+			pElement.classList.add("text-secondary");
 			pElement.innerHTML = inProjects.projects[i].projectType + ".";
 
 			labelElement.appendChild(h3Element);

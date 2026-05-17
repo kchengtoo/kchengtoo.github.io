@@ -14,6 +14,7 @@ $(document).ready(function() {
 	// else {
 	// 	console.log("ERROR");
 	// }
+	console.log(currentLocation);
 	if (currentLocation.includes("index")) {
 		categoryName = "featured-work";
 		displayProjectLinks(designProjects);

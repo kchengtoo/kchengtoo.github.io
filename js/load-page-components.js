@@ -17,7 +17,7 @@ $(document).ready(function() {
 	}
 	else if (!currentLocation.includes("pages")) {
 		console.log("homepage");
-		$("#header-div").load(" pages/shared-page-components.html #navbar-div");
+		$("#header-div").load("pages/shared-page-components.html #navbar-div");
 		$("#footer-div").load("pages/shared-page-components.html #load-social-media-div");
 		setTimeout (function() {
 			configComponents("home");
@@ -62,6 +62,7 @@ function configComponents(location) {
 		// console.log(homeLink);
 
 		for (i = 0; i < navbarElements.length; i++) {
+			console.log(navbarElements[i].innerHTML);
 			// navbarElements[i].href = "../" + navbarLinks[i];
 			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = "../" + navbarLinks[i];
@@ -104,6 +105,7 @@ function configComponents(location) {
 		// console.log(navbarElements[i].href);
 		for (i = 0; i < navbarElements.length; i++) {
 			// navbarElements[i].href = navbarLinks[i];
+			console.log(navbarElements[i].innerHTML);
 			if (navbarElements[i].innerHTML == "Resume") {
 				navbarElements[i].href = navbarLinks[i];
 			}
@@ -139,6 +141,7 @@ function configComponents(location) {
 				navbarElements[i].href = "pages/" + navbarLinks[i];
 			}
 			else if (navbarElements[i].innerHTML == "Work") {
+				console.log("HERE");
 				navbarElements[i].href = navbarLinks[i];
 			}
 			else {
